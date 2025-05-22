@@ -1,0 +1,2076 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <controls>
+        <prompt name="NameEdit">
+          <tooltip>Name des Diagramms</tooltip>
+          <caption>Name</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identifier">
+          <tooltip>Eindeutige ID für das Diagramm.</tooltip>
+        </prompt>
+        <line name="Line" />
+        <prompt name="Description">
+          <tooltip>Beschreibung des Diagramms.</tooltip>
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <tooltip>Gruppe, die Zugriffsrechte auf das Diagramm hat.</tooltip>
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <tooltip>Datum der letzen Änderung</tooltip>
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <tooltip>Letzer Bearbeiter des Diagramms</tooltip>
+          <caption>Geändert von</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page_Criteria">
+      <caption>Kriterien</caption>
+      <components>
+        <entityBrowseDefinition name="AnalysisBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="ComponentBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="ProductBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseCriteria">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseLocation">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseResults">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EbcPointNumber">
+              <Title>Index</Title>
+              <Width>30</Width>
+              <Column>PointNumberInt</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointDate">
+              <Title>Probenahmedatum</Title>
+              <Width>60</Width>
+              <Column>PointDate</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointName">
+              <Title>Gruppenname</Title>
+              <Width>50</Width>
+              <Column>PointName</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointValue">
+              <Title>Wert</Title>
+              <Width>45</Width>
+              <Column>PointValue</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcSampleId">
+              <Title>Proben ID</Title>
+              <Width>65</Width>
+              <Column>SampleId</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointExcluded">
+              <Title>Ausgeschlossen</Title>
+              <Width>40</Width>
+              <Column>Bad</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcSubgroupExcluded">
+              <Title>Teilgruppe Ausgeschlossen</Title>
+              <Width>65</Width>
+              <Column>SubgroupExcluded</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointComments">
+              <Title>Kommentar</Title>
+              <Width>100</Width>
+              <Column>Comments</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <PromptPhraseBrowseDefinition name="ResultFieldPhraseBrowse">
+          <location>
+            <x>395</x>
+            <y>38</y>
+          </location>
+          <width>389</width>
+          <caption>Ergebnisfeld</caption>
+          <multiselect>false</multiselect>
+          <forcevalid>false</forcevalid>
+          <usedescription>false</usedescription>
+        </PromptPhraseBrowseDefinition>
+        <groupbox name="ExportGroup">
+          <caption>Export Ergebnisse</caption>
+          <controls>
+            <PromptStringBrowseDefinition name="PrStrBrFileFormats">
+              <tooltip>Datenformat für die Exportierten Daten.</tooltip>
+              <caption>Dateiformat</caption>
+              <multiselect>false</multiselect>
+              <forcevalid>false</forcevalid>
+            </PromptStringBrowseDefinition>
+            <ButtonEditDefinition name="ButtonExportRawData">
+              <tooltip>Ergebnisse exportieren...</tooltip>
+              <caption>Ergebnisse exportieren</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <SpinEditDefinition name="SpinEditDecimalPlaces">
+              <tooltip>Anzahl der Dezimalstellen für die exportierten Ergebniswerte (von 2 bis 15)</tooltip>
+              <caption>Dezimalstellen</caption>
+            </SpinEditDefinition>
+          </controls>
+        </groupbox>
+        <prompt name="CheckEditCommittedDb">
+          <tooltip>Schließt Ergebnisse der Comitted Datenbank ein / aus</tooltip>
+          <caption>Committed Daten</caption>
+        </prompt>
+        <prompt name="CheckEditActiveDb">
+          <tooltip>Schließt Ergebnisse der Aktiven Datenbank ein / aus</tooltip>
+          <caption>Aktive Daten</caption>
+        </prompt>
+        <DateEditDefinition name="DateEditBasicQrySampledDate">
+          <tooltip>Wähle ein Probenahmedatum</tooltip>
+          <caption>Probenahmedatum</caption>
+        </DateEditDefinition>
+        <groupbox name="GroupBoxQueryResults">
+          <caption>Ergebnisse</caption>
+          <controls>
+            <ButtonEditDefinition name="ButtonEditApplyFilter">
+              <tooltip>Datenfilter anwenden</tooltip>
+              <caption>Filter</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <CheckEdit name="CheckEditEnableFilterData">
+              <width>227</width>
+              <tooltip>Filter um die angezeigten Daten weiter einzuschhränken</tooltip>
+              <caption>Filter nutzen, um Daten einzuschränken:</caption>
+            </CheckEdit>
+            <DateEditDefinition name="DateEditFilterSampledDate">
+              <location>
+                <x>452</x>
+                <y>228</y>
+              </location>
+              <tooltip>Zeige Ergebnisse ab diesem Datum an.</tooltip>
+            </DateEditDefinition>
+            <SpinEditDefinition name="SpinEditLastNDays">
+              <location>
+                <x>452</x>
+                <y>205</y>
+              </location>
+              <tooltip>Zeige die letzen N Ergebnisse in der Übersicht an</tooltip>
+            </SpinEditDefinition>
+            <radiobutton name="RadioButtonResultsFrmDate">
+              <location>
+                <x>239</x>
+                <y>229</y>
+              </location>
+              <width>207</width>
+              <tooltip>Zeigt, alle Ergebnisse die nach diesem Datum gezogen wurden an</tooltip>
+              <caption>Ergebnisse nach Probenahmedatum</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+            <explorergridcontrol name="ExplorerGridResults">
+              <caption>Ergebnisse</caption>
+            </explorergridcontrol>
+            <radiobutton name="RadioButtonLastNResults">
+              <location>
+                <x>239</x>
+                <y>205</y>
+              </location>
+              <width>207</width>
+              <tooltip>Letzten N Ergebnisse anzeigen</tooltip>
+              <caption>Letzten N Ergebnisse anzeigen</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+          </controls>
+        </groupbox>
+        <prompt name="DataSelection">
+          <location>
+            <x>395</x>
+            <y>11</y>
+          </location>
+          <width>389</width>
+          <tooltip>Jedesmal die Daten neu laden, wenn das Diagramm dargestellt wird.</tooltip>
+          <caption>Ergebnisse immer neu laden, wenn das Diagramm dargestellt wird.</caption>
+          <captionwidth>375</captionwidth>
+        </prompt>
+        <PromptEntityBrowseDefinition name="PromptEntityBrowseLocation">
+          <tooltip>Wähle eine LOCATION-Entität aus, die in der where-Klausel für grundlegende Kriterien hinzugefügt werden soll</tooltip>
+          <caption>Standort</caption>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="SMPromptAdvancedCriteria">
+          <tooltip>Wähle ein vordefiniertes Kriterium</tooltip>
+          <caption>Kriterium</caption>
+        </PromptEntityBrowseDefinition>
+        <prompt name="SMPromptSamplePoint">
+          <tooltip>Wähle eine VERSIONED_ANALYSIS- Entität aus, die in die grundlegende Kriterien-where-Klausel aufgenommen werden soll.</tooltip>
+          <caption>Probenahmestelle</caption>
+        </prompt>
+        <prompt name="SMPromptTestSchedule">
+          <tooltip>Wähle eine TEST_SCHEDULE- Entität aus, die in die grundlegende Kriterien-where-Klausel aufgenommen werden soll.</tooltip>
+          <caption>Testplan</caption>
+        </prompt>
+        <line name="Line17" />
+        <ButtonEditDefinition name="ButtonEditRunBasicCriteria">
+          <tooltip>Basiskriterium ausführen</tooltip>
+          <caption>Basiskriterium ausführen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+        </ButtonEditDefinition>
+        <PromptEntityBrowseDefinition name="prEntBrowseProduct">
+          <tooltip>Wähle eine PRODUCT_SPECIFICATION- Entität aus, die in die Klausel where für grundlegende Kriterien aufgenommen werden soll.</tooltip>
+          <caption>Produkt</caption>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="prEntBrowseComponent">
+          <tooltip>Wähle eine VERSIONED_COMPONENT-Entität aus, die in die grundlegende Kriterien-where-Klausel aufgenommen werden soll.</tooltip>
+          <caption>Komponente</caption>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="prEntBrowseAnalysis">
+          <tooltip>Wähle eine VERSIONED_ANALYSIS- Entät aus, die in die grundlegende Kirterien-where-Klausel aufgenommen werden soll.</tooltip>
+          <caption>Analyse</caption>
+        </PromptEntityBrowseDefinition>
+        <radiobutton name="rbUseAdvancedCrit">
+          <tooltip>Benutze ein erweitertes (vordefiniertes) Kriterium, um ein Ergebnisse zu generieren </tooltip>
+          <caption>Benutze erweitertes Kriterium</caption>
+          <radiogroupindex>0</radiogroupindex>
+          <CheckAlign>Left</CheckAlign>
+        </radiobutton>
+        <radiobutton name="rbUseBasicCrit">
+          <tooltip>Benutze Basiskriterium um Ergebnisse zu generieren.</tooltip>
+          <caption>Benutze Basiskriterium</caption>
+          <radiogroupindex>0</radiogroupindex>
+          <CheckAlign>Left</CheckAlign>
+        </radiobutton>
+        <label name="Label2">
+          <caption>Datenbanktyp:</caption>
+        </label>
+        <line name="Line2" />
+      </controls>
+    </form>
+    <form name="Page_Configuration">
+      <height>838</height>
+      <width>930</width>
+      <caption>Konfiguration</caption>
+      <minimumsize>
+        <height>740</height>
+        <width>930</width>
+      </minimumsize>
+      <controls>
+        <groupbox name="GroupBoxViewerOptions">
+          <location>
+            <x>12</x>
+            <y>701</y>
+          </location>
+          <width>305</width>
+          <caption>Viewer Optionen</caption>
+          <controls>
+            <CheckEdit name="CheckEditJustifyExcludeSubgroup">
+              <height>32</height>
+              <width>283</width>
+              <tooltip>Erzwingt ein Benutzerkommentar, wenn eine Teilgruppe ausgeschlossen wird.</tooltip>
+              <caption>Kommentar benötigt, um Teilgruppen auszuschließen</caption>
+            </CheckEdit>
+            <CheckEdit name="SMPromptModifableInView">
+              <width>283</width>
+              <tooltip>Option um temporäre Änderung an der Konfiguration im Viewer zu zulassen.</tooltip>
+              <caption>Konfiguration im Viewer erlauben</caption>
+            </CheckEdit>
+            <label name="LabelDefChartLabel">
+              <height>0</height>
+              <width>0</width>
+              <caption>Standard Diagramm</caption>
+            </label>
+            <PromptStringBrowseDefinition name="PrStringBrowseDefChart">
+              <width>0</width>
+              <tooltip>Erstes / Standard Diagramm, das beim Öffnen des Viewers angezeigt wird.</tooltip>
+              <caption>Auswahl Standard Diagramm</caption>
+              <multiselect>false</multiselect>
+              <forcevalid>false</forcevalid>
+            </PromptStringBrowseDefinition>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBoxConfig">
+          <location>
+            <x>323</x>
+            <y>8</y>
+          </location>
+          <height>820</height>
+          <width>600</width>
+          <minimumsize>
+            <height>610</height>
+            <width>600</width>
+          </minimumsize>
+          <controls>
+            <label name="LabelViewConfigMsg">
+              <location>
+                <x>4</x>
+                <y>19</y>
+              </location>
+              <width>592</width>
+              <caption>Diagrammtyp wählen, für den die Konfiguration angezeigt werden sollen.</caption>
+            </label>
+            <tabcontrol name="TabControlConfig">
+              <height>797</height>
+              <width>592</width>
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="IND_MR">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>Einzelwerte &amp;&amp; Gleitende Spannweite (MR)</caption>
+                  <controls>
+                    <PromptStringBrowseDefinition name="PromptStringBrowseImaMLP">
+                      <location>
+                        <x>302</x>
+                        <y>78</y>
+                      </location>
+                      <width>265</width>
+                      <tooltip>MLP Stufe</tooltip>
+                      <caption>Stufe</caption>
+                      <captionwidth>175</captionwidth>
+                      <multiselect>false</multiselect>
+                      <forcevalid>false</forcevalid>
+                    </PromptStringBrowseDefinition>
+                    <prompt name="SMPmtUseSubgroupIndex">
+                      <location>
+                        <x>302</x>
+                        <y>33</y>
+                      </location>
+                      <width>264</width>
+                      <caption>Verwende Teilgruppen Index für X-Achse</caption>
+                      <captionwidth>250</captionwidth>
+                    </prompt>
+                    <panel name="PanelControlLimtis">
+                      <height>568</height>
+                      <width>565</width>
+                      <caption>Panel2</caption>
+                      <controls>
+                        <groupbox name="GroupBoxDisplayOptions">
+                          <width>563</width>
+                          <caption>Anzeigeoptionen</caption>
+                          <controls>
+                            <SpinEditDefinition name="SpinEditIndMovLdp">
+                              <tooltip>Anzahl der Dezimalstellen, auf die die Legendenwerte gerundet werden soll.</tooltip>
+                              <caption>Dezimalstellen (Legende)</caption>
+                            </SpinEditDefinition>
+                            <prompt name="SMPromptImaDisplay1sd">
+                              <location>
+                                <x>292</x>
+                                <y>43</y>
+                              </location>
+                              <caption>1-Sigma Grenzen anzeigen (USD, LSD)</caption>
+                            </prompt>
+                            <prompt name="SMPromptImaShowSpecLimits">
+                              <caption>Spez Grenzen anzeigen (USL, LSL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt26">
+                              <location>
+                                <x>292</x>
+                                <y>20</y>
+                              </location>
+                              <caption>Warngrenzen anzeigen (UWL, LWL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt27">
+                              <caption>Kontrollgrenzen anzeigen (UCL, LCL)</caption>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBox4">
+                          <width>563</width>
+                          <caption>Trending</caption>
+                          <controls>
+                            <prompt name="SMPrompt30">
+                              <location>
+                                <x>292</x>
+                                <y>20</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Gleitende Spannweite (MR)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt31">
+                              <width>265</width>
+                              <caption>Einzelwerte</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxImaTarget">
+                          <width>563</width>
+                          <caption>Grenzwerte für Sollwerte</caption>
+                          <controls>
+                            <prompt name="SMPrompt32">
+                              <location>
+                                <x>292</x>
+                                <y>19</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Sollwert (MR)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt33">
+                              <width>265</width>
+                              <caption>Sollwert (Einzelwerte)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxImaMLPB">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Gleitende Spannweiten (MR)- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseImaMLPB">
+                              <width>265</width>
+                              <tooltip>MLP Stufe</tooltip>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt22">
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt34">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt35">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxImaSpecLtsB">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für Gleitende Spannweiten (MR)- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptImaTVB">
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUSB">
+                              <location>
+                                <x>291</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLSB">
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLWB">
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUWB">
+                              <location>
+                                <x>291</x>
+                                <y>42</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLCB">
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUCB">
+                              <location>
+                                <x>291</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxImaMLPA">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Einzelwert- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseImaMLPA">
+                              <width>265</width>
+                              <tooltip>MLP Stufe</tooltip>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt45">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt46">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxImaSpecLtsA">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für Einzelwert- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptImaTVA">
+                              <location>
+                                <x>21</x>
+                                <y>87</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUSA">
+                              <location>
+                                <x>292</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLSA">
+                              <location>
+                                <x>21</x>
+                                <y>64</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLWA">
+                              <location>
+                                <x>21</x>
+                                <y>41</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUWA">
+                              <location>
+                                <x>292</x>
+                                <y>41</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaLCA">
+                              <location>
+                                <x>21</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptImaUCA">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                      </controls>
+                    </panel>
+                    <radiobutton name="RadBtnImaClMlpB">
+                      <location>
+                        <x>502</x>
+                        <y>187</y>
+                      </location>
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClSpecifiedB">
+                      <location>
+                        <x>396</x>
+                        <y>188</y>
+                      </location>
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClTargetB">
+                      <location>
+                        <x>290</x>
+                        <y>188</y>
+                      </location>
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClDataB">
+                      <location>
+                        <x>184</x>
+                        <y>188</y>
+                      </location>
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClMlpA">
+                      <location>
+                        <x>502</x>
+                        <y>165</y>
+                      </location>
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClSpecifiedA">
+                      <location>
+                        <x>396</x>
+                        <y>166</y>
+                      </location>
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClTargetA">
+                      <location>
+                        <x>290</x>
+                        <y>166</y>
+                      </location>
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaClDataA">
+                      <location>
+                        <x>184</x>
+                        <y>166</y>
+                      </location>
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <line name="Line10">
+                      <width>560</width>
+                      <caption> Grenzwerttypen </caption>
+                    </line>
+                    <prompt name="SMPromptImaSltUpperSpec">
+                      <location>
+                        <x>302</x>
+                        <y>126</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Obere Spez. Grenze (USL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptImaSltLowerSpec">
+                      <location>
+                        <x>302</x>
+                        <y>102</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Untere Spez. Grenze (LSL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <radiobutton name="RadBtnImaSltDisable">
+                      <caption>Keine Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaSltMLPLimits">
+                      <caption>MLP Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnImaSltUserLimits">
+                      <caption>Benutzer Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label11">
+                      <width>148</width>
+                      <caption>Gleitende Spannweite (MR)</caption>
+                    </label>
+                    <label name="Label12">
+                      <width>148</width>
+                      <caption>Einzelwerte</caption>
+                    </label>
+                    <label name="Label13">
+                      <location>
+                        <x>26</x>
+                        <y>78</y>
+                      </location>
+                      <caption>Spezifikation</caption>
+                    </label>
+                    <line name="Line11">
+                      <width>560</width>
+                      <caption> Kontrollgrenzen </caption>
+                    </line>
+                    <prompt name="SMPromptImaTestLen">
+                      <location>
+                        <x>26</x>
+                        <y>31</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <line name="Line12">
+                      <width>560</width>
+                      <caption> Allgemeine Parameter </caption>
+                    </line>
+                  </controls>
+                </tabpage>
+                <tabpage name="MEAN_STD">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>Mittelwert &amp;&amp; Std. Dev.</caption>
+                  <controls>
+                    <PromptStringBrowseDefinition name="PromptStringBrowseMasMLP">
+                      <location>
+                        <x>302</x>
+                        <y>92</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Stufe</caption>
+                      <captionwidth>175</captionwidth>
+                      <multiselect>false</multiselect>
+                      <forcevalid>false</forcevalid>
+                    </PromptStringBrowseDefinition>
+                    <radiobutton name="RadioButtonMasGroup">
+                      <location>
+                        <x>163</x>
+                        <y>59</y>
+                      </location>
+                      <caption>Gruppe</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMasTime">
+                      <location>
+                        <x>163</x>
+                        <y>38</y>
+                      </location>
+                      <caption>Datum</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMasSize">
+                      <location>
+                        <x>163</x>
+                        <y>17</y>
+                      </location>
+                      <caption>Größe</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <panel name="Panel2">
+                      <height>549</height>
+                      <width>565</width>
+                      <caption>Panel2</caption>
+                      <controls>
+                        <groupbox name="GroupBoxMasDisplayOptions">
+                          <width>563</width>
+                          <caption>Anzeigeoptionen</caption>
+                          <controls>
+                            <SpinEditDefinition name="SpinEditMeanStdLdp">
+                              <tooltip>Anzahl der Dezimalstellen, auf die die Legendenwerte gerundet werden soll.</tooltip>
+                              <caption>Dezimalstellen (Legende)</caption>
+                            </SpinEditDefinition>
+                            <prompt name="SMPrompt9">
+                              <location>
+                                <x>292</x>
+                                <y>39</y>
+                              </location>
+                              <caption>1-Sigma Grenzen anzeigen (USD, LSD)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt8">
+                              <caption>Spez Grenzen anzeigen (USL, LSL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt7">
+                              <location>
+                                <x>292</x>
+                                <y>17</y>
+                              </location>
+                              <caption>Warngrenzen anzeigen (UWL, LWL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt6">
+                              <caption>Kontrollgrenzen anzeigen (UCL, LCL)</caption>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasTrendTables">
+                          <width>563</width>
+                          <caption>Trending</caption>
+                          <controls>
+                            <prompt name="SMPrompt11">
+                              <location>
+                                <x>292</x>
+                                <y>20</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Standardabweichung</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt10">
+                              <width>265</width>
+                              <caption>Mittelwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasTarget">
+                          <width>563</width>
+                          <caption>Grenzwerte für Sollwerte</caption>
+                          <controls>
+                            <prompt name="SMPrompt41">
+                              <location>
+                                <x>292</x>
+                                <y>19</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Sollwert (Std. Dev.)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt40">
+                              <width>265</width>
+                              <caption>Sollwert (Mittelwert)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasMLPB">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Standardabweichungs- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseMasMLPB">
+                              <width>265</width>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt14">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt15">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasSpecLtsB">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für Standardabweichungs- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptMasTVB">
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUSB">
+                              <location>
+                                <x>292</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLSB">
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLWB">
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUWB">
+                              <location>
+                                <x>292</x>
+                                <y>42</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLCB">
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUCB">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasMLPA">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Mittelwert- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseMasMLPA">
+                              <width>265</width>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt12">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt13">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMasSpecLtsA">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für das Mittelwert- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptMasTVA">
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUSA">
+                              <location>
+                                <x>292</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLSA">
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLWA">
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUWA">
+                              <location>
+                                <x>292</x>
+                                <y>41</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasLCA">
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMasUCA">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                      </controls>
+                    </panel>
+                    <radiobutton name="RadBtnMasClMlpB">
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClSpecifiedB">
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClTargetB">
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClDataB">
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClMlpA">
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClSpecifiedA">
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClTargetA">
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasClDataA">
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <line name="Line6">
+                      <width>556</width>
+                      <caption> Grenzwerttypen </caption>
+                    </line>
+                    <prompt name="SMPromptMasSltUpperSpec">
+                      <location>
+                        <x>302</x>
+                        <y>139</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Obere Spez. Grenze (USL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptMasSltLowerSpec">
+                      <location>
+                        <x>302</x>
+                        <y>116</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Untere Spez. Grenze (LSL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <radiobutton name="RadBtnMasSltDisable">
+                      <location>
+                        <x>163</x>
+                        <y>139</y>
+                      </location>
+                      <caption>Keine Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasSltMLPLimits">
+                      <location>
+                        <x>163</x>
+                        <y>116</y>
+                      </location>
+                      <caption>MLP Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMasSltUserLimits">
+                      <location>
+                        <x>163</x>
+                        <y>93</y>
+                      </location>
+                      <caption>Benutzer Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label7">
+                      <location>
+                        <x>26</x>
+                        <y>194</y>
+                      </location>
+                      <caption>Standardabweichung</caption>
+                    </label>
+                    <label name="Label6">
+                      <location>
+                        <x>26</x>
+                        <y>172</y>
+                      </location>
+                      <caption>Mittelwert</caption>
+                    </label>
+                    <label name="Label5">
+                      <location>
+                        <x>26</x>
+                        <y>92</y>
+                      </location>
+                      <caption>Spezifikation</caption>
+                    </label>
+                    <line name="Line5">
+                      <height>21</height>
+                      <width>556</width>
+                      <caption> Kontrollgrenzen </caption>
+                    </line>
+                    <prompt name="SMPromptMasTestLen">
+                      <location>
+                        <x>302</x>
+                        <y>44</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptMasSgsize">
+                      <location>
+                        <x>302</x>
+                        <y>17</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Teilgruppengröße</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <line name="Line4">
+                      <width>556</width>
+                      <caption> Allgemeine Parameter </caption>
+                    </line>
+                  </controls>
+                </tabpage>
+                <tabpage name="MEAN_RANGE">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>Mittelwert &amp;&amp; Spannweite</caption>
+                  <controls>
+                    <PromptStringBrowseDefinition name="PromptStringBrowseMarMlp">
+                      <location>
+                        <x>303</x>
+                        <y>92</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Stufe</caption>
+                      <captionwidth>175</captionwidth>
+                      <multiselect>false</multiselect>
+                      <forcevalid>false</forcevalid>
+                    </PromptStringBrowseDefinition>
+                    <radiobutton name="RadioButtonMARGroup">
+                      <caption>Gruppe</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMARDate">
+                      <caption>Datum</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMARSize">
+                      <caption>Größe</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMarClMlpB">
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClSpecifiedB">
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClTargetB">
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClDataB">
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMarClMlpA">
+                      <caption>MLP</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClSpecifiedA">
+                      <caption>Spezifiziert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClTargetA">
+                      <caption>Sollwert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnMarClDataA">
+                      <caption>Daten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <line name="Line7">
+                      <width>556</width>
+                      <caption> Grenzwerttypen </caption>
+                    </line>
+                    <prompt name="SMPromptMarSltUpperSpec">
+                      <location>
+                        <x>303</x>
+                        <y>139</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Obere Spez. Grenze (USL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptMarSltLowerSpec">
+                      <location>
+                        <x>303</x>
+                        <y>116</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Untere Spez. Grenze (LSL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <radiobutton name="RadioButtonMARNoLimits">
+                      <width>120</width>
+                      <caption>Keine Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMARMLPLimits">
+                      <width>120</width>
+                      <caption>MLP Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonMARUserLimits">
+                      <width>120</width>
+                      <caption>Benutzer Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label8">
+                      <location>
+                        <x>26</x>
+                        <y>194</y>
+                      </location>
+                      <caption>Spannweite</caption>
+                    </label>
+                    <label name="Label9">
+                      <location>
+                        <x>26</x>
+                        <y>173</y>
+                      </location>
+                      <caption>Mittelwert</caption>
+                    </label>
+                    <label name="Label10">
+                      <location>
+                        <x>26</x>
+                        <y>93</y>
+                      </location>
+                      <caption>Spezifikation</caption>
+                    </label>
+                    <line name="Line8">
+                      <height>19</height>
+                      <width>556</width>
+                      <caption> Kontrollgrenzen </caption>
+                    </line>
+                    <prompt name="SMPromptMARTestLen">
+                      <location>
+                        <x>302</x>
+                        <y>44</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptMARSubSize">
+                      <location>
+                        <x>302</x>
+                        <y>17</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Teilgruppengröße</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <line name="Line9">
+                      <width>556</width>
+                      <caption> Allgemeine Parameter </caption>
+                    </line>
+                    <panel name="Panel3">
+                      <height>549</height>
+                      <width>565</width>
+                      <caption>Panel2</caption>
+                      <controls>
+                        <groupbox name="GroupBox1">
+                          <width>563</width>
+                          <caption>Anzeigeoptionen</caption>
+                          <controls>
+                            <SpinEditDefinition name="SpinEditMeanRangeLdp">
+                              <tooltip>Anzahl der Dezimalstellen, auf die die Legendenwerte gerundet werden soll.</tooltip>
+                              <caption>Dezimalstellen (Legende)</caption>
+                            </SpinEditDefinition>
+                            <prompt name="SMPrompt1">
+                              <location>
+                                <x>292</x>
+                                <y>39</y>
+                              </location>
+                              <caption>1-Sigma Grenzen anzeigen (USD, LSD)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt2">
+                              <caption>Spez Grenzen anzeigen (USL, LSL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt3">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <caption>Warngrenzen anzeigen (UWL, LWL)</caption>
+                            </prompt>
+                            <prompt name="SMPrompt4">
+                              <caption>Kontrollgrenzen anzeigen (UCL, LCL)</caption>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBox2">
+                          <width>563</width>
+                          <caption>Trending</caption>
+                          <controls>
+                            <prompt name="SMPrompt5">
+                              <location>
+                                <x>292</x>
+                                <y>20</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Spannweite</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt16">
+                              <width>265</width>
+                              <caption>Mittelwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMARTarget">
+                          <width>563</width>
+                          <caption>Grenzwerte für Sollwerte</caption>
+                          <controls>
+                            <prompt name="SMPrompt17">
+                              <location>
+                                <x>293</x>
+                                <y>16</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Sollwert (Spannweite)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt18">
+                              <width>265</width>
+                              <caption>Sollwert (Mittelwert)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMARMLPB">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Spannweiten- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseMarMLPB">
+                              <width>265</width>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt19">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt20">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMARSpecLtsB">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für Spannweiten- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptMarTVB">
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUSB">
+                              <location>
+                                <x>292</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLSB">
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLWB">
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUWB">
+                              <location>
+                                <x>292</x>
+                                <y>42</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLCB">
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUCB">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMARMLPA">
+                          <width>563</width>
+                          <caption>MLP Grenzen für Mittelwert- Diagramm</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseMarMLPA">
+                              <width>265</width>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                            <prompt name="SMPrompt28">
+                              <location>
+                                <x>292</x>
+                                <y>37</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPrompt29">
+                              <location>
+                                <x>292</x>
+                                <y>12</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxMARSpecLtsA">
+                          <width>563</width>
+                          <caption>Spezifizierte Grenzen für das Mittelwert- Diagramm</caption>
+                          <controls>
+                            <prompt name="SMPromptMarTVA">
+                              <width>265</width>
+                              <caption>Sollwert</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUSA">
+                              <location>
+                                <x>292</x>
+                                <y>65</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere 1-Sigma Grenze (USD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLSA">
+                              <width>265</width>
+                              <caption>Untere 1-Sigma Grenze (LSD)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLWA">
+                              <width>265</width>
+                              <caption>Untere Warngrenze (LWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUWA">
+                              <location>
+                                <x>292</x>
+                                <y>41</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Warngrenze (UWL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarLCA">
+                              <width>265</width>
+                              <caption>Untere Kontrollgrenze (LCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptMarUCA">
+                              <location>
+                                <x>292</x>
+                                <y>18</y>
+                              </location>
+                              <width>265</width>
+                              <caption>Obere Kontrollgrenze (UCL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                      </controls>
+                    </panel>
+                  </controls>
+                </tabpage>
+                <tabpage name="CUSUM">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>Kumulierte Summe (CUSUM)</caption>
+                  <controls>
+                    <prompt name="SMPromptTargetValue">
+                      <width>235</width>
+                      <caption>Sollwert</caption>
+                      <captionwidth>145</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptUseMeanValue">
+                      <width>124</width>
+                      <caption>Verwende Mittelwert</caption>
+                      <captionwidth>110</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptDecisionSlope">
+                      <width>365</width>
+                      <caption>Steigung</caption>
+                      <captionwidth>145</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptDecisionInterval">
+                      <width>365</width>
+                      <caption>Entscheidungsintervall</caption>
+                      <captionwidth>145</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptDecisionPt">
+                      <width>365</width>
+                      <caption>Punkt</caption>
+                      <captionwidth>145</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptTestLength">
+                      <width>235</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>145</captionwidth>
+                    </prompt>
+                  </controls>
+                </tabpage>
+                <tabpage name="PROC_CAP">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>Prozessfähigkeit</caption>
+                  <controls>
+                    <panel name="Panel1">
+                      <width>554</width>
+                      <caption>Panel1</caption>
+                      <controls>
+                        <groupbox name="GroupBoxProcDp">
+                          <width>550</width>
+                          <caption>Anzeigeoptionen</caption>
+                          <controls>
+                            <SpinEditDefinition name="SMPromptProcLdp">
+                              <tooltip>Anzahl der Dezimalstellen, auf die die Legendenwerte gerundet werden soll.</tooltip>
+                              <caption>Dezimalstellen (Legende)</caption>
+                            </SpinEditDefinition>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxPCUserLimits">
+                          <width>550</width>
+                          <caption>Grenzen</caption>
+                          <controls>
+                            <prompt name="SMPromptPCUpperLimit">
+                              <width>265</width>
+                              <caption>Obere Spez. Grenze (USL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                            <prompt name="SMPromptPCLowerLimit">
+                              <width>265</width>
+                              <caption>Untere Spez. Grenze (LSL)</caption>
+                              <captionwidth>175</captionwidth>
+                            </prompt>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupBoxPCMLPLevel">
+                          <width>550</width>
+                          <caption>MLP</caption>
+                          <controls>
+                            <PromptStringBrowseDefinition name="PromptStringBrowseProcCapMLP">
+                              <width>265</width>
+                              <caption>Stufe</caption>
+                              <captionwidth>175</captionwidth>
+                              <multiselect>false</multiselect>
+                              <forcevalid>false</forcevalid>
+                            </PromptStringBrowseDefinition>
+                          </controls>
+                        </groupbox>
+                      </controls>
+                    </panel>
+                    <radiobutton name="RadioButtonPCMLPLimits">
+                      <location>
+                        <x>216</x>
+                        <y>106</y>
+                      </location>
+                      <caption>MLP Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadioButtonPCUserLimits">
+                      <location>
+                        <x>42</x>
+                        <y>106</y>
+                      </location>
+                      <caption>Benutzer Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label4">
+                      <location>
+                        <x>19</x>
+                        <y>85</y>
+                      </location>
+                      <caption>Spezifikation</caption>
+                    </label>
+                    <line name="Line3">
+                      <width>554</width>
+                    </line>
+                    <prompt name="SMPromptPCNumOfCells">
+                      <location>
+                        <x>19</x>
+                        <y>42</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Zellenanzahl</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptPCTestLength">
+                      <location>
+                        <x>19</x>
+                        <y>15</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                  </controls>
+                </tabpage>
+                <tabpage name="EWMA">
+                  <height>771</height>
+                  <width>584</width>
+                  <caption>EWMA</caption>
+                  <controls>
+                    <PromptStringBrowseDefinition name="PromptStringBrowseEwmaMLP">
+                      <location>
+                        <x>303</x>
+                        <y>163</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Stufe</caption>
+                      <captionwidth>175</captionwidth>
+                      <multiselect>false</multiselect>
+                      <forcevalid>false</forcevalid>
+                    </PromptStringBrowseDefinition>
+                    <groupbox name="GroupBox5">
+                      <width>556</width>
+                      <caption>Anzeigeoptionen</caption>
+                      <controls>
+                        <SpinEditDefinition name="SMPromptEwmaLdp">
+                          <location>
+                            <x>14</x>
+                            <y>100</y>
+                          </location>
+                          <tooltip>Anzahl der Dezimalstellen, auf die die Legendenwerte gerundet werden soll.</tooltip>
+                          <caption>Dezimalstellen (Legende)</caption>
+                        </SpinEditDefinition>
+                        <prompt name="SMPrompt38">
+                          <location>
+                            <x>14</x>
+                            <y>19</y>
+                          </location>
+                          <caption>Spez Grenzen anzeigen (USL, LSL)</caption>
+                        </prompt>
+                        <prompt name="SMPrompt39">
+                          <location>
+                            <x>14</x>
+                            <y>73</y>
+                          </location>
+                          <caption>Rohdaten anzeigen</caption>
+                        </prompt>
+                        <prompt name="SMPrompt42">
+                          <location>
+                            <x>14</x>
+                            <y>46</y>
+                          </location>
+                          <caption>Kontrollgrenzen anzeigen (UCL, LCL)</caption>
+                        </prompt>
+                      </controls>
+                    </groupbox>
+                    <prompt name="SMPromptEwmaSltUpperSpec">
+                      <location>
+                        <x>303</x>
+                        <y>215</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Obere Spez. Grenze (USL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptEwmaSltLowerSpec">
+                      <location>
+                        <x>303</x>
+                        <y>188</y>
+                      </location>
+                      <width>265</width>
+                      <caption>Untere Spez. Grenze (LSL)</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <radiobutton name="RadBtnEwmaSltDisable">
+                      <location>
+                        <x>124</x>
+                        <y>215</y>
+                      </location>
+                      <width>148</width>
+                      <caption>Keine Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnEwmaSltMLPLimits">
+                      <location>
+                        <x>124</x>
+                        <y>188</y>
+                      </location>
+                      <width>148</width>
+                      <caption>MLP Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="RadBtnEwmaSltUserLimits">
+                      <width>148</width>
+                      <caption>Benutzer Grenzen</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label14">
+                      <location>
+                        <x>28</x>
+                        <y>162</y>
+                      </location>
+                      <caption>Spezifikation</caption>
+                    </label>
+                    <line name="Line13">
+                      <width>556</width>
+                      <caption>EWMA</caption>
+                    </line>
+                    <line name="Line14">
+                      <height>16</height>
+                      <width>556</width>
+                      <caption> Kontrollgrenzen </caption>
+                    </line>
+                    <prompt name="SMPromptEwmaWeight">
+                      <width>265</width>
+                      <caption>EWMA Gewichtung</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptEwmaTestLen">
+                      <width>265</width>
+                      <caption>Testumfang</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <prompt name="SMPromptEwmaSgsize">
+                      <width>265</width>
+                      <caption>Teilgruppengröße</caption>
+                      <captionwidth>175</captionwidth>
+                    </prompt>
+                    <line name="Line15">
+                      <width>556</width>
+                      <caption> Allgemeine Parameter </caption>
+                    </line>
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </groupbox>
+        <prompt name="CheckEditEwmaActive">
+          <width>234</width>
+          <tooltip>Aktiviere das Exponentially Weighted Moving Average (EWMA)- Diragramm.</tooltip>
+          <caption>EWMA</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <prompt name="CheckEditProcCapActive">
+          <width>234</width>
+          <tooltip>Aktiviere das Prozessfähigkeit- Diagramm.</tooltip>
+          <caption>Prozessfähigkeit</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <prompt name="CheckEditCuSumActive">
+          <width>234</width>
+          <tooltip>Aktivere das Kumulierte Summe (CUSUM)- Diragram.</tooltip>
+          <caption>CUSUM</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <prompt name="CheckEditIndAndMovRangeActive">
+          <width>234</width>
+          <tooltip>Aktiviere das Einzelwerte- und Gleitende Spannweite (MR)- Diagramm.</tooltip>
+          <caption>Einzelwerte &amp;&amp; Gleitende Spannweite (MR)</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <prompt name="CheckEditMeanAndRangeActive">
+          <width>234</width>
+          <tooltip>Aktiviere das Mittelwert- und Spannweiten- Diagramm.</tooltip>
+          <caption>Mittelwert &amp;&amp; Spannweite</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <prompt name="CheckEditMeanAndStdActive">
+          <width>234</width>
+          <tooltip>Aktiviere das Mittelwert- und Standardabweichungs- Diagramm.</tooltip>
+          <caption>Mittelwert &amp;&amp; Std. Dev.</caption>
+          <captionwidth>220</captionwidth>
+        </prompt>
+        <label name="Label1">
+          <height>30</height>
+          <width>234</width>
+          <caption>Diagramme wählen:</caption>
+        </label>
+      </controls>
+    </form>
+    <form name="Page_Chart">
+      <width>930</width>
+      <caption>Diagramm</caption>
+      <minimumsize>
+        <height>600</height>
+        <width>930</width>
+      </minimumsize>
+      <controls>
+        <panel name="Panel4PairedCharts">
+          <location>
+            <x>267</x>
+            <y>35</y>
+          </location>
+          <width>651</width>
+          <caption>Panel4</caption>
+          <controls>
+            <XYChart name="XYChartBottom">
+              <width>651</width>
+              <caption>XYChart2</caption>
+            </XYChart>
+            <splitter name="Splitter1">
+              <width>651</width>
+              <position>0</position>
+            </splitter>
+            <XYChart name="XYChartTop">
+              <width>651</width>
+              <caption>XYChart1</caption>
+            </XYChart>
+          </controls>
+        </panel>
+        <label name="LabelSelectedChart">
+          <width>717</width>
+        </label>
+        <ToolBoxDefinition name="ToolBoxLeft">
+          <width>261</width>
+          <caption>ToolBoxLeft</caption>
+          <groups>
+            <ToolBoxGroupDefinition name="ToolBoxGroupChartTypes">
+              <location />
+              <tooltip>Auswählbare Diagrammtypen für dieses Diagramm</tooltip>
+              <caption>Diagrammtypen</caption>
+              <items />
+            </ToolBoxGroupDefinition>
+            <ToolBoxGroupDefinition name="ToolBoxGroupOptions">
+              <location />
+              <caption>Optionen</caption>
+              <items>
+                <ToolBoxItemDefinition name="ToolBoxItemViewReport">
+                  <location />
+                  <tooltip>Erstelle einen Bericht mit einer bestimmten Breichtsvorlage</tooltip>
+                  <caption>Bericht erstellen</caption>
+                  <iconname>SQC_REPORT</iconname>
+                  <command>OPTION_VIEW_REPORT</command>
+                </ToolBoxItemDefinition>
+                <ToolBoxItemDefinition name="ToolBoxItemSubgroups">
+                  <location />
+                  <tooltip>Teilgruppen anzeigen</tooltip>
+                  <caption>Teilgruppen anzeigen</caption>
+                  <iconname>SQC_SUBGROUP_VIEW</iconname>
+                  <command>OPTION_VIEW_SUBGROUPS</command>
+                </ToolBoxItemDefinition>
+                <ToolBoxItemDefinition name="ToolBoxItemRefresh">
+                  <location />
+                  <tooltip>Diagramm aktualisieren</tooltip>
+                  <caption>Aktualisieren</caption>
+                  <iconname>INT_REFRESH</iconname>
+                  <command>OPTION_VIEW_REFRESH</command>
+                </ToolBoxItemDefinition>
+              </items>
+            </ToolBoxGroupDefinition>
+          </groups>
+        </ToolBoxDefinition>
+        <XYChart name="XYChartMain">
+          <location>
+            <x>239</x>
+            <y>34</y>
+          </location>
+          <width>677</width>
+          <caption>XYChart1</caption>
+        </XYChart>
+      </controls>
+    </form>
+    <form name="PageScheduling">
+      <caption>Zeitplanung</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseOperators">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseRepTemplates">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <PromptEntityBrowseDefinition name="PrEntBrDistRepReport">
+          <caption>Bericht</caption>
+          <captionwidth>150</captionwidth>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="PrEntBrChkTrendReport">
+          <caption>Bericht</caption>
+          <captionwidth>150</captionwidth>
+        </PromptEntityBrowseDefinition>
+        <prompt name="SMPromptDistReport">
+          <width>164</width>
+          <caption>Erstelle Bereicht</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <prompt name="SMPromptChkTrending">
+          <width>164</width>
+          <caption>Prüfe auf Trends</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <prompt name="SMPromptDistRepPrinter">
+          <caption>Verteilerliste</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <prompt name="SMPromptChkTrendPrinter">
+          <caption>Verteilerliste</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <prompt name="SMPromptDistRepFrequency">
+          <caption>Zeitintervall</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <prompt name="SMPromptChkTrendFrequency">
+          <caption>Zeitintervall</caption>
+          <captionwidth>150</captionwidth>
+        </prompt>
+        <line name="Line16" />
+        <PromptEntityBrowseDefinition name="PrEntBrowseOperator">
+          <caption>Verantwortlicher Mitarbeiter</caption>
+          <captionwidth>150</captionwidth>
+        </PromptEntityBrowseDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SqcChartErrAnalysisOrCompMissing" xml:space="preserve">
+    <value>Wert für Analyse / Komponente fehlt!</value>
+  </data>
+  <data name="SqcChartErrDbTypeMissing" xml:space="preserve">
+    <value>Abfragedatenbanktyp auswählen!</value>
+  </data>
+  <data name="SqcErrNoQueryResults" xml:space="preserve">
+    <value>Keine Ergebnisse zurückgegeben!</value>
+  </data>
+  <data name="SQC_WIZARD_TITLE" xml:space="preserve">
+    <value>SQC</value>
+  </data>
+  <data name="SQCTrendTask_FormatErrorMessage" xml:space="preserve">
+    <value>Mehrere Fehler in dieser Zelle: 
+</value>
+  </data>
+  <data name="SQCTrendTask_ValidateCell_This_value_cannot_be_negative" xml:space="preserve">
+    <value>Dieser Wert darf nicht leer oder negativ sein.</value>
+  </data>
+  <data name="SqcErrorNoChartTypeSelected" xml:space="preserve">
+    <value>Es muss mindestens ein Diagrammtyp ausgewählt sein.</value>
+  </data>
+  <data name="SQCTrendTask_ValidateCell_This_value_cannot_be_less_than_the_first_column" xml:space="preserve">
+    <value>Dieser Wert darf nicht kleiner als die erste Spalte sein.</value>
+  </data>
+  <data name="SQCTrendTask_ValidateCell_Mandatory_value_not_specified" xml:space="preserve">
+    <value>Pflicht Wert nicht angegeben!</value>
+  </data>
+  <data name="SqcErrorControlSpecInvalid" xml:space="preserve">
+    <value>{0} - Angegebene Grenzwerte: Die unteren Grenzwerte müssen unter den oberen Grenzwerten liegen.</value>
+  </data>
+  <data name="SqcErrorUserSpecInvalid" xml:space="preserve">
+    <value>{0} - Spezifikationsbenutzergrenzen: Die Untergrenze muss unter der Obergrenze liegen.</value>
+  </data>
+  <data name="SqcErrorProcCapUserSpecInvalid" xml:space="preserve">
+    <value>Prozessfähigkeit (Spezifikation - Benutzergrenzen): Die Untere Grenze muss unter der Oberen Grenze liegen.</value>
+  </data>
+  <data name="SqcContextMenuExcludeSubgroup" xml:space="preserve">
+    <value>Teilgruppe ausschließen</value>
+  </data>
+  <data name="SqcContextMenuEditSubgroupComment" xml:space="preserve">
+    <value>Teilgruppen- Kommentar bearbeiten</value>
+  </data>
+  <data name="SqcContextMenuIncludeSubgroup" xml:space="preserve">
+    <value>Teilgruppe einschließen</value>
+  </data>
+  <data name="SqcChartSetSubgroupCommentTitle" xml:space="preserve">
+    <value>Teilgruppenkommentar</value>
+  </data>
+  <data name="SqcChartSetSubgroupComment" xml:space="preserve">
+    <value>Geben Sie einen Kommentar für die ausgewählte Teilgruppe ein</value>
+  </data>
+  <data name="SqcChartXAxisSubgroupTitle" xml:space="preserve">
+    <value>Teilgruppe</value>
+  </data>
+  <data name="SqcChartYAxisTitleMeanStd" xml:space="preserve">
+    <value>Mittelwert (Std)</value>
+  </data>
+  <data name="SqcChartYAxisTitleRange" xml:space="preserve">
+    <value>Spannweite</value>
+  </data>
+  <data name="SqcChartYAxisTitleStd" xml:space="preserve">
+    <value>Std. Dev.</value>
+  </data>
+  <data name="SqcChartYAxisTitleIndividuals" xml:space="preserve">
+    <value>Einzelwerte</value>
+  </data>
+  <data name="SqcChartYAxisTitleMovRange" xml:space="preserve">
+    <value>Gleitende Spannweite</value>
+  </data>
+  <data name="SqcChartYAxisTitleEwma" xml:space="preserve">
+    <value>Exp. Weighted Moving Average (EWMA)</value>
+  </data>
+  <data name="SqcErrorEwmaWeightNotBetween0and1" xml:space="preserve">
+    <value>Exp Weight muss größer als 0 und kleiner oder gleich 1 sein.</value>
+  </data>
+  <data name="SqcErrorLslMustbeLessthanUsl" xml:space="preserve">
+    <value>Untere Spez. Grenze muss unter der Oberen Spez. Grenze liegen.</value>
+  </data>
+  <data name="SqcChartLowerDecisionLevel" xml:space="preserve">
+    <value>Untere Entscheidungsebene</value>
+  </data>
+  <data name="SqcChartUpperDecisionLevel" xml:space="preserve">
+    <value>Obere Entscheidungsebene</value>
+  </data>
+  <data name="SqcContextMenuExploreSamples" xml:space="preserve">
+    <value>Proben durchsuchen ...</value>
+  </data>
+  <data name="SqcChartExportToCommaSepFormat" xml:space="preserve">
+    <value>Kommagetrennt (CSV)</value>
+  </data>
+  <data name="SqcChartExportToExcelFormat" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="SqcChartExportToTabDelimitedFormat" xml:space="preserve">
+    <value>Tabulatorgetrennt (CSV)</value>
+  </data>
+  <data name="SqcChartExportToWordFormat" xml:space="preserve">
+    <value>Word</value>
+  </data>
+  <data name="SqcChartCannotOpenExportedFile" xml:space="preserve">
+    <value>Fehler beim Öffnen der Dateierweiterung {0}</value>
+  </data>
+  <data name="SqcChartNoExportFormatSelected" xml:space="preserve">
+    <value>Wählen Sie ein Dateiformat.</value>
+  </data>
+  <data name="SqcChartCuSumPointToolTipFmt" xml:space="preserve">
+    <value>Testergebnis: {0} {3} Teilgruppe # = {1}, CuSum = {2}</value>
+  </data>
+  <data name="SqcChartTrendingGoodPtToolTip" xml:space="preserve">
+    <value>Teilgruppe # {0} {8} X = {1}, Y = {2} {8} Status: {3} {8} Datum / Uhrzeit: {4} {8} Analyst: {5} {8} # von Testergebnisse: {6} {8} Trendregel: {7}</value>
+  </data>
+  <data name="SqcChartNoTrendGoodPtToolTip" xml:space="preserve">
+    <value>Teilrgruppe # {0} {7} X = {1}, Y = {2} {7} Status: {3} {7} Datum / Uhrzeit: {4} {7} Analyst: {5} {7} # von Testergebnisse: {6}</value>
+  </data>
+  <data name="SqcChartLegendTextCp" xml:space="preserve">
+    <value>Cp</value>
+  </data>
+  <data name="SqcChartLegendTextCpk" xml:space="preserve">
+    <value>Cpk</value>
+  </data>
+  <data name="SqcChartLegendTextCR" xml:space="preserve">
+    <value>Cr</value>
+  </data>
+  <data name="SqcChartLegendTextFrom" xml:space="preserve">
+    <value>Ab Index</value>
+  </data>
+  <data name="SqcChartLegendTextKurtosis" xml:space="preserve">
+    <value>Exzess (Kurtosis)</value>
+  </data>
+  <data name="SqcChartLegendTextLCL" xml:space="preserve">
+    <value>LCL</value>
+  </data>
+  <data name="SqcChartLegendTextLow3S" xml:space="preserve">
+    <value>-3S</value>
+  </data>
+  <data name="SqcChartLegendTextLSD" xml:space="preserve">
+    <value>LSD</value>
+  </data>
+  <data name="SqcChartLegendTextLSL" xml:space="preserve">
+    <value>LSL</value>
+  </data>
+  <data name="SqcChartLegendTextLWL" xml:space="preserve">
+    <value>LWL</value>
+  </data>
+  <data name="SqcChartLegendTextMean" xml:space="preserve">
+    <value>Mittelwert</value>
+  </data>
+  <data name="SqcChartLegendTextMeanCL" xml:space="preserve">
+    <value>CL</value>
+  </data>
+  <data name="SqcChartLegendTextPpk" xml:space="preserve">
+    <value>Ppk</value>
+  </data>
+  <data name="SqcChartLegendTextSigma" xml:space="preserve">
+    <value>Sigma</value>
+  </data>
+  <data name="SqcChartLegendTextSkewness" xml:space="preserve">
+    <value>Schiefe (Skew)</value>
+  </data>
+  <data name="SqcChartLegendTextTo" xml:space="preserve">
+    <value>Bis Index</value>
+  </data>
+  <data name="SqcChartLegendTextUCL" xml:space="preserve">
+    <value>UCL</value>
+  </data>
+  <data name="SqcChartLegendTextUpper3S" xml:space="preserve">
+    <value>+3S</value>
+  </data>
+  <data name="SqcChartLegendTextUSD" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="SqcChartLegendTextUSL" xml:space="preserve">
+    <value>USL</value>
+  </data>
+  <data name="SqcChartLegendTextUWL" xml:space="preserve">
+    <value>UWL</value>
+  </data>
+  <data name="SqcChartSubgroupExcluded" xml:space="preserve">
+    <value>Ausgeschlossene Teilgruppe</value>
+  </data>
+  <data name="SqcChartSubgroupIncluded" xml:space="preserve">
+    <value>Eingeschlossene Teilgruppe</value>
+  </data>
+  <data name="SqcChartTrendInfoConsecutive" xml:space="preserve">
+    <value>{0} {1} Punkte {2}</value>
+  </data>
+  <data name="SqcChartTrendInfoOutOfOrMore" xml:space="preserve">
+    <value>{0} {1} {2} Punkte {3}</value>
+  </data>
+  <data name="SqcContextMenuViewSubgroups" xml:space="preserve">
+    <value>Teilgruppenoperationen anzeigen</value>
+  </data>
+  <data name="SqcChartYAxisTitleIndSampledDate" xml:space="preserve">
+    <value>Probenahmedatum</value>
+  </data>
+  <data name="SQC_Chart_Print_EmptyText" xml:space="preserve">
+    <value>Fehler beim Erstellen des Diagramms!</value>
+  </data>
+  <data name="SqcChartPageCaption" xml:space="preserve">
+    <value>{0}  :  {1}</value>
+  </data>
+  <data name="SqcTaskChartIdName" xml:space="preserve">
+    <value>Diagramm ID</value>
+  </data>
+  <data name="SqcLimitTrendingForCurrentTestDescription" xml:space="preserve">
+    <value>Find Trend Only For Current Test.</value>
+  </data>
+  <data name="SqcLimitTrendingForCurrentTestName" xml:space="preserve">
+    <value>Find Trend Only For Current Test.</value>
+  </data>
+  <data name="SqcFindTrendNodeCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SqcIncidentDescriptionDescription" xml:space="preserve">
+    <value>Enter Description for the new Incident.</value>
+  </data>
+  <data name="SqcIncidentDescriptionName" xml:space="preserve">
+    <value>[Incident] - Description</value>
+  </data>
+  <data name="SqcIncidentTemplateDescription" xml:space="preserve">
+    <value>Select Incident Template Description for the new Incident.</value>
+  </data>
+  <data name="SqcIncidentTemplateName" xml:space="preserve">
+    <value>[Incident] - Incident Template</value>
+  </data>
+  <data name="SqcChartYAxisTitleMean" xml:space="preserve">
+    <value>Mittelwert</value>
+  </data>
+  <data name="SqcChartYAxisTitleMeanR" xml:space="preserve">
+    <value>Mittelwert (Spannweite)</value>
+  </data>
+  <data name="SqcTrendFoundMailMsg" xml:space="preserve">
+    <value>SQC-Trend gefunden!</value>
+  </data>
+  <data name="SqcFindTrendNodeNameFormat" xml:space="preserve">
+    <value>If Find SQC Trend - {0}</value>
+  </data>
+  <data name="SqcTaskChartIdDescription" xml:space="preserve">
+    <value>Select the chart entity for finding trends. If empty, all charts associated with current analysis will be searched for trending.</value>
+  </data>
+  <data name="SqcTaskChartTypeIdDescription" xml:space="preserve">
+    <value>Select Chart Type. Search for trends will be limited to selected chart types, provided they are activated within the chart definition. If empty, all active chart types will be searched for trending.</value>
+  </data>
+  <data name="SqcTaskChartTypeIdName" xml:space="preserve">
+    <value>Chart Type</value>
+  </data>
+  <data name="SqcTaskTrendTableDescription" xml:space="preserve">
+    <value>Select Trend Table. Search for trends will be limited to selected Trend Table rules. If empty, preconfigured trend tables, if any, will be used while searching for trending.</value>
+  </data>
+  <data name="SqcTaskTrendTableName" xml:space="preserve">
+    <value>Trend Table</value>
+  </data>
+  <data name="SqcFindTrendNodeName" xml:space="preserve">
+    <value>If Find SQC Trend</value>
+  </data>
+  <data name="SqcTrendTaskDescription" xml:space="preserve">
+    <value>Find trends within SQC Charts.</value>
+  </data>
+  <data name="CreateIncidentDescriptionDescription" xml:space="preserve">
+    <value>Enter a description for the new incident.</value>
+  </data>
+  <data name="CreateIncidentDescriptionName" xml:space="preserve">
+    <value>Incident Description</value>
+  </data>
+  <data name="CreateIncidentNodeCategory" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="CreateIncidentNodeDescription" xml:space="preserve">
+    <value>Create an incident from an incident template.</value>
+  </data>
+  <data name="CreateIncidentNodeName" xml:space="preserve">
+    <value>Create Incident</value>
+  </data>
+  <data name="CreateIncidentNodeNameFormat" xml:space="preserve">
+    <value>Incident  '{0}'</value>
+  </data>
+  <data name="CreateIncidentTemplateDescription" xml:space="preserve">
+    <value>Select an incident template to create the incident.</value>
+  </data>
+  <data name="CreateIncidentTemplateName" xml:space="preserve">
+    <value>Incident Template</value>
+  </data>
+  <data name="SqcBackgndTaskMailBodyLineTitle" xml:space="preserve">
+    <value>(Teilgruppe # {0} in Diagramm - {1}) - {2}</value>
+  </data>
+  <data name="SqcBackgndTaskMailSubjectTitle4NoTrends" xml:space="preserve">
+    <value>Kein Trend im Diagramm gefunden - {0}</value>
+  </data>
+  <data name="SqcBackgndTaskMailSubjectTitle4Trends" xml:space="preserve">
+    <value>Trend im Diagramm gefunden - {0}</value>
+  </data>
+  <data name="SqcNoTrendFoundMailMsg" xml:space="preserve">
+    <value>Kein Trend gefunden.</value>
+  </data>
+  <data name="SQCChartReportMailBody" xml:space="preserve">
+    <value>Im Anhang befindet sich der Bericht - {0} für SQC-Diagramm - {1}.</value>
+  </data>
+  <data name="SQCChartReportMailSubject" xml:space="preserve">
+    <value>SQC-Diagrammbericht</value>
+  </data>
+  <data name="SqcChartTypeNameCuSum" xml:space="preserve">
+    <value>CUSUM- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameEWMA" xml:space="preserve">
+    <value>Erwartetes gewichtetes gleitendes Durchschnittsdiagramm</value>
+  </data>
+  <data name="SqcChartTypeNameIndividual" xml:space="preserve">
+    <value>Einzelwerte- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameMeanR" xml:space="preserve">
+    <value>Mittelwert (Spannweite)- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameMeanS" xml:space="preserve">
+    <value>Mittelwert (Std)- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameMovRange" xml:space="preserve">
+    <value>Gleitendes Spannweiten- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameProCap" xml:space="preserve">
+    <value>Prozessfähigkeits- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameRange" xml:space="preserve">
+    <value>Spannweiten- Diagramm</value>
+  </data>
+  <data name="SqcChartTypeNameStdDev" xml:space="preserve">
+    <value>Standard Abweichungs- Diagramm</value>
+  </data>
+  <data name="SqcReportCategoryName" xml:space="preserve">
+    <value>SQC- Diagramme</value>
+  </data>
+  <data name="SqcChartViewerFormTitle" xml:space="preserve">
+    <value>Diagramm - Ansicht - {0}</value>
+  </data>
+  <data name="SqcCriteriaTextTitle" xml:space="preserve">
+    <value>Kriterien</value>
+  </data>
+  <data name="SqcReportEmptyChartMsg" xml:space="preserve">
+    <value>Der Diagrammtyp ist in der Diagrammentität nicht ausgewählt / aktiviert.</value>
+  </data>
+  <data name="SqcContextMenuExcludeResultPoint" xml:space="preserve">
+    <value>Ergebnispunkt ausschließen</value>
+  </data>
+  <data name="SqcContextMenuIncludeResultPoint" xml:space="preserve">
+    <value>Ergebnispunkt einschließen</value>
+  </data>
+  <data name="SqcPrintSelectReportTemplateText" xml:space="preserve">
+    <value>Bitte wählen Sie eine Berichtsvorlage aus.</value>
+  </data>
+  <data name="SqcPrintSelectReportTemplateTitle" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+  <data name="SqcReportChartWithNoData" xml:space="preserve">
+    <value>Der Diagrammtyp verfügt nicht über genügend Daten.</value>
+  </data>
+  <data name="SqcReportInvalidEntityType" xml:space="preserve">
+    <value>Ungültige Diagrammentität in der Berichtsdatenquelle.</value>
+  </data>
+  <data name="SqcChartInvalidDecimalPlaces" xml:space="preserve">
+    <value>Der Wert für Dezimalstellen muss zwischen 2 und 15 liegen.</value>
+  </data>
+  <data name="SqcChartExcludedResult" xml:space="preserve">
+    <value>Ausgeschlossenes Ergebnis</value>
+  </data>
+  <data name="SqcBasicCriteriaParamsChanged" xml:space="preserve">
+    <value>Ein oder mehrere grundlegende Kriterienparameter wurden geändert. Wählen Sie die Schaltfläche &lt;Abfrage ausführen&gt;, um die Abfrage auszuführen, bevor Sie das Diagramm speichern.</value>
+  </data>
+  <data name="SqcConfigurationFormTitle" xml:space="preserve">
+    <value>Konfiguration - {0} ({1})</value>
+  </data>
+  <data name="SqcErrSubgroupCommentMandatory" xml:space="preserve">
+    <value>Teilgruppenkommentar eingeben.</value>
+  </data>
+  <data name="SQCTrendTask_ValidateCell_This_value_cannot_be_greater_than_the_third_column" xml:space="preserve">
+    <value>Dieser Wert darf nicht größer als die dritte Spalte sein.</value>
+  </data>
+  <data name="SqcCaptionEditResComment" xml:space="preserve">
+    <value>Kommentar</value>
+  </data>
+  <data name="SqcCaptionNewGroupName" xml:space="preserve">
+    <value>Gruppenname</value>
+  </data>
+  <data name="SqcMsgEditResComment" xml:space="preserve">
+    <value>Kommentar für die ausgewählten Testergebnisse eingeben</value>
+  </data>
+  <data name="SqcMsgNewGroupName" xml:space="preserve">
+    <value>Neuen Gruppennamen eingeben</value>
+  </data>
+  <data name="SqcGridContextMenuSetGrpName" xml:space="preserve">
+    <value>Gruppennamen festlegen</value>
+  </data>
+  <data name="SqcGridContextMenuWriteComment" xml:space="preserve">
+    <value>Kommentar erfassen</value>
+  </data>
+  <data name="SqcResultsGridTitle" xml:space="preserve">
+    <value>Abfrageergebnisse ({0} von {1})</value>
+  </data>
+  <data name="SqcGridFilterBlankDate" xml:space="preserve">
+    <value>Ungültiger Datumswert in Filteroptionen</value>
+  </data>
+  <data name="SqcSchedulerInvalidFrequency" xml:space="preserve">
+    <value>Ungültiger Frequenzwert eingegeben.</value>
+  </data>
+  <data name="SqcChartErrProcCapLslUslOutofRange" xml:space="preserve">
+    <value>Fehler beim Zeichnen des Prozessfähigkeits- Diagramms. Der USL-Wert ist zu hoch, der LSL-Wert ist zu niedrig oder beides.</value>
+  </data>
+  <data name="InvalidResultValueTitle" xml:space="preserve">
+    <value>Ungültiger Ergebniswert</value>
+  </data>
+  <data name="InvalidResultValue" xml:space="preserve">
+    <value>Ergebnis '{0}' kann nicht in eine Zahl umgewandelt werden. Bitte die Kriterien prüfen.</value>
+  </data>
+  <data name="ToolTipSubGroup" xml:space="preserve">
+    <value>Subgroup #{0}</value>
+  </data>
+  <data name="ToolTipXY" xml:space="preserve">
+    <value>X={0}, Y={1}</value>
+  </data>
+  <data name="ToolTipStatus" xml:space="preserve">
+    <value>Status : {0}</value>
+  </data>
+  <data name="ToolTipDateTime" xml:space="preserve">
+    <value>Datum/Zeit : {0}</value>
+  </data>
+  <data name="ToolTipAnalyst" xml:space="preserve">
+    <value>Benutzer : {0}</value>
+  </data>
+  <data name="ToolTipTestResults" xml:space="preserve">
+    <value># Ergebnisse : {0}</value>
+  </data>
+  <data name="ToolTipTrends" xml:space="preserve">
+    <value>Trendregel : {0}</value>
+  </data>
+  <data name="ToolTipSubGroupComments" xml:space="preserve">
+    <value>Kommentar Teilgruppe  : {0}</value>
+  </data>
+  <data name="ToolTipPointComments" xml:space="preserve">
+    <value>Kommentar Datenpunkt : {0}</value>
+  </data>
+  <data name="ToolTipSampleComments" xml:space="preserve">
+    <value>Kommentar Probe : {0}</value>
+  </data>
+  <data name="ToolTipTestComments" xml:space="preserve">
+    <value>Kommentar Test : {0}</value>
+  </data>
+  <data name="ToolTipResultComments" xml:space="preserve">
+    <value>Kommentar Ergebnis : {0}</value>
+  </data>
+  <data name="EditPointComment" xml:space="preserve">
+    <value>Kommentar zum Datenpunkt eingeben</value>
+  </data>
+  <data name="EditPointCommentTitle" xml:space="preserve">
+    <value>Kommentar zum Datenpunkt bearbeiten</value>
+  </data>
+  <data name="SqcContextMenuEditPointComment" xml:space="preserve">
+    <value>Kommentar bearbeiten</value>
+  </data>
+</root>

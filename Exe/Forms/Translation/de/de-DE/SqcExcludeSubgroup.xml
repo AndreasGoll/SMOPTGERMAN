@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinitionExcludeSubgroup">
+      <caption>General</caption>
+      <extendedfunctions />
+      <controls>
+        <ActionButtonDefinition name="ActionButton2">
+          <caption>&amp;Cancel</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <unboundgridcontrol name="unbGridDesignResults">
+          <caption>Setze den Haken bei dem Ergebnis der Teilgruppe, um es auszuschließen oder aufzunehmen.</caption>
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="colSubgroupExcluded">
+              <caption>Teilgruppe Ausgeschlossen</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="colSampleID">
+              <caption>Proben ID</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="colPointDate">
+              <caption>Probenahmedatum</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="colPointValue">
+              <caption>Wert</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+        <ActionButtonDefinition name="ActionButton1">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <TextEdit name="TextEditComment">
+          <tooltip>Begründung für den Ausschluss bzw. Aufnahme in die Teilgruppe</tooltip>
+          <caption>Kommentar zur Teilgruppe</caption>
+          <captionwidth>145</captionwidth>
+        </TextEdit>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="formDefnChartViewer">
+      <caption>General</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseResults">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EbcPointNumber">
+              <Title>Index</Title>
+              <Width>30</Width>
+              <Column>PointNumberInt</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointName">
+              <Title>Punktname</Title>
+              <Width>50</Width>
+              <Column>PointName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointDate">
+              <Title>Probenahmedatum</Title>
+              <Width>60</Width>
+              <Column>PointDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointValue">
+              <Title>Wert</Title>
+              <Width>50</Width>
+              <Column>PointValue</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcSampleId">
+              <Title>Proben ID</Title>
+              <Width>65</Width>
+              <Column>SampleId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointExcluded">
+              <Title>Punkt ausgeschlossen</Title>
+              <Width>40</Width>
+              <Column>Bad</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcSubgroupIndex">
+              <Title>Teilgruppen Index</Title>
+              <Width>50</Width>
+              <Column>SubgroupNumber</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcSubgroupExcluded">
+              <Title>Teilgruppe ausgeschlossen</Title>
+              <Width>40</Width>
+              <Column>SubgroupExcluded</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EbcPointComments">
+              <Title>Kommentar</Title>
+              <Width>120</Width>
+              <Column>Comments</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <label name="LabelChartTitle" />
+        <panel name="PanelMain">
+          <caption>Panel2</caption>
+          <controls>
+            <panel name="Panel4Charts">
+              <location>
+                <x>268</x>
+              </location>
+              <height>612</height>
+              <width>870</width>
+              <caption>Panel3</caption>
+              <controls>
+                <panel name="Panel4PairedCharts">
+                  <height>603</height>
+                  <width>861</width>
+                  <caption>Panel4</caption>
+                  <controls>
+                    <XYChart name="XYChartBottom">
+                      <location>
+                        <y>293</y>
+                      </location>
+                      <height>310</height>
+                      <width>861</width>
+                      <caption>XYChart2</caption>
+                      <titleFont />
+                    </XYChart>
+                    <splitter name="Splitter2">
+                      <height>5</height>
+                      <width>861</width>
+                      <position>0</position>
+                    </splitter>
+                    <XYChart name="XYChartTop">
+                      <width>861</width>
+                      <caption>XYChart1</caption>
+                      <titleFont />
+                    </XYChart>
+                  </controls>
+                </panel>
+                <XYChart name="XYChartMain">
+                  <height>603</height>
+                  <width>860</width>
+                  <caption>XYChartMain</caption>
+                  <titleFont />
+                </XYChart>
+              </controls>
+            </panel>
+            <splitter name="Splitter1">
+              <location>
+                <x>268</x>
+                <y>612</y>
+              </location>
+              <height>5</height>
+              <width>870</width>
+              <position>0</position>
+            </splitter>
+            <panel name="PanelGrid">
+              <location>
+                <x>268</x>
+                <y>617</y>
+              </location>
+              <width>870</width>
+              <caption>Panel3</caption>
+              <controls>
+                <explorergridcontrol name="ExplorerGridResults">
+                  <width>858</width>
+                  <caption>Results</caption>
+                </explorergridcontrol>
+              </controls>
+            </panel>
+            <splitter name="Splitter3">
+              <location>
+                <x>264</x>
+              </location>
+              <height>742</height>
+              <position>0</position>
+            </splitter>
+            <panel name="Panel1">
+              <width>264</width>
+              <caption>PanelLeft</caption>
+              <controls>
+                <ToolBoxDefinition name="ToolBoxLeft">
+                  <width>260</width>
+                  <caption>ToolBox1</caption>
+                  <groups>
+                    <ToolBoxGroupDefinition name="ToolBoxGroupCharts">
+                      <location />
+                      <tooltip>Ausgewählte Diagramme</tooltip>
+                      <caption>Ausgewählte Diagramme</caption>
+                      <items />
+                    </ToolBoxGroupDefinition>
+                    <ToolBoxGroupDefinition name="ToolBoxGroupChartTypes">
+                      <location />
+                      <tooltip>Diagrammtypen für ausgewähltes Diagramm</tooltip>
+                      <caption>Diagrammtypen</caption>
+                      <items />
+                    </ToolBoxGroupDefinition>
+                    <ToolBoxGroupDefinition name="ToolBoxGroupOptions">
+                      <location />
+                      <caption>Optionen</caption>
+                      <items>
+                        <ToolBoxItemDefinition name="ToolBoxItemViewSubgroups">
+                          <location />
+                          <tooltip>Teilgruppen anzeigen</tooltip>
+                          <caption>Teilgruppen anzeigen</caption>
+                          <iconname>SQC_SUBGROUP_VIEW</iconname>
+                          <command>OPTION_VIEW_SUBGROUPS</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemViewReport">
+                          <location />
+                          <tooltip>Erstelle einen Bericht mit einer bestimmten Berichtsvorlage</tooltip>
+                          <caption>Bericht erstellen</caption>
+                          <iconname>SQC_REPORT</iconname>
+                          <command>OPTION_VIEW_REPORT</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemViewConfig">
+                          <location />
+                          <tooltip>Betrachte die Konfiguration des ausgewählten Diagrammtypens</tooltip>
+                          <caption>Konfiguration anzeigen</caption>
+                          <iconname>SQC_VIEW_CONFIG</iconname>
+                          <command>OPTION_VIEW_CONFIG</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemViewSql">
+                          <location />
+                          <tooltip>Kriterien des SQL anzeigen</tooltip>
+                          <caption>SQL- Kriterien anzeigen</caption>
+                          <iconname>SQC_VIEW_CRITERIA</iconname>
+                          <command>OPTION_VIEW_SQL</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemRefresh">
+                          <location />
+                          <enabled>false</enabled>
+                          <tooltip>Diagramm aktualisieren</tooltip>
+                          <caption>Aktualisieren</caption>
+                          <iconname>INT_REFRESH</iconname>
+                          <command>OPTION_VIEW_REFRESH</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemPrev">
+                          <location />
+                          <tooltip>Betrachte den vorherigen Abschnitt von Daten</tooltip>
+                          <caption>Vorheriger Abschnitt anzeigen</caption>
+                          <iconname>SQC_SEGMENT_PREV</iconname>
+                          <command>OPTION_VIEW_PREV</command>
+                        </ToolBoxItemDefinition>
+                        <ToolBoxItemDefinition name="ToolBoxItemNext">
+                          <location />
+                          <tooltip>Betrachte den nächsten Abschnitt von Daten</tooltip>
+                          <caption>Nächster Abschnitt anzeigen</caption>
+                          <iconname>SQC_SEGMENT_NEXT</iconname>
+                          <command>OPTION_VIEW_NEXT</command>
+                        </ToolBoxItemDefinition>
+                      </items>
+                    </ToolBoxGroupDefinition>
+                  </groups>
+                </ToolBoxDefinition>
+                <panel name="Panel2">
+                  <width>260</width>
+                  <caption>Panel2</caption>
+                  <controls>
+                    <SpinEditDefinition name="SpinEditInterval">
+                      <tooltip>Aktualisierungsintervall</tooltip>
+                      <caption>Intervall (min)</caption>
+                    </SpinEditDefinition>
+                    <label name="LabelLastRefreshed">
+                      <width>251</width>
+                      <caption>LabelLastRefreshed</caption>
+                    </label>
+                    <label name="LabelLref">
+                      <width>251</width>
+                      <caption>Zuletzt aktualisiert:</caption>
+                    </label>
+                    <CheckEdit name="CheckEditAutoRefresh">
+                      <width>251</width>
+                      <tooltip>Wenn aktiv, wird die Anzeige mit den angegebenen Intervall aktualisiert</tooltip>
+                      <caption>Automatische Aktualisierung</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                  </controls>
+                </panel>
+              </controls>
+            </panel>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

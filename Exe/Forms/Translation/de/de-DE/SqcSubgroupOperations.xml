@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>General</caption>
+      <extendedfunctions />
+      <controls>
+        <ActionButtonDefinition name="ActionButton2">
+          <caption>&amp;Cancel</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ActionButton1">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <unboundgridcontrol name="UnboundGridDesign1">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="GridDesignColumnIndex">
+              <caption>Index</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="GridDesignColumnAbad">
+              <caption>Ausgeschlossen (Mittelwert)</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="GridDesignColumnComments">
+              <caption>Kommentare</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

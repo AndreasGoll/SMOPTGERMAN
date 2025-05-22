@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <line name="Line3" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identifier" />
+        <line name="Line" />
+        <prompt name="SqcwinTrendName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="propertiesPage">
+      <caption>Regeln</caption>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="DataGridDesign1">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="TrendFactorOne">
+              <caption>1. Faktor</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TrendParameterPhrase">
+              <caption>Qualifikation</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TrendTypePhrase">
+              <caption>Regel</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,28 @@
+﻿EXPLORER_RMB                  
+CABINET,FOLDER_NUMBER,RMB_NUMBER,NAME,ORDER_NUMBER,PARENT_NUMBER,MENUPROC,NAME_DE,DESCRIPTION_DE
+30,10,10,100,10,10,10,100,234
+                    24
+"TABLE_DETAILS","229","1","SQC Chart","1","0","0","SQC Diagramm",
+"TABLE_DETAILS","229","2","Add","2","1","26102","Hinzufügen","SQC Diagramm hinzufügen"
+"TABLE_DETAILS","229","3","Copy","3","1","26103","Kopieren","SQC Diagramm kopieren"
+"TABLE_DETAILS","229","4","Modify","4","1","26104","Ändern","SQC Diagramm ändern"
+"TABLE_DETAILS","229","5","Display","5","1","26105","Anzeigen","SQC Diagramm anzeigen"
+"TABLE_DETAILS","229","6","<Separator>","6","1","0","<Separator>",
+"TABLE_DETAILS","229","7","Print","7","1","26106","Drucken","SQC Diagramm drucken"
+"TABLE_DETAILS","229","8","List","8","1","26107","Liste","SQC Diagramm Liste"
+"TABLE_DETAILS","229","9","<Separator>","9","1","0","<Separator>",
+"TABLE_DETAILS","229","10","Remove","10","1","26108","Entfernen","SQC Diagramm entfernen"
+"TABLE_DETAILS","229","11","Restore","11","1","26109","Wiederherstellen","SQC Diagramm wiederherstellen"
+"TABLE_DETAILS","229","12","<Separator>","12","1","0","<Separator>",
+"TABLE_DETAILS","229","13","View Chart","13","1","26111","Diagramm anzeigen","Diagramm anzeigen"
+"TABLE_DETAILS","230","1","SQC Trend","1","0","0","SQC Trendregeln",
+"TABLE_DETAILS","230","2","Add","2","1","26122","Hinzufügen","SQC Trendregel hinzufügen"
+"TABLE_DETAILS","230","3","Copy","3","1","26123","Kopieren","SQC Trendregel kopieren"
+"TABLE_DETAILS","230","4","Modify","4","1","26124","Ändern","SQC Trendregel ändern"
+"TABLE_DETAILS","230","5","Display","5","1","26125","Anzeigen","SQC Trendregel anzeigen"
+"TABLE_DETAILS","230","6","<Separator>","6","1","0","<Separator>",
+"TABLE_DETAILS","230","7","Print","7","1","26126","Drucken","SQC Trendregel drucken"
+"TABLE_DETAILS","230","8","List","8","1","26127","Liste","SQC Trendregel Liste"
+"TABLE_DETAILS","230","9","<Separator>","9","1","0","<Separator>",
+"TABLE_DETAILS","230","10","Remove","10","1","26128","Entfernen","SQC Trendregel entfernen"
+"TABLE_DETAILS","230","11","Restore","11","1","26129","Wiederherstellen","SQC Trendregel wiederherstellen"

@@ -1,0 +1,26 @@
+﻿MENU_TOOLBAR                  
+TOOLBAR_NAME,ITEM_NUMBER,PARENT_NUMBER,ITEM_NAME,TYPE,PROCEDURE_NUM,INTERNAL_ITEM_NAME,PAINT_STYLE,BEGIN_GROUP,SHORTCUT,ITEM_NAME_DE
+20,10,10,234,20,10,40,40,1,20,234
+                      22
+"SYSTEM","2537","2536","Charts","MENU","0","USER_MENU","Standard","TRUE",,"Diagramme"
+"SYSTEM","2538","2537","Open...","ITEM","26101","MENU_26101","Standard","FALSE",,"Öffnen..."
+"SYSTEM","2539","2537","Add","ITEM","26102","MENU_26102","Standard","TRUE",,"Hinzufügen"
+"SYSTEM","2540","2537","Copy","ITEM","26103","MENU_26103","Standard","FALSE",,"Kopieren"
+"SYSTEM","2541","2537","Modify","ITEM","26104","MENU_26104","Standard","FALSE",,"Ändern"
+"SYSTEM","2542","2537","Display","ITEM","26105","MENU_26105","Standard","FALSE",,"Anzeigen"
+"SYSTEM","2543","2537","Print","ITEM","26106","MENU_26106","Standard","TRUE",,"Drucken"
+"SYSTEM","2544","2537","List","ITEM","26107","MENU_26107","Standard","FALSE",,"Liste"
+"SYSTEM","2545","2537","Remove","ITEM","26108","MENU_26108","Standard","TRUE",,"Entfernen"
+"SYSTEM","2546","2537","Restore","ITEM","26109","MENU_26109","Standard","FALSE",,"Wiederherstellen"
+"SYSTEM","2547","2536","Trends","MENU","0","USER_MENU","Standard","FALSE",,"Trendregeln"
+"SYSTEM","2548","2547","Open...","ITEM","26121","MENU_26121","Standard","FALSE",,"Öffnen..."
+"SYSTEM","2549","2547","Add","ITEM","26122","MENU_26122","Standard","TRUE",,"Hinzufügen"
+"SYSTEM","2550","2547","Copy","ITEM","26123","MENU_26123","Standard","FALSE",,"Kopieren"
+"SYSTEM","2551","2547","Modify","ITEM","26124","MENU_26124","Standard","FALSE",,"Ändern"
+"SYSTEM","2552","2547","Display","ITEM","26125","MENU_26125","Standard","FALSE",,"Anzeigen"
+"SYSTEM","2553","2547","Print","ITEM","26126","MENU_26126","Standard","TRUE",,"Drucken"
+"SYSTEM","2554","2547","List","ITEM","26127","MENU_26127","Standard","FALSE",,"Liste"
+"SYSTEM","2555","2547","Remove","ITEM","26128","MENU_26128","Standard","TRUE",,"Entfernen"
+"SYSTEM","2556","2547","Restore","ITEM","26129","MENU_26129","Standard","FALSE",,"Wiederherstellen"
+"SYSTEM","2557","2536","View Chart","ITEM","26111","MENU_26111","Standard","TRUE",,"Diagramm anzeigen"
+"SYSTEM","2558","2536","Help","ITEM","26130","MENU_26130","Standard","TRUE",,"Hilfe"
