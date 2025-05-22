@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseSample">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="IdNumeric">
+              <Title>Numerische ID</Title>
+              <Width>75</Width>
+              <Column>IdNumeric</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="IdText">
+              <Title>Textuelle ID</Title>
+              <Width>75</Width>
+              <Column>IdText</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="WorkflowNode">
+              <Title>Workflow Knoten</Title>
+              <Width>75</Width>
+              <Column>WorkflowNode</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="CellPullId">
+              <Title>Pull Zelle</Title>
+              <Width>75</Width>
+              <Column>CellPullId.Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="TestGroup">
+              <Title>Testgruppe</Title>
+              <Width>75</Width>
+              <Column>CellPullId.Testgrouplink</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseStudy">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="StbStudyName">
+              <Title>Studie</Title>
+              <Width>75</Width>
+              <Column>StbStudyName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>StudyStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Createfromtemplate">
+              <Title>Template</Title>
+              <Width>75</Width>
+              <Column>Createfromtemplate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseJobs">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Auftragsname</Title>
+              <Width>75</Width>
+              <Column>JobName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn2">
+              <Title>Auftragsstatus</Title>
+              <Width>75</Width>
+              <Column>JobStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn3">
+              <Title>Los ID</Title>
+              <Width>75</Width>
+              <Column>LotId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn4">
+              <Title>Workflow Knoten</Title>
+              <Width>75</Width>
+              <Column>WorkflowNode</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn5">
+              <Title>Freigabekommentare</Title>
+              <Width>75</Width>
+              <Column>AuthorisationNotes</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <splitter name="Splitter">
+          <location>
+            <x>9</x>
+            <y>168</y>
+          </location>
+          <height>5</height>
+          <position>0</position>
+        </splitter>
+        <panel name="PanelMiddle">
+          <caption>Panel1</caption>
+          <controls>
+            <explorergridcontrol name="ExplorerGridStudies" />
+          </controls>
+        </panel>
+        <panel name="PanelMain">
+          <caption>Panel1</caption>
+          <controls>
+            <tabcontrol name="TabControl">
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="PageJobs">
+                  <caption>Aufträge</caption>
+                  <controls>
+                    <explorergridcontrol name="ExplorerGridJobs" />
+                  </controls>
+                </tabpage>
+                <tabpage name="PageSamples">
+                  <caption>Proben</caption>
+                  <controls>
+                    <explorergridcontrol name="ExplorerGridSamples" />
+                  </controls>
+                </tabpage>
+                <tabpage name="PageCalendar">
+                  <caption>Kalender</caption>
+                  <controls>
+                    <CalendarDefinition name="PredictionCalendar">
+                      <caption>Calendar1</caption>
+                      <isdatabound>false</isdatabound>
+                      <viewtype>Day</viewtype>
+                      <readonly>false</readonly>
+                      <customworkingweek>false</customworkingweek>
+                    </CalendarDefinition>
+                  </controls>
+                </tabpage>
+                <tabpage name="PageLog">
+                  <caption>Log des Schedulers</caption>
+                  <controls>
+                    <TextEdit name="TextEdit1" />
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </panel>
+        <panel name="PanelButton">
+          <caption>Panel1</caption>
+          <controls>
+            <ButtonEditDefinition name="ButtonPredict">
+              <tooltip>Predict cells for a given time frame and storage time.</tooltip>
+              <caption>Vorhersage</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ButtonEditDefinition name="ButtonStart">
+              <tooltip>Create the jobs and initial samples for the study.</tooltip>
+              <caption>Starte Studie</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <DateEditDefinition name="StorageStart">
+              <tooltip>Start of the Prediction Time Window</tooltip>
+              <caption>Lagerung</caption>
+            </DateEditDefinition>
+            <ButtonEditDefinition name="ButtonLogin">
+              <tooltip>Process cells for a given time frame, using the storage time for  database.</tooltip>
+              <caption>Verarbeite Zellen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ActionButtonDefinition name="ButtonCancel">
+              <caption>&amp;Abbrechen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <DateEditDefinition name="PredictEnd">
+              <tooltip>End of the Prediction Time Window</tooltip>
+              <caption>Ende</caption>
+            </DateEditDefinition>
+            <DateEditDefinition name="PredictStart">
+              <tooltip>Start of the Prediction Time Window</tooltip>
+              <caption>Start</caption>
+            </DateEditDefinition>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

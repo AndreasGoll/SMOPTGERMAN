@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <panel name="Panel1">
+          <caption>Panel1</caption>
+          <controls>
+            <panel name="Panel2">
+              <caption>Panel2</caption>
+              <controls>
+                <groupbox name="Equations">
+                  <location>
+                    <y>214</y>
+                  </location>
+                  <height>162</height>
+                  <caption>Gleichungen</caption>
+                  <controls>
+                    <picturebox name="Equation">
+                      <location>
+                        <x>3</x>
+                        <y>17</y>
+                      </location>
+                      <height>142</height>
+                      <caption>PictureBox1</caption>
+                    </picturebox>
+                  </controls>
+                </groupbox>
+                <splitter name="Splitter2">
+                  <height>5</height>
+                  <position>0</position>
+                </splitter>
+                <groupbox name="GroupBox2">
+                  <caption>Abgeleitete Werte</caption>
+                  <controls>
+                    <unboundgridcontrol name="DerivedValues">
+                      <location>
+                        <x>3</x>
+                        <y>17</y>
+                      </location>
+                      <height>189</height>
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="Description">
+                          <caption>Beschreibung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Value">
+                          <caption>Wert</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </groupbox>
+              </controls>
+            </panel>
+            <splitter name="Splitter1">
+              <position>0</position>
+            </splitter>
+            <tabcontrol name="GraphData">
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="ResultsTab">
+                  <caption>Ergebnispunkte</caption>
+                  <controls>
+                    <unboundgridcontrol name="ResultPoints">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="ColX">
+                          <caption>X Achsenpunkt</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="ColY">
+                          <caption>Y Achsenpunkt</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </tabpage>
+                <tabpage name="RegressionLineTab">
+                  <caption>Regressionsgerade</caption>
+                  <controls>
+                    <unboundgridcontrol name="RegressionLinePoints">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="X">
+                          <caption>X Achsenpunkt</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="RegLnPnt">
+                          <caption>Regressionlinienpunkt</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </tabpage>
+                <tabpage name="ConfidenceIntervalTab">
+                  <caption>Konfidenzintervalle</caption>
+                  <controls>
+                    <unboundgridcontrol name="ConfidenceIntervals">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="X">
+                          <caption>X Achsenpunkt</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="CI">
+                          <caption>CI</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="yplusCI">
+                          <caption>y + CI</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="yminusCI">
+                          <caption>y - CI</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </panel>
+        <ActionButtonDefinition name="Close">
+          <caption>Schli&amp;eßen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

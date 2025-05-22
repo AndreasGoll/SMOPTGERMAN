@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <components>
+        <stringtable name="StringTable">
+          <stringentries>
+            <stringentry name="ViewArticle">
+              <value>Artikel Anzeigen</value>
+            </stringentry>
+            <stringentry name="ViewTemplate">
+              <value>Template Anzeigen</value>
+            </stringentry>
+            <stringentry name="ViewStudy">
+              <value>Studie Anzeigen</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <prompt name="ApprovalStatus">
+          <caption>Freigabe Status</caption>
+        </prompt>
+        <prompt name="ProductVersion">
+          <tooltip>Version number of the Product Id</tooltip>
+          <caption>Version</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="MlpHeaderName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="PageSchedule">
+      <caption>MLP Pläne</caption>
+      <components>
+        <entityBrowseDefinition name="MlpScheduleBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Product">
+              <Title>Produkt</Title>
+              <Width>50</Width>
+              <Column>MlpHeaderName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>50</Width>
+              <Column>Identity</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Version">
+              <Title>Version</Title>
+              <Width>40</Width>
+              <Column>ProductVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Group">
+              <Title>Gruppe</Title>
+              <Width>50</Width>
+              <Column>GroupId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Status">
+              <Title>Freigabe Status</Title>
+              <Width>50</Width>
+              <Column>ApprovalStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <explorergridcontrol name="MlpScheduleGrid" />
+      </controls>
+    </form>
+    <form name="PageFamilies">
+      <caption>MLP Familien</caption>
+      <components>
+        <entityBrowseDefinition name="FamilyBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Family">
+              <Title>Familie</Title>
+              <Width>50</Width>
+              <Column>MlpFamilyHeaderName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>50</Width>
+              <Column>FamilyName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Group">
+              <Title>Gruppe</Title>
+              <Width>50</Width>
+              <Column>GroupId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Description">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>FamilyDescription</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <explorergridcontrol name="MlpFamilyGrid" />
+      </controls>
+    </form>
+    <form name="PageArticles">
+      <caption>Artikel</caption>
+      <components>
+        <entityBrowseDefinition name="ArticleBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Artikel</Title>
+              <Width>50</Width>
+              <Column>ArticlePackages.StbArticleName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>50</Width>
+              <Column>ArticleP</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ArticleVersion">
+              <Title>Version</Title>
+              <Width>40</Width>
+              <Column>VersionP</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PackagingSystem">
+              <Title>Packmittel System</Title>
+              <Width>75</Width>
+              <Column>PackagingSystem</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ReleaseSpec">
+              <Title>Freigabespez.</Title>
+              <Width>75</Width>
+              <Column>Releasespec</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ShelfLifeSpec">
+              <Title>Laufzeitspez.</Title>
+              <Width>75</Width>
+              <Column>Shelflifespec</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Group">
+              <Title>Gruppe</Title>
+              <Width>50</Width>
+              <Column>ArticlePackages.GroupId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <explorergridcontrol name="ArticleGrid" />
+      </controls>
+    </form>
+    <form name="PageTemplates">
+      <caption>Studien Templates</caption>
+      <components>
+        <entityBrowseDefinition name="TemplateBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Studientemplate</Title>
+              <Width>50</Width>
+              <Column>ParentStudy.StbStudyTemplateName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>50</Width>
+              <Column>StudytemplateId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Version">
+              <Title>Version</Title>
+              <Width>40</Width>
+              <Column>StudytemplateVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Packaging">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>Packaging</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Group">
+              <Title>Gruppe</Title>
+              <Width>50</Width>
+              <Column>ParentStudy.GroupId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <explorergridcontrol name="TemplateGrid" />
+      </controls>
+    </form>
+    <form name="PageStudies">
+      <caption>Studien</caption>
+      <components>
+        <entityBrowseDefinition name="StudyPackagingBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>50</Width>
+              <Column>ParentStudy.StbStudyName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Study">
+              <Title>Studie</Title>
+              <Width>50</Width>
+              <Column>StudyId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyVersion">
+              <Title>Version</Title>
+              <Width>40</Width>
+              <Column>StudyVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Packaging">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>Packaging</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ReleaseSpecification">
+              <Title>Freigabespez.</Title>
+              <Width>75</Width>
+              <Column>Releasespec</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ShelfSpecification">
+              <Title>Laufzeitspez.</Title>
+              <Width>75</Width>
+              <Column>Shelflifespec</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Group">
+              <Title>Gruppe</Title>
+              <Width>50</Width>
+              <Column>ParentStudy.GroupId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <explorergridcontrol name="StudiesGrid" />
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowsePackaging">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseArticle">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Article">
+              <Title>Artikel</Title>
+              <Width>100</Width>
+              <Column>StbArticleName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Version</Title>
+              <Width>50</Width>
+              <Column>ArticleVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <PromptEntityBrowseDefinition name="PromptEntityArticle">
+          <tooltip>Select the Article Name</tooltip>
+          <caption>Artikel</caption>
+        </PromptEntityBrowseDefinition>
+        <unboundgridcontrol name="PackagingMergeGrid">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="Template Packaging">
+              <caption>Packmittel aus Studientemplate</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Study Packaging">
+              <caption>Packmittel der Studie</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+        <ActionButtonDefinition name="ActionButton2">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ActionButton1">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

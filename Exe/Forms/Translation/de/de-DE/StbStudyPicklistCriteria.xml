@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowsePullCriteria">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseLinkCriteria">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <picturebox name="PictureBox">
+          <caption>PictureBox1</caption>
+        </picturebox>
+        <panel name="PanelButton">
+          <caption>Panel1</caption>
+          <controls>
+            <ActionButtonDefinition name="ActionButtonCancel">
+              <caption>&amp;Abbrechen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <ActionButtonDefinition name="ActionButtonOk">
+              <caption>&amp;OK</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+          </controls>
+        </panel>
+        <label name="LabelDescription">
+          <caption>Selektiere Kriterien zum Füllen der Entnahmeliste</caption>
+        </label>
+        <PromptEntityBrowseDefinition name="PromptEntityBrowseLink">
+          <caption>Kriterien Unterstudien</caption>
+          <captionwidth>140</captionwidth>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="PromptEntityBrowsePull">
+          <caption>Pull Kriterien</caption>
+          <captionwidth>140</captionwidth>
+        </PromptEntityBrowseDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

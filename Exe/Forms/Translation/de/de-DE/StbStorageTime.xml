@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="StbStorageTimeName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page_Timing">
+      <caption>Weitere Informationen</caption>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="GroupBox3">
+          <caption>Anzeigeoptionen</caption>
+          <controls>
+            <TextEdit name="TextEdit2">
+              <tooltip>This Name will be printed on Reports</tooltip>
+              <caption>Berichtsname</caption>
+            </TextEdit>
+            <prompt name="Icon">
+              <tooltip>Icon</tooltip>
+              <caption>Symbol</caption>
+            </prompt>
+            <prompt name="ShortName">
+              <tooltip>The short name will be displayed in the Study Matrix</tooltip>
+              <caption>Kurzname</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox1">
+          <caption>Zeitfenster</caption>
+          <controls>
+            <prompt name="TimeWindowForPullLogin">
+              <tooltip>Offset for sample login when the Time Point is due</tooltip>
+              <caption>Pull Anmeldung</caption>
+            </prompt>
+            <prompt name="TimeWindowForTesting">
+              <tooltip>Testing must be completed in this interval</tooltip>
+              <caption>Testzeitraum</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox2">
+          <caption>Intervall</caption>
+          <controls>
+            <prompt name="FinalTimePoint">
+              <tooltip>Define this Storage Time Point as Final Time Point</tooltip>
+              <caption>Finaler Zeitpunkt</caption>
+            </prompt>
+            <prompt name="TimeInMonths">
+              <tooltip>Time in Month</tooltip>
+              <caption>Zeit in Monaten</caption>
+            </prompt>
+            <prompt name="TimeInDays">
+              <tooltip>Time in Days</tooltip>
+              <caption>Zeit in Tagen</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

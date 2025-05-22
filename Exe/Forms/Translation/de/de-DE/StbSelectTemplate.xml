@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinitionSelectTemplate">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <picturebox name="PictureBox1">
+          <caption>PictureBox1</caption>
+          <image>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</image>
+        </picturebox>
+        <label name="Label1">
+          <caption>Bitte das Studientemplate wählen.</caption>
+        </label>
+        <PromptEntityBrowseDefinition name="PromptEntityTemplate">
+          <forcevalid>false</forcevalid>
+        </PromptEntityBrowseDefinition>
+        <ActionButtonDefinition name="ActionButton2">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ActionButton1">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="ConditionPicker">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="StudyBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="ConditionBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="ConditionColumn">
+              <Title>Lagerungsbedingung</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="OrderColumn">
+              <Title>Sortiernummer</Title>
+              <Width>75</Width>
+              <Column>OrderNumber</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ActiveColumn">
+              <Title>Aktiv</Title>
+              <Width>75</Width>
+              <Column>Active</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <stringtable name="StringTable">
+          <stringentries>
+            <stringentry name="MissingCondition">
+              <value>Bitte eine gültige Lagerungsbedingung der Studie wählen</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <CheckEdit name="ActiveBox">
+          <caption>Aktiv</caption>
+          <CheckAlign>Left</CheckAlign>
+        </CheckEdit>
+        <ActionButtonDefinition name="ActionButton2">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ActionButton1">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <PromptEntityBrowseDefinition name="ConditionPrompt">
+          <caption>Lagerbedingung</caption>
+          <captionwidth>125</captionwidth>
+        </PromptEntityBrowseDefinition>
+        <PromptEntityBrowseDefinition name="StudyPrompt">
+          <caption>Studie</caption>
+          <captionwidth>125</captionwidth>
+        </PromptEntityBrowseDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

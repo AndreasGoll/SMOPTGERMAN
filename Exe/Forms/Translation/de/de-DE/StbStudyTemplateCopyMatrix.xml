@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="CopyMatrix">
+      <width>307</width>
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <ActionButtonDefinition name="ActionButtonCancel">
+          <location>
+            <x>229</x>
+            <y>86</y>
+          </location>
+          <width>66</width>
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ActionButtonOK">
+          <location>
+            <x>157</x>
+            <y>86</y>
+          </location>
+          <width>66</width>
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <PromptStringBrowseDefinition name="PromptOrientation">
+          <width>283</width>
+          <caption>Orientierung</caption>
+          <multiselect>false</multiselect>
+          <forcevalid>false</forcevalid>
+        </PromptStringBrowseDefinition>
+        <PromptStringBrowseDefinition name="PromptPackagingSystem">
+          <width>283</width>
+          <caption>Packmittel</caption>
+          <multiselect>false</multiselect>
+          <forcevalid>false</forcevalid>
+        </PromptStringBrowseDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="StbStorageConditionName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page2">
+      <caption>Weitere Informationen</caption>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="GroupBox2">
+          <caption>Anzeigeoptionen</caption>
+          <controls>
+            <TextEdit name="TextEdit1">
+              <caption>Berichtsname</caption>
+            </TextEdit>
+            <prompt name="Icon">
+              <caption>Symbol</caption>
+            </prompt>
+            <prompt name="ShortName">
+              <caption>Kurzname</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="LabelText">
+          <caption>Etikettentext</caption>
+          <controls>
+            <prompt name="LabelingText">
+              <caption>Etikettentext</caption>
+            </prompt>
+            <prompt name="AdditionalLabelingText">
+              <caption>Zusätzlicher Text</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox1">
+          <caption>Entsorgung</caption>
+          <controls>
+            <prompt name="DisposalInterval">
+              <tooltip>Das geplante Entsorgungsdatum wird beim Beenden der Studie berechnet als &lt;Datum Studie beendet&gt; + &lt;Entsorgung nach&gt;</tooltip>
+              <caption>Entsorgung nach</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+    <form name="Page_StStorageConditionLocations">
+      <caption>Lagerorte</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseLocation">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridStorageConditionLocations">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnLocation">
+              <caption>Lagerort</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

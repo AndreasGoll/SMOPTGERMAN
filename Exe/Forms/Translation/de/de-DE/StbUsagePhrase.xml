@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="CalculationName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="PageTestGroup">
+      <caption>Analysen</caption>
+      <components>
+        <stringtable name="AnalysisParams">
+          <stringentries>
+            <stringentry name="TestGroupProperties">
+              <value>StbTestGroupName,TestGroupId,TestGroupVersion,Description,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="TestGroupNames">
+              <value>Name,Identität,Version,Beschreibung,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="TemplateProperties">
+              <value>StbStudyTemplateName,Identity,StudyTemplateVersion,ReportingName,GroupId,Description,LabManager,StudyDirector,ProjectId,Article,UseHighestApprVersion,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="TemplateNames">
+              <value>Name,Identität,Version,Reporting Name,Gruppe,Beschreibung,Laborleiter,Studiendirektor,Projekt,Artikel,Verwende Höchste Version,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="StudyProperties">
+              <value>StbStudyName,Identity,StudyVersion,ReportingName,GroupId,Description,LabManager,StudyDirector,ProjectId,Article,UseHighestApprVersion,ApprovalStatus,StudyStatus</value>
+            </stringentry>
+            <stringentry name="StudyNames">
+              <value>Name,Identität,Version,Reporting Name,Gruppe,Beschreibung,Laborleiter,Studiendirektor,Projekt,Artikel,Verwende Höchste Version,Freigabe Status,Studien Status</value>
+            </stringentry>
+            <stringentry name="StudyPackagingProperties">
+              <value>Packaging,LotId,JobId,OrigPackagingType</value>
+            </stringentry>
+            <stringentry name="StudyPackagingNames">
+              <value>Packmittel,Los,Auftrag,Quelltyp</value>
+            </stringentry>
+            <stringentry name="TemplatePackagingProperties">
+              <value>Packaging,PackagingType</value>
+            </stringentry>
+            <stringentry name="TemplatePackagingNames">
+              <value>Packmittel,Packmittel-Typ</value>
+            </stringentry>
+            <stringentry name="StudyPullProperties">
+              <value>PackagingSystem,Orientation,StorageCondition,StorageTime,ItemNumber,OptionalPull,TestingSite,PullType</value>
+            </stringentry>
+            <stringentry name="StudyPullNames">
+              <value>Packmittel System,Packmittel-Typ,Orientierung,Lagerungsbedingung,Lagerzeit,Element Nummer,Optionaler Pull,Prüflabor,Pull Typ</value>
+            </stringentry>
+            <stringentry name="TemplatePullProperties">
+              <value>PackagingSystem,PackagingType,Orientation,StorageCondition,StorageTime,ItemNumber,OptionalPull,TestingSite,PullType</value>
+            </stringentry>
+            <stringentry name="TemplatePullNames">
+              <value>Packmittel System,Packmittel-Typ,Orientierung,Lagerungsbedingung,Lagerzeit,Element Nummer,Optionaler Pull,Prüflabor,Pull Typ</value>
+            </stringentry>
+            <stringentry name="GroupStudiesName">
+              <value>Studien</value>
+            </stringentry>
+            <stringentry name="GroupStudiesIcon">
+              <value>STB_STUDY_GREEN</value>
+            </stringentry>
+            <stringentry name="GroupTemplatesName">
+              <value>Studien Templates</value>
+            </stringentry>
+            <stringentry name="GroupTemplatesIcon">
+              <value>STB_STUDY_TEMPLATE</value>
+            </stringentry>
+            <stringentry name="DisplayStudyOption">
+              <value>28788</value>
+            </stringentry>
+            <stringentry name="DisplayStudyText">
+              <value>Studie Anzeigen</value>
+            </stringentry>
+            <stringentry name="DisplayTemplateOption">
+              <value>28746</value>
+            </stringentry>
+            <stringentry name="DisplayTemplateText">
+              <value>Template Anzeigen</value>
+            </stringentry>
+            <stringentry name="DisplayTGOption">
+              <value>28737</value>
+            </stringentry>
+            <stringentry name="DisplayTGText">
+              <value>Testgruppe Anzeigen</value>
+            </stringentry>
+            <stringentry name="AnalysisProperties">
+              <value>VersionedAnalysisName,Identity,AnalysisVersion,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="AnalysisNames">
+              <value>Name,Identität,Version,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="DisplayAnalysisOption">
+              <value>36</value>
+            </stringentry>
+            <stringentry name="DisplayAnalysisText">
+              <value>Analyse Anzeigen</value>
+            </stringentry>
+            <stringentry name="MlpProperties">
+              <value>MlpHeaderName,Identity,ProductVersion,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="MlpNames">
+              <value>Name,Identität,Version,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="ArticleProperties">
+              <value>StbArticleName,Identity,ArticleVersion,Description,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="ArticleNames">
+              <value>Name,Identität,Version,Beschreibung,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="ArticlePackagingProperties">
+              <value>PackagingSystem,ReleaseSpecId,ReleaseSpecVersion,ShelfLifeSpecId,ShelfLifeSpecVersion</value>
+            </stringentry>
+            <stringentry name="ArticlePackagingNames">
+              <value>Packmittel,Release Spezifikation,Release Spez. Version,Shelf Life Spezifikation,Shelf Life Spez. Version</value>
+            </stringentry>
+            <stringentry name="GroupArticlesName">
+              <value>Artikel</value>
+            </stringentry>
+            <stringentry name="GroupArticlesIcon">
+              <value>STB_ARTICLE</value>
+            </stringentry>
+            <stringentry name="DisplayArticleOption">
+              <value>28717</value>
+            </stringentry>
+            <stringentry name="DisplayArticleText">
+              <value>Artikel Anzeigen</value>
+            </stringentry>
+            <stringentry name="DisplayMlpOption">
+              <value>557</value>
+            </stringentry>
+            <stringentry name="DisplayMlpText">
+              <value>MLP Anzeigen</value>
+            </stringentry>
+            <stringentry name="GroupProductsName">
+              <value>Produkte</value>
+            </stringentry>
+            <stringentry name="GroupProductsIcon">
+              <value>INT_MLPS</value>
+            </stringentry>
+            <stringentry name="GroupTestGroupsName">
+              <value>Testgruppen</value>
+            </stringentry>
+            <stringentry name="GroupTestGroupsIcon">
+              <value>INT_TEST_SCHEDULE</value>
+            </stringentry>
+            <stringentry name="EntityNameArticle">
+              <value>Artikel</value>
+            </stringentry>
+            <stringentry name="EntityNameAnalysis">
+              <value>Analyse</value>
+            </stringentry>
+            <stringentry name="EntityNameStudy">
+              <value>Studie</value>
+            </stringentry>
+            <stringentry name="EntityNameTemplate">
+              <value>Studien Template</value>
+            </stringentry>
+            <stringentry name="EntityNameProduct">
+              <value>Produkt</value>
+            </stringentry>
+            <stringentry name="EntityNameTestGroup">
+              <value>Testgruppe</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <splitter name="TestGroupSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="TestGroupRightPanel">
+          <caption>Panel2</caption>
+          <controls>
+            <datagridcontrol name="AnalysisProperties">
+              <caption>Eigenschaften</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns />
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </panel>
+        <panel name="TestGroupLeftPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <simpletreelist name="AnalysisTree">
+              <caption>Analysen</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

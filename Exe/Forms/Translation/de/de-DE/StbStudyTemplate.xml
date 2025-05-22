@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="MlpBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="ColumnLevelId">
+              <Title>Markt</Title>
+              <Width>75</Width>
+              <Column>LevelId</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ColumnLevelDescription">
+              <Title>Beschreibung</Title>
+              <Width>100</Width>
+              <Column>Description</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="JobWorkflowBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Job Workflow">
+              <Title>Workflow Name</Title>
+              <Width>75</Width>
+              <Column>WorkflowName</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <prompt name="SMPrompt2">
+          <caption>Gruppe</caption>
+        </prompt>
+        <line name="Line3" />
+        <line name="Line2" />
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <prompt name="StudyTemplateVersion">
+          <caption>Version</caption>
+        </prompt>
+        <prompt name="StbStudyTemplateName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page_Additional">
+      <caption>Weitere Informationen</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseForLabels">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <groupbox name="GroupBox4">
+          <caption>Märkte</caption>
+          <controls>
+            <datagridcontrol name="DataGridMarkets">
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns>
+                <GridColumnDefinition name="MarketId">
+                  <caption>Markt</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+              </gridcolumns>
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox2">
+          <caption>Eigenschaften Studienvorlage</caption>
+          <controls>
+            <prompt name="IsGxP">
+              <width>154</width>
+              <tooltip>Include Inventory page ?</tooltip>
+              <caption>Ist GMP</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="UsePackagingType">
+              <width>154</width>
+              <tooltip>Packaging Axis is based on Packaging Types if checked, otherwise based on Packaging Systems</tooltip>
+              <caption>Verwende Packmitteltyp</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <TextEdit name="VersionComment">
+              <caption>Versionskommentar</caption>
+              <captionwidth>140</captionwidth>
+            </TextEdit>
+            <TextEdit name="ReportingName">
+              <caption>Berichtsname</caption>
+              <captionwidth>140</captionwidth>
+            </TextEdit>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBoxTemplateProperties">
+          <caption>Standard Studieneigenschaften</caption>
+          <controls>
+            <TextEdit name="StudyPurpose">
+              <caption>Zweck der Studie</caption>
+              <captionwidth>140</captionwidth>
+            </TextEdit>
+            <prompt name="Article">
+              <caption>Artikel</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="ProjectId">
+              <caption>Projekt</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="LabManager">
+              <caption>Laborleitung</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="StudyDirector">
+              <caption>Studiendirektor</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="StudyType">
+              <caption>Studientyp</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox7">
+          <caption>Eigenschaften Inventar</caption>
+          <controls>
+            <prompt name="CalcAmountFromTestGroup">
+              <caption>Menge aus Testgruppe</caption>
+            </prompt>
+            <prompt name="InventoryBaseUnitPrompt">
+              <caption>Einheit</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="InventoryBasedOnPrompt">
+              <caption>Inventar basiert auf</caption>
+            </prompt>
+            <prompt name="ManageInventory">
+              <width>154</width>
+              <tooltip>Manage Inventory - Inventory Tab will not be visible if this Checkbox is not selected.</tooltip>
+              <caption>Inventar planen</caption>
+              <captionwidth>140</captionwidth>
+            </prompt>
+            <prompt name="DefaultOveragePrompt">
+              <caption>Standardreserve [%]</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+    <form name="Page_Configuration">
+      <caption>Konfiguration</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseEntityTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseJobLifecycle">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseJobEntityTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseStorageLabel">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowsePullLabel">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseDefSampleLifecycle">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseSampleLogin">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseJobWorkflow">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <groupbox name="GroupBox8">
+          <caption>Standard Anmeldekonfiguration</caption>
+          <controls>
+            <PromptEntityBrowseDefinition name="PromptJobWorkflow">
+              <caption>Auftrags- Workflow</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <PromptEntityBrowseDefinition name="PromptSampleWorkflow">
+              <caption>Proben- Workflow</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <prompt name="PreSchedule">
+              <caption>Vorlauf</caption>
+              <captionwidth>170</captionwidth>
+            </prompt>
+            <PromptEntityBrowseDefinition name="PromptDefSampleWorkflow">
+              <caption>Proben- Lifecycle</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <prompt name="SampleStartingStatus">
+              <caption>Initialer Probenstatus</caption>
+              <captionwidth>170</captionwidth>
+            </prompt>
+            <PromptEntityBrowseDefinition name="JobEntityTemplate">
+              <caption>Auftrags- Entitätenvorlage</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <TextEdit name="JobSyntax">
+              <caption>Auftrags- Syntax</caption>
+              <captionwidth>170</captionwidth>
+            </TextEdit>
+            <PromptEntityBrowseDefinition name="JobLifecyclelink">
+              <caption>Auftrags- Lifecycle</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <TextEdit name="SampleSyntax">
+              <caption>Proben- Syntax</caption>
+              <captionwidth>170</captionwidth>
+            </TextEdit>
+            <PromptEntityBrowseDefinition name="EntityTemplate">
+              <caption>Proben- Entätenvorlage</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <PromptEntityBrowseDefinition name="PullLabelTemplate">
+              <caption>Pull Etikettenvorlage</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <PromptEntityBrowseDefinition name="StorageLabelTemplate">
+              <caption>Einlagerung Etikettenvorlage</caption>
+              <captionwidth>170</captionwidth>
+            </PromptEntityBrowseDefinition>
+            <prompt name="UseHighestApprVersion">
+              <width>184</width>
+              <caption>Verwende Höchste Version</caption>
+              <captionwidth>170</captionwidth>
+            </prompt>
+            <prompt name="Calendar">
+              <caption>Kalender</caption>
+              <captionwidth>170</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox3">
+          <caption>Syntax für Matrix Zellen</caption>
+          <controls>
+            <TextEdit name="TextEditFormulaPullStudy">
+              <caption>Unterstudien Element</caption>
+            </TextEdit>
+            <TextEdit name="TextEditFormulaPullEvent">
+              <caption>Event Element</caption>
+            </TextEdit>
+            <TextEdit name="TextEditFormulaPullCell">
+              <caption>Zellen Element</caption>
+            </TextEdit>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox1">
+          <caption>Matrix Konfiguration</caption>
+          <controls>
+            <prompt name="MatrixColumnWidth">
+              <caption>Matrix Spaltenbreite</caption>
+            </prompt>
+            <prompt name="MatrixXAxis">
+              <caption>Matrix X Achse</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="UsedAxisTitle">
+          <caption>Achsentitel</caption>
+          <controls>
+            <prompt name="PackagingAxisTitle">
+              <caption>Achsentitel des Packmittels</caption>
+            </prompt>
+            <prompt name="OrientationAxisTitle">
+              <caption>Achsentitel der Orientierung</caption>
+            </prompt>
+            <prompt name="StorageTimeAxisTitle">
+              <caption>Achsentitel der Lagerzeit</caption>
+            </prompt>
+            <prompt name="StorageConditionAxisTitle">
+              <caption>Achsentitel Lagerbedingung</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+    <form name="Page_Matrix">
+      <caption>Matrix</caption>
+      <components>
+        <entityBrowseDefinition name="EntityWorkflowBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseEventWorkflowEvent">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="BrowsePullInfoEntityTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseTestingSite">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Identität</Title>
+              <Width>75</Width>
+              <Column>Identity</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn2">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>Description</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseLnkStudyTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseTestGroup">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseEventEntityTemplate">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <label name="LabelMatrixNoData">
+          <caption>Unvollständige Definition der Achsenpunkte. Bitte [Achse Edit.] betätigen, um Achsenpunkte zu definieren.</caption>
+        </label>
+        <unboundgridcontrol name="STBTemplateGrid">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns />
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+        <panel name="ButtonPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <ButtonEditDefinition name="ButtonEditCellItem">
+              <tooltip>Edit Cell Items</tooltip>
+              <caption>Zellen Edit.</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ButtonEditDefinition name="ButtonCopyMatrix">
+              <tooltip>Copy Matrix</tooltip>
+              <caption>Kopieren</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ButtonEditDefinition name="ButtonEditAxisPoints">
+              <tooltip>Edit Axis Points</tooltip>
+              <caption>Achsen Edit.</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+          </controls>
+        </panel>
+        <splitter name="RightSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="PropertiesPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <splitter name="PropertiesSplitter">
+              <position>0</position>
+            </splitter>
+            <unboundgridcontrol name="AnalysisListGrid">
+              <caption>Analysenliste</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns>
+                <GridColumnDefinition name="Analysis">
+                  <caption>Analyse</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="Version">
+                  <caption>Version</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="RepCount">
+                  <caption>Wdh. Zähler</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+              </gridcolumns>
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </unboundgridcontrol>
+            <tabcontrol name="TabControlCell">
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="PullInfo">
+                  <caption>Pull Info</caption>
+                  <controls>
+                    <datagridcontrol name="DataGridPullInfo">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="ItemNumber">
+                          <caption>Element Nr.</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Testgroup">
+                          <caption>Testgruppe</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="DisplayedTestGroupVersion">
+                          <caption>Testgruppen Version</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="EntityTemplate">
+                          <caption>Entitäsvorlage</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="OptionalPull">
+                          <caption>Optionaler Pull</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="AmountRequired">
+                          <caption>Menge</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="AmountInContainer">
+                          <caption>Container</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="ReserveSamplesCount">
+                          <caption>Menge</caption>
+                          <categorycaption>Reserve </categorycaption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="ReserveSamplesContainer">
+                          <caption>Container</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="NumPullLabels">
+                          <caption>Anzahl Pulletiketten</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PullType">
+                          <caption>Pulltyp</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="TestingSite">
+                          <caption>Prüflabor</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Description">
+                          <caption>Beschreibung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="SampleLoginType">
+                          <caption>Proben Anmeldetyp</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageCondition">
+                          <caption>Lagerbedingung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageTime">
+                          <caption>Lagerzeit</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Orientation">
+                          <caption>Orientierung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingSystem">
+                          <caption>Packmittel</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingType">
+                          <caption>Packmitteltyp</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </datagridcontrol>
+                    <ToolBarDefinition name="ToolBarPullInfo">
+                      <caption>ToolBar1</caption>
+                      <Buttons>
+                        <ToolBarButtonDefinition name="ButtonAdd">
+                          <tooltip>Hinzufügen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                        <ToolBarButtonDefinition name="ButtonDelete">
+                          <tooltip>Löschen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                      </Buttons>
+                    </ToolBarDefinition>
+                  </controls>
+                </tabpage>
+                <tabpage name="Event">
+                  <caption>Ereignis</caption>
+                  <controls>
+                    <datagridcontrol name="DataGridEventInfo">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="ItemNumber">
+                          <caption>Element Nr.</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Event">
+                          <caption>Ereignis</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="TimeOffset">
+                          <caption>Zeitversatz</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="EntityTemplate">
+                          <caption>Entitätsvorlage</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageCondition">
+                          <caption>Lagerbedingung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageTime">
+                          <caption>Lagerzeit</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Orientation">
+                          <caption>Orientierung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingSystem">
+                          <caption>Packmittel</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingType">
+                          <caption>Packmitteltyp</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </datagridcontrol>
+                    <ToolBarDefinition name="ToolBarEvent">
+                      <caption>ToolBar1</caption>
+                      <Buttons>
+                        <ToolBarButtonDefinition name="ButtonAdd">
+                          <tooltip>Hinzufügen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                        <ToolBarButtonDefinition name="ButtonRemove">
+                          <tooltip>Löschen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                      </Buttons>
+                    </ToolBarDefinition>
+                  </controls>
+                </tabpage>
+                <tabpage name="SubStudy">
+                  <caption>Unterstudie</caption>
+                  <controls>
+                    <datagridcontrol name="DataGridLinkInfo">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns>
+                        <GridColumnDefinition name="ItemNumber">
+                          <caption>Element Nr.</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="LinkedStudyTemplateLink">
+                          <caption>Unterstudien Vorlage</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Description">
+                          <caption>Beschreibung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="RequiredAmount">
+                          <caption>Menge</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="AmountInContainer">
+                          <caption>Container</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageCondition">
+                          <caption>Lagerbedingung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="StorageTime">
+                          <caption>Lagerzeit</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="Orientation">
+                          <caption>Orientierung</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingSystem">
+                          <caption>Packmittel</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                        <GridColumnDefinition name="PackagingType">
+                          <caption>Packmitteltyp</caption>
+                          <readonly>false</readonly>
+                          <datatype>Boolean</datatype>
+                          <showbutton>false</showbutton>
+                        </GridColumnDefinition>
+                      </gridcolumns>
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </datagridcontrol>
+                    <ToolBarDefinition name="ToolBarSubTemplate">
+                      <caption>ToolBar1</caption>
+                      <Buttons>
+                        <ToolBarButtonDefinition name="ButtonAdd">
+                          <tooltip>Hinzufügen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                        <ToolBarButtonDefinition name="ButtonRemove">
+                          <tooltip>Löschen</tooltip>
+                          <begingroup>false</begingroup>
+                          <canappearpressed>false</canappearpressed>
+                          <ispressed>false</ispressed>
+                        </ToolBarButtonDefinition>
+                      </Buttons>
+                    </ToolBarDefinition>
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </panel>
+        <splitter name="LeftSplitter">
+          <position>0</position>
+        </splitter>
+        <simpletreelist name="STBTemplateTree">
+          <caption>Packmittel / Orientierung</caption>
+          <readonly>false</readonly>
+          <treeoperations>None</treeoperations>
+          <openexpanded>false</openexpanded>
+          <showroot>false</showroot>
+          <autofocusnewnode>false</autofocusnewnode>
+          <showimages>false</showimages>
+          <nodes />
+          <showheader>false</showheader>
+          <allowdragdrop>false</allowdragdrop>
+        </simpletreelist>
+      </controls>
+    </form>
+    <form name="Page_Inventory">
+      <caption>Inventar</caption>
+      <controls>
+        <unboundgridcontrol name="UnbGridInventory">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="TextRoot">
+              <caption>Studie</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TextPackaging">
+              <caption>Packmittel</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TextOrientation">
+              <caption>Orientierung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TextCondition">
+              <caption>Bedingung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="CountPlanned">
+              <caption>Geplante Anzahl</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ContainersPlanned">
+              <caption>Geplante Container</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Overage">
+              <caption>Reserve</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TotalCount">
+              <caption>Gesamt Anzahl</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TotalContainers">
+              <caption>Container Gesamt</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+        <panel name="InventoryTopPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <prompt name="SMPrompt1">
+              <caption>Standardreserve [%]</caption>
+            </prompt>
+            <prompt name="ReUseOpenedContainer">
+              <width>174</width>
+              <caption>Geöffnete weiterverwenden</caption>
+              <captionwidth>160</captionwidth>
+            </prompt>
+            <prompt name="InventoryBasedOn">
+              <caption>Inventar basiert auf</caption>
+              <captionwidth>138</captionwidth>
+            </prompt>
+            <prompt name="OverageIn">
+              <caption>Reserve in</caption>
+            </prompt>
+            <ButtonEditDefinition name="InventoryButtonFill">
+              <caption>Füllen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <prompt name="InventoryBaseUnit">
+              <caption>Inventar Basiseinheit</caption>
+              <captionwidth>138</captionwidth>
+            </prompt>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+    <form name="Page_Comments">
+      <caption>Kommentare</caption>
+      <controls>
+        <datagridcontrol name="GridStbStudyTmplComments">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnPackagingSystem">
+              <caption>Packmittel</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnPackagingType">
+              <caption>Packmitteltyp</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnOrientation">
+              <caption>Orientierung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnStorageCondition">
+              <caption>Lagerbedingung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnStorageTime">
+              <caption>Lagerzeit</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnComments">
+              <caption>Kommentar</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnUseForReport">
+              <caption>Für Bericht verwenden</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_Validation">
+      <caption>Validierung</caption>
+      <controls>
+        <unboundgridcontrol name="UnboundGridValidation">
+          <caption>Validierungs- Issues</caption>
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColSection">
+              <caption>Sektion</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColSeverity">
+              <caption>Schweregrad</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColText">
+              <caption>Issue Meldung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColPos">
+              <caption>Position</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </unboundgridcontrol>
+        <splitter name="ValSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="ValLeftPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <simpletreelist name="SimpleTreeListValidation">
+              <caption>Validierungs-Gruppierung</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+            <panel name="ValbotPanel">
+              <caption>Panel1</caption>
+              <controls>
+                <ButtonEditDefinition name="ButtonValidateStudyTemplate">
+                  <tooltip>Validate study template</tooltip>
+                  <caption>Validiere</caption>
+                  <size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </size>
+                </ButtonEditDefinition>
+              </controls>
+            </panel>
+            <panel name="ValtopPanel">
+              <caption>Panel1</caption>
+              <controls>
+                <prompt name="SMPromptRuleType">
+                  <caption>Regeltyp</caption>
+                </prompt>
+              </controls>
+            </panel>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

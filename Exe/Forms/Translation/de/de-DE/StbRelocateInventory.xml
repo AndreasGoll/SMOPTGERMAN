@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="LocationBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Standortname</Title>
+              <Width>75</Width>
+              <Column>LocationName</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="PersonnelBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Mitarbeiter Name</Title>
+              <Width>75</Width>
+              <Column>PersonnelName</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <TextEdit name="Reason">
+          <caption>Begründung</caption>
+        </TextEdit>
+        <PromptEntityBrowseDefinition name="PromptNewLocation">
+          <caption>Neuer Ort</caption>
+          <forcevalid>false</forcevalid>
+        </PromptEntityBrowseDefinition>
+        <DateEditDefinition name="RelocatedOnBrowsePrompt">
+          <caption>Umgelagert am</caption>
+        </DateEditDefinition>
+        <PromptEntityBrowseDefinition name="PromptRelocatedBy">
+          <caption>Umgelagert von</caption>
+          <forcevalid>false</forcevalid>
+        </PromptEntityBrowseDefinition>
+        <ActionButtonDefinition name="ButtonCancel">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ButtonOK">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

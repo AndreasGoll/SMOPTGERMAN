@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <panel name="PanelDisposalGrid">
+          <caption>Panel1</caption>
+          <controls>
+            <ButtonEditDefinition name="ButtonDefault">
+              <location>
+                <x>608</x>
+                <y>3</y>
+              </location>
+              <tooltip>Set all to disposed and fill in the current time and user</tooltip>
+              <caption>Default</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ButtonEditDefinition name="ButtonFillDown">
+              <location>
+                <x>687</x>
+                <y>3</y>
+              </location>
+              <width>93</width>
+              <tooltip>Copy either the disposed on or the disposed by value down to empty cells in the same column</tooltip>
+              <caption>Fülle Unten</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <datagridcontrol name="DataGridStudyStorage">
+              <caption>Lagerorte</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns>
+                <GridColumnDefinition name="ParentCondition">
+                  <caption>Lagerbedingung</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="ParentOrientation">
+                  <caption>Orientierung</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="Location">
+                  <caption>Standort</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="CountRemaining">
+                  <caption>Verbleibende Anzahl</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="ContainersRemaining">
+                  <caption>Verbleibende Container</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="NotCalculatable">
+                  <caption>Nicht berechenbar</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="DisposedOn">
+                  <caption>Entsorgt am</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="DisposedBy">
+                  <caption>Entsorgt von</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+                <GridColumnDefinition name="DisposalCompleted">
+                  <caption>Entsorgt</caption>
+                  <readonly>false</readonly>
+                  <datatype>Boolean</datatype>
+                  <showbutton>false</showbutton>
+                </GridColumnDefinition>
+              </gridcolumns>
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </panel>
+        <panel name="PanelDisposalTop">
+          <caption>Panel1</caption>
+          <controls>
+            <prompt name="PromptLot">
+              <caption>Charge</caption>
+            </prompt>
+            <prompt name="PromptLotReservation">
+              <caption>Reservierung</caption>
+            </prompt>
+            <prompt name="PromptUnit">
+              <caption>Einheit</caption>
+            </prompt>
+            <prompt name="PromptPackAxisPoint">
+              <caption>Packmittel</caption>
+            </prompt>
+            <prompt name="PromptStudy">
+              <caption>Studie</caption>
+            </prompt>
+            <prompt name="PromptJob">
+              <caption>Auftrag</caption>
+            </prompt>
+            <line name="LineVertical" />
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

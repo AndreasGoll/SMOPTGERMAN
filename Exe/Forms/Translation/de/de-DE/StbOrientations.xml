@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity">
+          <tooltip>Identity</tooltip>
+        </prompt>
+        <line name="Line" />
+        <prompt name="StOrientationName">
+          <tooltip>Name</tooltip>
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <tooltip>Description</tooltip>
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="DisplayOptions">
+      <caption>Weitere Informationen</caption>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="GroupBox1">
+          <caption>Anzeigeoptionen</caption>
+          <controls>
+            <prompt name="Icon">
+              <tooltip>Icon</tooltip>
+              <caption>Symbol</caption>
+            </prompt>
+            <TextEdit name="TextEdit1">
+              <caption>Berichtsname</caption>
+            </TextEdit>
+            <prompt name="ShortName">
+              <tooltip>short name</tooltip>
+              <caption>Kurzname</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

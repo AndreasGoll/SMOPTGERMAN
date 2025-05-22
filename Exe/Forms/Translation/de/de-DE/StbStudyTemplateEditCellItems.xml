@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <panel name="PanelMiddle">
+          <caption>Panel6</caption>
+          <controls>
+            <tabcontrol name="TabControlCell">
+              <tooltip>Choose action to perform</tooltip>
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="PageCopy">
+                  <caption>Elemente kopieren</caption>
+                  <controls>
+                    <ButtonEditDefinition name="ButtonCopyItems">
+                      <caption>Kopieren</caption>
+                      <size>
+                        <Width>0</Width>
+                        <Height>0</Height>
+                      </size>
+                    </ButtonEditDefinition>
+                    <panel name="Panel1">
+                      <caption>Panel1</caption>
+                      <controls>
+                        <radiobutton name="RbOverwriteMode">
+                          <caption>Werte überschreiben</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <radiobutton name="RbNoOverwriteMode">
+                          <caption>Nicht überschreiben</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                      </controls>
+                    </panel>
+                    <panel name="Panel4">
+                      <caption>Panel4</caption>
+                      <controls>
+                        <CheckEdit name="CheckEditPullProperties">
+                          <caption>Pulleigenschaften kopieren</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                        <CheckEdit name="CheckEditCreatePullIfNotFound">
+                          <width>135</width>
+                          <tooltip>Create a new Pull if no Pull is found with the specified Pull Number</tooltip>
+                          <caption>Fehlende Pulls erstellen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                        <radiobutton name="RbCopyToAllPulls">
+                          <caption>Alle in der Zelle</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <SpinEditDefinition name="SeCopyPullNumber" />
+                        <radiobutton name="RbCopyToOnePullNum">
+                          <caption>Pull Nummer</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                      </controls>
+                    </panel>
+                    <panel name="Panel5">
+                      <caption>Panel5</caption>
+                      <controls>
+                        <CheckEdit name="CheckEditEventProperties">
+                          <width>174</width>
+                          <caption>Ereigniseigenschaften kopieren</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                        <radiobutton name="RbCopyToAllEvents">
+                          <width>158</width>
+                          <caption>Alle in der Zelle</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <SpinEditDefinition name="SeCopyEventNumber">
+                          <width>43</width>
+                        </SpinEditDefinition>
+                        <CheckEdit name="CheckEditCreateEventIfNotFound">
+                          <width>173</width>
+                          <caption>Fehlende Ereignisse erstellen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                        <radiobutton name="RbCopyToOneEventNum">
+                          <caption>Ereignis-Nr.</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                      </controls>
+                    </panel>
+                  </controls>
+                </tabpage>
+                <tabpage name="PageAdd">
+                  <caption>Elemente hinzfügen</caption>
+                  <controls>
+                    <panel name="PanelAddEvents">
+                      <caption>Panel6</caption>
+                      <controls>
+                        <CheckEdit name="CheckEditAddEvents">
+                          <width>165</width>
+                          <tooltip>Add new Events with the properties defined to all cells checked.</tooltip>
+                          <caption>Ereignisse hinzufügen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                      </controls>
+                    </panel>
+                    <panel name="PanelAddPulls">
+                      <caption>Panel6</caption>
+                      <controls>
+                        <CheckEdit name="CheckEditAddPulls">
+                          <tooltip>Add new Pulls with the properties defined to all cells checked.</tooltip>
+                          <caption>Pulls hinzufügen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                      </controls>
+                    </panel>
+                    <ButtonEditDefinition name="ButtonAddItems">
+                      <width>104</width>
+                      <caption>Hinzufügen</caption>
+                      <size>
+                        <Width>0</Width>
+                        <Height>0</Height>
+                      </size>
+                    </ButtonEditDefinition>
+                  </controls>
+                </tabpage>
+                <tabpage name="PageDelete">
+                  <caption>Elemente löschen</caption>
+                  <controls>
+                    <ButtonEditDefinition name="ButtonDeleteItems">
+                      <caption>Löschen</caption>
+                      <size>
+                        <Width>0</Width>
+                        <Height>0</Height>
+                      </size>
+                    </ButtonEditDefinition>
+                    <panel name="Panel2">
+                      <caption>Panel2</caption>
+                      <controls>
+                        <CheckEdit name="CheckEditDeletePulls">
+                          <caption>Pulls löschen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                        <radiobutton name="RbDeleteAllPulls">
+                          <caption>Alle Pulls</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <radiobutton name="RbDeleteOnePull">
+                          <width>84</width>
+                          <caption>Pull Nummer</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <SpinEditDefinition name="SeDeletePullNumber">
+                          <location>
+                            <x>132</x>
+                            <y>55</y>
+                          </location>
+                        </SpinEditDefinition>
+                      </controls>
+                    </panel>
+                    <panel name="Panel3">
+                      <caption>Panel3</caption>
+                      <controls>
+                        <radiobutton name="RbDeleteAllEvents">
+                          <caption>Alle Ereignisse</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <radiobutton name="RbDeleteOneEvent">
+                          <width>109</width>
+                          <caption>Ereignis Nummer</caption>
+                          <radiogroupindex>0</radiogroupindex>
+                          <CheckAlign>Left</CheckAlign>
+                        </radiobutton>
+                        <SpinEditDefinition name="SeDeleteEventNumber">
+                          <location>
+                            <x>157</x>
+                            <y>56</y>
+                          </location>
+                        </SpinEditDefinition>
+                        <CheckEdit name="CheckEditDeleteEvents">
+                          <caption>Ereignisse löschen</caption>
+                          <CheckAlign>Left</CheckAlign>
+                        </CheckEdit>
+                      </controls>
+                    </panel>
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+            <tabcontrol name="TabControlProperties">
+              <caption>TabControl2</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="TabPagePull">
+                  <caption>Pull Eigenschaften</caption>
+                  <controls>
+                    <unboundgridcontrol name="PullPropertiesGrid">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns />
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </tabpage>
+                <tabpage name="TabPageEvent">
+                  <caption>Event Eigenschaften</caption>
+                  <controls>
+                    <unboundgridcontrol name="EventPropertiesDataGrid">
+                      <showbuttons>false</showbuttons>
+                      <autosizecolumns>false</autosizecolumns>
+                      <MultiSelect>false</MultiSelect>
+                      <showiconcolumn>false</showiconcolumn>
+                      <showindicator>false</showindicator>
+                      <showhorzlines>false</showhorzlines>
+                      <showvertlines>false</showvertlines>
+                      <allowsort>false</allowsort>
+                      <fixedcolumns>0</fixedcolumns>
+                      <gridcolumns />
+                      <readonly>false</readonly>
+                      <supportedoperations>None</supportedoperations>
+                      <defaultview>Horizontal</defaultview>
+                    </unboundgridcontrol>
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </panel>
+        <panel name="PanelButton">
+          <caption>Panel6</caption>
+          <controls>
+            <ActionButtonDefinition name="CloseButton">
+              <caption>Schli&amp;eßen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+          </controls>
+        </panel>
+        <groupbox name="TopBox">
+          <caption>Zellen auswählen</caption>
+          <controls>
+            <panel name="PanelStorage">
+              <caption>Panel6</caption>
+              <controls>
+                <unboundgridcontrol name="MatrixGrid">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns />
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </unboundgridcontrol>
+                <ButtonEditDefinition name="ButtonInvertGrid">
+                  <location>
+                    <x>410</x>
+                    <y>11</y>
+                  </location>
+                  <width>85</width>
+                  <tooltip>Invert the item selection</tooltip>
+                  <caption>Invertieren</caption>
+                  <size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </size>
+                </ButtonEditDefinition>
+                <label name="MatrixLabel">
+                  <caption>Lagerbedingung und Lagerzeit</caption>
+                </label>
+              </controls>
+            </panel>
+            <panel name="PanelOrientation">
+              <caption>Panel7</caption>
+              <controls>
+                <ButtonEditDefinition name="ButtonInvertOrientation">
+                  <location>
+                    <x>150</x>
+                    <y>11</y>
+                  </location>
+                  <width>85</width>
+                  <tooltip>Invert the item selection</tooltip>
+                  <caption>Invertieren</caption>
+                  <size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </size>
+                </ButtonEditDefinition>
+                <unboundgridcontrol name="OrientationSelectionGrid">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns />
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </unboundgridcontrol>
+                <label name="OrientationLabel">
+                  <caption>Orientierungen</caption>
+                </label>
+              </controls>
+            </panel>
+            <panel name="PanelPackaging">
+              <caption>Panel8</caption>
+              <controls>
+                <ButtonEditDefinition name="ButtonInvertPackaging">
+                  <location>
+                    <x>149</x>
+                    <y>11</y>
+                  </location>
+                  <width>85</width>
+                  <tooltip>Invert the item selection</tooltip>
+                  <caption>Invertieren</caption>
+                  <size>
+                    <Width>0</Width>
+                    <Height>0</Height>
+                  </size>
+                </ButtonEditDefinition>
+                <unboundgridcontrol name="PackagingSelectionGrid">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns />
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </unboundgridcontrol>
+                <label name="PackagingLabel">
+                  <caption>Packmittel</caption>
+                </label>
+              </controls>
+            </panel>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

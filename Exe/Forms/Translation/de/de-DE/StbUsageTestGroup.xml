@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <components>
+        <stringtable name="StringTable">
+          <stringentries>
+            <stringentry name="ViewArticle">
+              <value>Artikel Anzeigen</value>
+            </stringentry>
+            <stringentry name="ViewTemplate">
+              <value>Template Anzeigen</value>
+            </stringentry>
+            <stringentry name="ViewStudy">
+              <value>Studie Anzeigen</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <prompt name="ApprovalStatus">
+          <caption>Freigabe Status</caption>
+        </prompt>
+        <prompt name="Version">
+          <tooltip>Version number of the Product Id</tooltip>
+          <caption>Version</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="Name">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="SpecsPage">
+      <caption>Studien Templates</caption>
+      <components>
+        <stringtable name="TemplateParams">
+          <stringentries>
+            <stringentry name="TemplateProperties">
+              <value>StbStudyTemplateName,Identity,StudyTemplateVersion,ReportingName,GroupId,Description,LabManager,StudyDirector,ProjectId,Article,UseHighestApprVersion,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="TemplateNames">
+              <value>Name,Identität,Version,Reporting Name,Gruppe,Beschreibung,Laborleiter,Studiendirektor,Projekt,Artikel,Verwende Höchste Version,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="TemplatePackagingProperties">
+              <value>Packaging,PackagingType</value>
+            </stringentry>
+            <stringentry name="TemplatePackagingNames">
+              <value>Packmittel,Packmittel-Typ</value>
+            </stringentry>
+            <stringentry name="DisplayTemplateOption">
+              <value>28746</value>
+            </stringentry>
+            <stringentry name="DisplayTemplateText">
+              <value>Template Anzeigen</value>
+            </stringentry>
+            <stringentry name="TemplatePullProperties">
+              <value>PackagingSystem,PackagingType,Orientation,StorageCondition,StorageTime,ItemNumber,OptionalPull,TestingSite,PullType</value>
+            </stringentry>
+            <stringentry name="TemplatePullNames">
+              <value>Packmittel System,Packmittel-Typ,Orientierung,Lagerungsbedingung,Lagerzeit,Element Nummer,Optionaler Pull,Prüflabor,Pull Typ</value>
+            </stringentry>
+            <stringentry name="EntityNameTemplate">
+              <value>Studien Template</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <splitter name="SpecSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="SpecRightPanel">
+          <controls>
+            <datagridcontrol name="TemplateProperties">
+              <caption>Eigenschaften</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns />
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </panel>
+        <panel name="SpecLeftPanel">
+          <controls>
+            <simpletreelist name="TemplateTree">
+              <caption>Studien Templates</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+    <form name="PageTestGroup">
+      <caption>Studies</caption>
+      <components>
+        <stringtable name="StudyParams">
+          <stringentries>
+            <stringentry name="StudyProperties">
+              <value>StbStudyName,Identity,StudyVersion,ReportingName,GroupId,Description,LabManager,StudyDirector,ProjectId,Article,UseHighestApprVersion,ApprovalStatus,StudyStatus</value>
+            </stringentry>
+            <stringentry name="StudyNames">
+              <value>Name,Identität,Version,Reporting Name,Gruppe,Beschreibung,Laborleiter,Studiendirektor,Projekt,Artikel,Verwende Höchste Version,Freigabe Status,Studien Status</value>
+            </stringentry>
+            <stringentry name="StudyPackagingProperties">
+              <value>Packaging,LotId,JobId,OrigPackagingType</value>
+            </stringentry>
+            <stringentry name="StudyPackagingNames">
+              <value>Packmittel,Los,Auftrag,Quelltyp</value>
+            </stringentry>
+            <stringentry name="StudyPullProperties">
+              <value>PackagingSystem,Orientation,StorageCondition,StorageTime,ItemNumber,OptionalPull,TestingSite,PullType</value>
+            </stringentry>
+            <stringentry name="StudyPullNames">
+              <value>Packmittel System,Packmittel-Typ,Orientierung,Lagerungsbedingung,Lagerzeit,Element Nummer,Optionaler Pull,Prüflabor,Pull Typ</value>
+            </stringentry>
+            <stringentry name="DisplayStudyOption">
+              <value>28788</value>
+            </stringentry>
+            <stringentry name="DisplayStudyText">
+              <value>Studie Anzeigen</value>
+            </stringentry>
+            <stringentry name="EntityNameStudy">
+              <value>Studie</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <splitter name="TestGroupSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="TestGroupRightPanel">
+          <caption>Panel2</caption>
+          <controls>
+            <datagridcontrol name="StudyProperties">
+              <caption>Eigenschaften</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns />
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </panel>
+        <panel name="TestGroupLeftPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <simpletreelist name="StudyTree">
+              <caption>Studien</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

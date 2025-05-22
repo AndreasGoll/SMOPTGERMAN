@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ABlankOverageIsNotAllowed" xml:space="preserve">
+    <value>Eine leere Reserve ist nicht zulässig</value>
+  </data>
+  <data name="AllConditions" xml:space="preserve">
+    <value>(Alle Bedingungen)</value>
+  </data>
+  <data name="AllOrientations" xml:space="preserve">
+    <value>(Alle Orientierungen)</value>
+  </data>
+  <data name="AllPackagings" xml:space="preserve">
+    <value>(Alle Packmittel)</value>
+  </data>
+  <data name="ALotMustBeEntered" xml:space="preserve">
+    <value>Es muss eine Charge eingegeben werden</value>
+  </data>
+  <data name="ALotMustBeEnteredBecauseOfFinalTimePoint" xml:space="preserve">
+    <value>Es muss eine Charge eingegeben werden, da ein finaler Zeitpunkt für die Studie definiert ist.</value>
+  </data>
+  <data name="AmountInContainer" xml:space="preserve">
+    <value>Behälter</value>
+  </data>
+  <data name="AmountInTestGroupChangedPleaseUpdate" xml:space="preserve">
+    <value>Betrag in Testgruppe (n) hat sich geändert - bitte aktualisieren Sie die Pull-Daten</value>
+  </data>
+  <data name="AmountInTestGroupChangedPullWillBeUpdated" xml:space="preserve">
+    <value>Betrag in Testgruppe (n) hat sich geändert - Pull-Daten werden aktualisiert</value>
+  </data>
+  <data name="AndCalcAllDueDates" xml:space="preserve">
+    <value>und alle Fälligkeitstermine berechnen?</value>
+  </data>
+  <data name="AndCondition" xml:space="preserve">
+    <value>und Zustand</value>
+  </data>
+  <data name="ANegativeOverageIsNotAllowed" xml:space="preserve">
+    <value>Ein negativer Überschuss ist nicht zulässig</value>
+  </data>
+  <data name="AnOrientationMustBeSelected" xml:space="preserve">
+    <value>Eine Orientierung muss ausgewählt werden</value>
+  </data>
+  <data name="APackagingMustBeSelected" xml:space="preserve">
+    <value>Ein Packmittel muss ausgewählt werden</value>
+  </data>
+  <data name="AssignSampleErrorHeader" xml:space="preserve">
+    <value>Probe kann nicht zugeordnet werden</value>
+  </data>
+  <data name="AssignSampleInvalid" xml:space="preserve">
+    <value>Ungültiger Pull oder Probe bereits zugewiesen.</value>
+  </data>
+  <data name="AStorageDateMustBeEntered" xml:space="preserve">
+    <value>Ein Speicherdatum muss eingegeben werden</value>
+  </data>
+  <data name="AxisXTitle" xml:space="preserve">
+    <value>Zeitpunkt (Monate)</value>
+  </data>
+  <data name="BusyCalender" xml:space="preserve">
+    <value>Hinzufügen von Zellen zum Kalender</value>
+  </data>
+  <data name="BusyProcess" xml:space="preserve">
+    <value>Zellen verarbeiten.</value>
+  </data>
+  <data name="CancelPicklist" xml:space="preserve">
+    <value>Möchten Sie die Entnahmeliste stornieren?</value>
+  </data>
+  <data name="CancelPicklistError" xml:space="preserve">
+    <value>Die Entnahmeliste wurden berits bearbeitet. Die Entnahmeliste kann nicht storniert werden.</value>
+  </data>
+  <data name="CellErrorEvent" xml:space="preserve">
+    <value>Fehler beim Verarbeiten des Ereignisses &apos;{0}&apos; gefunden.</value>
+  </data>
+  <data name="CellErrorEventNull" xml:space="preserve">
+    <value>Der im Verarbeitungsereignis gefundene Fehler ist null.</value>
+  </data>
+  <data name="CellErrorLink" xml:space="preserve">
+    <value>Fehler bei der Verarbeitung der verknüpften Studie &apos;{0}&apos; gefunden.</value>
+  </data>
+  <data name="CellErrorLinkNotStarted" xml:space="preserve">
+    <value>Verknüpfte Studie &apos;{0}&apos; hat den falschen Status &apos;{1}&apos; nicht gestartet.</value>
+  </data>
+  <data name="CellErrorLinkNull" xml:space="preserve">
+    <value>Der in der verknüpften Sudie für die Verarbeitung gefundene Fehler ist null.</value>
+  </data>
+  <data name="CellErrorPostProcess" xml:space="preserve">
+    <value>Fehler in der Nachbearbeitung für Ereignis &apos;{0}&apos; gefunden.</value>
+  </data>
+  <data name="CellErrorPull" xml:space="preserve">
+    <value>Fehler beim Verarbeiten von Pull &apos;{0}&apos; gefunden.</value>
+  </data>
+  <data name="CellErrorPullNoSample" xml:space="preserve">
+    <value>Probe nicht erstellt.</value>
+  </data>
+  <data name="CellErrorTemplateNull" xml:space="preserve">
+    <value>Entitätsvorlage nicht gefunden.</value>
+  </data>
+  <data name="CellErrorWorkflow" xml:space="preserve">
+    <value>Fehler im Workflow &apos;{0}&apos; gefunden.</value>
+  </data>
+  <data name="CellErrorWorkflowNull" xml:space="preserve">
+    <value>Workflow nicht gefunden.</value>
+  </data>
+  <data name="ChangeFinalTimePoint" xml:space="preserve">
+    <value>Wenn Sie zu &quot;Endzeitpunkt&quot; wechseln, wird die Zeit in Tagen / Monat gelöscht. Ändern?</value>
+  </data>
+  <data name="ChangeSettingUseHighestApprovedVersion" xml:space="preserve">
+    <value>Durch Ändern der Einstellung &quot;Höchste genehmigte Version verwenden&quot; wird möglicherweise die in den Pull-Zellen definierte erforderliche Menge geändert. Ändern?</value>
+  </data>
+  <data name="ChangeSettingUsePackagingTypeDeleteDepData" xml:space="preserve">
+    <value>Durch Ändern der Einstellung &quot;Packmitteltyp verwenden&quot; werden alle abhängigen Daten gelöscht. Ändern?</value>
+  </data>
+  <data name="ChartTitle" xml:space="preserve">
+    <value>Chart Titel</value>
+  </data>
+  <data name="CompletePicklist" xml:space="preserve">
+    <value>Möchten Sie die Bearbeitung beenden?</value>
+  </data>
+  <data name="CompleteStorage" xml:space="preserve">
+    <value>Einlagerung abschließen</value>
+  </data>
+  <data name="Condition" xml:space="preserve">
+    <value>Bedingung</value>
+  </data>
+  <data name="ConfidenceLinesTooFewPoints" xml:space="preserve">
+    <value>Konfidenzlinien können nur mit mehr als 2 Punkten berechnet werden.</value>
+  </data>
+  <data name="Container" xml:space="preserve">
+    <value>Behälter</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Fortfahren ?</value>
+  </data>
+  <data name="CopyMatrixTo" xml:space="preserve">
+    <value>Matrix - Kopieren -</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Anzahl</value>
+  </data>
+  <data name="CriticalIssuesExistGoToValidateionPage" xml:space="preserve">
+    <value>Die Studienvorlage kann nicht gespeichert werden, da kritische Validierungsprobleme vorliegen. Zur Validierungsseite wechseln?</value>
+  </data>
+  <data name="CriticalStudyIssuesExistGoToValidateionPage" xml:space="preserve">
+    <value>Die Studie kann nicht gespeichert werden, da kritische Validierungsprobleme vorliegen. Zur Validierungsseite wechseln?</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Aktuell</value>
+  </data>
+  <data name="DataSuccessfullyAdded" xml:space="preserve">
+    <value>Daten erfolgreich hinzugefügt</value>
+  </data>
+  <data name="DataSuccessfullyCopied" xml:space="preserve">
+    <value>Daten erfolgreich kopiert</value>
+  </data>
+  <data name="DataSuccessfullyDeleted" xml:space="preserve">
+    <value>Daten erfolgreich gelöscht</value>
+  </data>
+  <data name="DeleteTheCondition" xml:space="preserve">
+    <value>Bedingung löschen</value>
+  </data>
+  <data name="DeleteTheCondition2" xml:space="preserve">
+    <value> wird auch alle abhängigen Daten löschen - Löschen?</value>
+  </data>
+  <data name="DeleteTheOrientation" xml:space="preserve">
+    <value>Orientierung löschen</value>
+  </data>
+  <data name="DeleteTheOrientation2" xml:space="preserve">
+    <value> wird auch alle abhängigen Daten löschen - Löschen?</value>
+  </data>
+  <data name="DeleteThePackaging" xml:space="preserve">
+    <value>Packmittel löschen</value>
+  </data>
+  <data name="DeleteThePackaging2" xml:space="preserve">
+    <value> wird auch alle abhängigen Daten löschen - Löschen?</value>
+  </data>
+  <data name="DeleteTheTimePoint" xml:space="preserve">
+    <value>Zeitpunkt löschen</value>
+  </data>
+  <data name="DeleteTheTimePoint2" xml:space="preserve">
+    <value> wird auch alle abhängigen Daten löschen - Löschen?</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="DisposedByMustBeEntered" xml:space="preserve">
+    <value>Entsorgt von muss eingegeben werden</value>
+  </data>
+  <data name="DisposedOnMustBeEntered" xml:space="preserve">
+    <value>Entsorgt am muss eingegeben werden</value>
+  </data>
+  <data name="DoYouWantToCompleteTheStorageForOrient" xml:space="preserve">
+    <value>Möchten Sie den Speicher zur Orientierung vervollständigen?</value>
+  </data>
+  <data name="DoYouWantToCompleteThisStorageAndCalc" xml:space="preserve">
+    <value>Möchten Sie die Einlagerung abschließen und alle Fälligkeitstermine berechnen?</value>
+  </data>
+  <data name="EnterALocationForThisCondition" xml:space="preserve">
+    <value>Geben Sie einen Standort für diese Lagerbedingung ein</value>
+  </data>
+  <data name="EnteredAmountIsIncorrect" xml:space="preserve">
+    <value>Der eingegebene Betrag ist falsch - Der Wert muss größer als 0 sein</value>
+  </data>
+  <data name="EnteredNumberOfLabelsIsIncorrect" xml:space="preserve">
+    <value>Die eingegebene Anzahl der Etiketten ist falsch - muss zwischen 0 und 50 liegen</value>
+  </data>
+  <data name="EntityTemplate" xml:space="preserve">
+    <value>Entitätenvorlage</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="ErrorInDefinitionOfCondition" xml:space="preserve">
+    <value>Fehler in der Definition der Lagerbedingung</value>
+  </data>
+  <data name="ErrorInDefinitionOfOrientation" xml:space="preserve">
+    <value>Fehler in der Orientierungsdefinition</value>
+  </data>
+  <data name="ErrorInDefinitionOfPackaging" xml:space="preserve">
+    <value>Fehler in der Packmitteldefinition</value>
+  </data>
+  <data name="ErrorInDefinitionOfTimePoint" xml:space="preserve">
+    <value>Fehler in der Lagerzeitdefinition</value>
+  </data>
+  <data name="FormulaMustReturnInteger" xml:space="preserve">
+    <value>Es wird erwartet, dass die Formel einen ganzzahligen Wert zurückgibt</value>
+  </data>
+  <data name="ForTheAnalysisNoActiveVersionExist" xml:space="preserve">
+    <value>Für die Analyse {0} existiert keine aktive Version</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informationen</value>
+  </data>
+  <data name="Initial" xml:space="preserve">
+    <value>Initial</value>
+  </data>
+  <data name="Initials" xml:space="preserve">
+    <value>Initiale Proben</value>
+  </data>
+  <data name="InSelectedPackagingOrientationPullsExist" xml:space="preserve">
+    <value>Zellenelemente sind in den Zielzellen vorhanden. Diese Daten werden gelöscht. Trotzdem kopieren?</value>
+  </data>
+  <data name="IsLessThanContainersPlanned" xml:space="preserve">
+    <value>ist weniger als die geplanten Container.</value>
+  </data>
+  <data name="IsLessThanCountPlanned" xml:space="preserve">
+    <value>ist weniger als die geplante Anzahl.</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="ItemNumberGreaterZero" xml:space="preserve">
+    <value>Die Artikelnummer muss größer als Null sein</value>
+  </data>
+  <data name="LinkedStudyCannotBeStartedManually" xml:space="preserve">
+    <value>Diese Studie ist eine verknüpfte Studie und kann nicht manuell gestartet werden</value>
+  </data>
+  <data name="LocationMustBeEntered" xml:space="preserve">
+    <value>Ein Standort muss eingegeben werden</value>
+  </data>
+  <data name="LotHasNoExpiryDateButStudyHasFinalTimePoint" xml:space="preserve">
+    <value>Die ausgewählte Charge hat kein Ablaufdatum, ist jedoch in der Studie ein finaler Zeitpunkt. Für die Berechnung des Fälligkeitsdatums wird ein Ablaufdatum benötigt.</value>
+  </data>
+  <data name="LotmustBeEnteredBecauseOfFinalTimePoint" xml:space="preserve">
+    <value>Es muss eine Charge eingegeben werden, da es einen finalen Zeitpunkt in der Studie gibt</value>
+  </data>
+  <data name="LotUnitAndStudyUnitAreNotConvertible" xml:space="preserve">
+    <value>Mengeneiheit der Charge&gt; {0} &lt;und der Studie &gt; {1} &lt; sind nicht konvertierbar</value>
+  </data>
+  <data name="ManualAllocationTitle" xml:space="preserve">
+    <value>Manuelle Zuordnung</value>
+  </data>
+  <data name="ManualAllocCommentMustBeEntered" xml:space="preserve">
+    <value>Es muss ein Kommentar eingegeben werden</value>
+  </data>
+  <data name="ManualAllocContainerLargerThanAvailable" xml:space="preserve">
+    <value>Die Anzahl der zugewiesenen Container darf nicht größer sein als die verfügbaren Container</value>
+  </data>
+  <data name="ManualAllocContainerLargerThanRequiredForCompletion" xml:space="preserve">
+    <value>Die Anzahl der zugewiesenen Container darf nicht größer sein als die für den Abschluss der Studie erforderliche Anzahl</value>
+  </data>
+  <data name="ManualAllocContainersLargerThanStored" xml:space="preserve">
+    <value>Die Anzahl der zugewiesenen Container darf nicht größer sein als die der gespeicherten Container</value>
+  </data>
+  <data name="ManualAllocCountLargerThanAvailable" xml:space="preserve">
+    <value>Die zugewiesene Anzahl kann nicht größer sein als die verfügbare Anzahl</value>
+  </data>
+  <data name="ManualAllocCountLargerThanRequiredForCompletion" xml:space="preserve">
+    <value>Die zugewiesene Anzahl darf nicht größer sein als die für den Abschluss der Studie erforderliche Anzahl</value>
+  </data>
+  <data name="ManualAllocCountLargerThanStored" xml:space="preserve">
+    <value>Die zugewiesene Anzahl darf nicht größer sein als die gespeicherte Anzahl</value>
+  </data>
+  <data name="ManualAllocErrorCreatingRecord" xml:space="preserve">
+    <value>Bitte wählen Sie einen Initialen Pull.</value>
+  </data>
+  <data name="ManualAllocErrorProblemToCompleteStudy" xml:space="preserve">
+    <value>Die angegebene Menge ist höher als die für den Abschluss der Studie erforderliche Menge. Trotzdem entnehmen?</value>
+  </data>
+  <data name="ManualAllocErrorTitle" xml:space="preserve">
+    <value>Manueller Zuordnungsfehler</value>
+  </data>
+  <data name="ReconcileErrorTitle" xml:space="preserve">
+    <value>Inventarfehler abgleichen</value>
+  </data>
+  <data name="ManualAllocNothingallocated" xml:space="preserve">
+    <value>Es wurde keine Menge eingegeben.</value>
+  </data>
+  <data name="ManualAllocPullDateMustBeEntered" xml:space="preserve">
+    <value>Ein Pull-Datum muss eingegeben werden</value>
+  </data>
+  <data name="ManualAllocPulledByMustBeEntered" xml:space="preserve">
+    <value>Entnommen von muss einen Eintrag enthalten</value>
+  </data>
+  <data name="ManualAllocStorageNotComplete" xml:space="preserve">
+    <value>Speicherung nicht abgeschlossen, Zuordnung nicht möglich</value>
+  </data>
+  <data name="ReconcileStorageNotComplete" xml:space="preserve">
+    <value>Speicherung nicht abgeschlossen, Abgleich nicht möglich</value>
+  </data>
+  <data name="MoveInventoryStorageNotComplete" xml:space="preserve">
+    <value>Speicherung nicht abgeschlossen, Inventar verschieben nicht möglich</value>
+  </data>
+  <data name="RelocateInventoryStorageNotComplete" xml:space="preserve">
+    <value>Speicherung nicht abgeschlossen, Inventar verschieben nicht möglich</value>
+  </data>
+  <data name="Market" xml:space="preserve">
+    <value>Markt</value>
+  </data>
+  <data name="MarketNotDefined" xml:space="preserve">
+    <value>Dieser Markt ist in den Packmittel-MLPs nicht definiert</value>
+  </data>
+  <data name="MoveConfirm" xml:space="preserve">
+    <value>Möchten Sie das Inventar verschieben?</value>
+  </data>
+  <data name="MoveErrorHeader" xml:space="preserve">
+    <value>Fehler beim verschieben</value>
+  </data>
+  <data name="RelocateErrorHeader" xml:space="preserve">
+    <value>Inventarfehler verschieben</value>
+  </data>
+  <data name="MoveErrorNoTargetPart1" xml:space="preserve">
+    <value>Es ist nur ein Standort für die Lagerbedingung definiert</value>
+  </data>
+  <data name="MoveErrorNoTargetPart2" xml:space="preserve">
+    <value>Bewegen ist nicht möglich</value>
+  </data>
+  <data name="MoveErrorOneLocationOnly" xml:space="preserve">
+    <value>Alle ausgewählten Datensätze müssen denselben anfänglichen Standort haben</value>
+  </data>
+  <data name="MoveHeader" xml:space="preserve">
+    <value>Inventar bewegen</value>
+  </data>
+  <data name="MoveInventoryTitle" xml:space="preserve">
+    <value>Inventar bewegen</value>
+  </data>
+  <data name="MustBeStringOrBoolean" xml:space="preserve">
+    <value>muss string oder boolean sein.</value>
+  </data>
+  <data name="NameAlreadyExists" xml:space="preserve">
+    <value>Name existiert bereits</value>
+  </data>
+  <data name="NeedRefreshMatrixCellsWereModified" xml:space="preserve">
+    <value>Aktualisierung erforderlich: Matrixzellen wurden geändert</value>
+  </data>
+  <data name="NewerVersionOfTestGroupChangedPleaseUpdate" xml:space="preserve">
+    <value>Neuere Version für Testgruppe(n) gefunden - bitte aktualisieren Sie die Pull-Daten</value>
+  </data>
+  <data name="NoDataPoints" xml:space="preserve">
+    <value>Keine Daten zum Anzeigen.</value>
+  </data>
+  <data name="NodeCalculateDueDatesCategory" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="NodeCalculateDueDatesDescription" xml:space="preserve">
+    <value>Berechnen Sie die Fälligkeitstermine für Stabilitätsstudienzellen.</value>
+  </data>
+  <data name="NodeCalculateDueDatesFormatName" xml:space="preserve">
+    <value>Fälligkeitstermine berechnen</value>
+  </data>
+  <data name="NodeCalculateDueDatesName" xml:space="preserve">
+    <value>Fälligkeitstermine berechnen</value>
+  </data>
+  <data name="NoEvents" xml:space="preserve">
+    <value>Keine Ereignisse</value>
+  </data>
+  <data name="NoIntersectionPoints" xml:space="preserve">
+    <value>Keine Schnittpunkte gefunden.</value>
+  </data>
+  <data name="NoLinkedStudyAvailable" xml:space="preserve">
+    <value>Nicht verfügbar</value>
+  </data>
+  <data name="NoLinkedStudyTemplate" xml:space="preserve">
+    <value>Keine Links</value>
+  </data>
+  <data name="NoMLPLimits" xml:space="preserve">
+    <value>Kein MLP-Level zum Zeichnen von Grenzwertlinien festgelegt.</value>
+  </data>
+  <data name="NoPulls" xml:space="preserve">
+    <value>Keine Pulls</value>
+  </data>
+  <data name="NoPullsOrSubstudiesExist" xml:space="preserve">
+    <value>Es gibt keine Pulls oder verknüpften Studien</value>
+  </data>
+  <data name="NoStorageItemSelected" xml:space="preserve">
+    <value>Bitte wählen Sie ein eingelagertes Objekt</value>
+  </data>
+  <data name="NotCalculable" xml:space="preserve">
+    <value>n.c.</value>
+  </data>
+  <data name="NumPullLabels" xml:space="preserve">
+    <value>Anzahl der Etiketten</value>
+  </data>
+  <data name="OneConditionMustSelected" xml:space="preserve">
+    <value>Es muss mindestens eine Lagerbedingung / Lagerzeit ausgewählt werden</value>
+  </data>
+  <data name="OneOrientationMustSelected" xml:space="preserve">
+    <value>Es muss mindestens eine Orientierung ausgewählt werden</value>
+  </data>
+  <data name="OnePackagingMustSelected" xml:space="preserve">
+    <value>Es muss mindestens ein Packmittel ausgewählt werden</value>
+  </data>
+  <data name="OptionalPulls" xml:space="preserve">
+    <value>Optionaler Probenzug</value>
+  </data>
+  <data name="OrientationGridColumnOrientation" xml:space="preserve">
+    <value>Orientierung</value>
+  </data>
+  <data name="PackagingGridColumnPackaging" xml:space="preserve">
+    <value>Packmittel</value>
+  </data>
+  <data name="PleaseCheckTheComments" xml:space="preserve">
+    <value>Kommentare konnten nicht eindeutig vergeben werden, bitte überprüfen Sie die Kommentare</value>
+  </data>
+  <data name="PleaseDefineAllStudyPackagings" xml:space="preserve">
+    <value>Bitte definieren Sie alle Packmittel</value>
+  </data>
+  <data name="PleaseEnterATemplateIdFirst" xml:space="preserve">
+    <value>Bitte geben Sie zuerst eine Vorlagen-ID ein!</value>
+  </data>
+  <data name="PleaseSelectAnItemNumner" xml:space="preserve">
+    <value>Bitte wählen Sie eine &apos;Artikelnummer&apos;</value>
+  </data>
+  <data name="PleaseSelectAnOption" xml:space="preserve">
+    <value>Bitte wählen Sie &quot;Pull-Eigenschaften kopieren&quot; und / oder &quot;Ereigniseigenschaften kopieren&quot;.</value>
+  </data>
+  <data name="PleaseSelectAnOrientation" xml:space="preserve">
+    <value>Bitte wählen Sie eine Orientierung</value>
+  </data>
+  <data name="PleaseSelectAPackaging" xml:space="preserve">
+    <value>Bitte wählen Sie ein Packmittel</value>
+  </data>
+  <data name="PleaseSelectPullAndOrEvent" xml:space="preserve">
+    <value>Bitte wählen Sie &quot;Pulls hinzufügen&quot; und / oder &quot;Ereignisse hinzufügen&quot;.</value>
+  </data>
+  <data name="PleaseSelectPullAndOrEventToDelete" xml:space="preserve">
+    <value>Bitte wählen Sie &quot;Pulls löschen&quot; und / oder &quot;Ereignisse löschen&quot;.</value>
+  </data>
+  <data name="PointsReachInfinity" xml:space="preserve">
+    <value>Beide Schnittpunkte erreichten unendlich.</value>
+  </data>
+  <data name="ProvideUserCalc" xml:space="preserve">
+    <value>Bitte geben Sie eine Inventarbenutzerberechnung an</value>
+  </data>
+  <data name="PullNumberGreaterZero" xml:space="preserve">
+    <value>Die Pull-Nummer muss größer als Null sein</value>
+  </data>
+  <data name="PullType" xml:space="preserve">
+    <value>Art des Ziehens</value>
+  </data>
+  <data name="RawResultToolTip" xml:space="preserve">
+    <value>Dies gibt 0 zurück, wenn keine Konvertierung in eine Zahl möglich ist.</value>
+  </data>
+  <data name="ReconsileInventoryTitle" xml:space="preserve">
+    <value>Inventar abgleichen</value>
+  </data>
+  <data name="Refreshed" xml:space="preserve">
+    <value>Erfrischt</value>
+  </data>
+  <data name="ReleaseLifeSpecNotCompatible" xml:space="preserve">
+    <value>Die ausgewählte Release-Spezifikation &apos;{0}&apos; Version &apos;{1}&apos; stimmt nicht mit der im Artikel definierten Spezifikation überein ({2}, Version {3}).</value>
+  </data>
+  <data name="RelocateErrorNoTargetPart1" xml:space="preserve">
+    <value>Für die Studie &apos;{0}&apos;, das Packmittel &apos;{1}&apos; und die Orientierung &apos;{2}&apos; ist nur ein Ort definiert. Umzug nicht möglich.</value>
+  </data>
+  <data name="RelocateErrorOneLocationOnly" xml:space="preserve">
+    <value>Alle ausgewählten Geschäftsdatensätze müssen denselben anfänglichen Speicherort haben</value>
+  </data>
+  <data name="RelocateInventoryTitle" xml:space="preserve">
+    <value>Inventar verschieben</value>
+  </data>
+  <data name="RelocationConfirm" xml:space="preserve">
+    <value>Möchten Sie das Inventar verschieben?</value>
+  </data>
+  <data name="RelocationErrorHeader" xml:space="preserve">
+    <value>Fehler beim Verschieben</value>
+  </data>
+  <data name="RelocationHeader" xml:space="preserve">
+    <value>Inventar verschieben</value>
+  </data>
+  <data name="ReportButton" xml:space="preserve">
+    <value>Bericht</value>
+  </data>
+  <data name="ReserveContainerStoredIsZeroButReserveCountStoredIsNot" xml:space="preserve">
+    <value>Gespeicherte Reservecontainer = 0, gespeicherte Reservezähler jedoch nicht</value>
+  </data>
+  <data name="ReserveCountStoredIsZeroButReserveContainerStoredIsNot" xml:space="preserve">
+    <value>Anzahl Reserven = 0, Reservecontainer jedoch nicht</value>
+  </data>
+  <data name="ReserveSamplesContainer" xml:space="preserve">
+    <value>Container reservieren</value>
+  </data>
+  <data name="ReserveSamplesCount" xml:space="preserve">
+    <value>Reservenanzahl</value>
+  </data>
+  <data name="SampleWorkflow" xml:space="preserve">
+    <value>Probenworkflow</value>
+  </data>
+  <data name="SelfLifeSpecNotCompatible" xml:space="preserve">
+    <value>Die ausgewählte Self Live-Spezifikation &apos;{0}&apos; Version &apos;{1}&apos; stimmt nicht mit der im Artikel definierten Spezifikation überein ({2}, Version {3}).</value>
+  </data>
+  <data name="ShouldGMPUpdated" xml:space="preserve">
+    <value>Wenn Sie zu GMP wechseln, werden die ausgewählten Märkte gelöscht. Ändern?</value>
+  </data>
+  <data name="SourceAndTargetAreTheSame" xml:space="preserve">
+    <value>Quelle und Ziel sind gleich und können nicht kopiert werden</value>
+  </data>
+  <data name="StorageDateMustBeEntered" xml:space="preserve">
+    <value>Ein Speicherdatum muss eingegeben werden</value>
+  </data>
+  <data name="StorageLocationMustBeEntered" xml:space="preserve">
+    <value>Der Speicherort muss eingegeben werden</value>
+  </data>
+  <data name="StoredByMustBeEntered" xml:space="preserve">
+    <value>Gespeichert von muss eingegeben werden</value>
+  </data>
+  <data name="StoredContainerIsZeroButStoredCountIsNot" xml:space="preserve">
+    <value>Gespeicherte Container sind 0, gespeicherte Count jedoch nicht</value>
+  </data>
+  <data name="StoredContainersForOrientation" xml:space="preserve">
+    <value>Gespeicherte Container zur Orientierung</value>
+  </data>
+  <data name="StoredContainersIsZeroWarning" xml:space="preserve">
+    <value>Gespeicherte Container sind Null</value>
+  </data>
+  <data name="StoredContainersTotalIsLessThanContainersPlanned" xml:space="preserve">
+    <value>Die Gesamtzahl der gespeicherten Container ({0}) ist geringer als die Gesamtzahl der geplanten Container ({1}).</value>
+  </data>
+  <data name="StoredCountForOrientation" xml:space="preserve">
+    <value>Gespeicherte Anzahl zur Orientierung</value>
+  </data>
+  <data name="StoredCountIsZeroButStoredContainerIsNot" xml:space="preserve">
+    <value>Gespeicherte Anzahl = 0, gespeicherte Container jedoch nicht</value>
+  </data>
+  <data name="StoredCountIsZeroWarning" xml:space="preserve">
+    <value>Gespeicherte Anzahl ist Null</value>
+  </data>
+  <data name="StoredCountTotalIsLargerThanLotQuantity" xml:space="preserve">
+    <value>Die gespeicherte Gesamtzahl ({0}) ist größer als die verfügbare Menge der Charge ({1}).</value>
+  </data>
+  <data name="StoredCountTotalIsLessThanCountPlanned" xml:space="preserve">
+    <value>Die gespeicherte Gesamtzahl ({0}) ist geringer als die geplante Gesamtzahl ({1}).</value>
+  </data>
+  <data name="StoredCountTotalPlusInitialCountPlannedIsLargerThanLotQuantity" xml:space="preserve">
+    <value>Die gespeicherte Gesamtzahl plus die ursprünglich geplante Anzahl ({0}) ist größer als die verfügbare Menge der Charge ({1}).</value>
+  </data>
+  <data name="Study" xml:space="preserve">
+    <value>Studie</value>
+  </data>
+  <data name="StudyErrorVersion" xml:space="preserve">
+    <value>Fehler gefunden : Die Studie hat keine aktive Version.</value>
+  </data>
+  <data name="StudyStorage" xml:space="preserve">
+    <value>Inventardatensatz</value>
+  </data>
+  <data name="StudyStorageForStudy" xml:space="preserve">
+    <value>Inventardatensatz für das Studie</value>
+  </data>
+  <data name="StudyTemplate" xml:space="preserve">
+    <value>Studienvorlage</value>
+  </data>
+  <data name="TestGroup" xml:space="preserve">
+    <value>Testgruppe</value>
+  </data>
+  <data name="TestGroupCompListExistButNoSeleted" xml:space="preserve">
+    <value>Für die folgende Analyse / Version existiert eine Komponentenliste, es ist jedoch keine Liste ausgewählt</value>
+  </data>
+  <data name="TestingSite" xml:space="preserve">
+    <value>Testort</value>
+  </data>
+  <data name="TextResultToolTip" xml:space="preserve">
+    <value>Dies gibt 0 zurück, wenn keine Konvertierung in eine Zahl möglich ist.</value>
+  </data>
+  <data name="TheOldVersionOfTestGroupIsUsedInStudy" xml:space="preserve">
+    <value>Die alte Version der Testgruppe wird in der folgenden Studie verwendet: [# 13 #] [# 10 #]</value>
+  </data>
+  <data name="TheTestGroupIsUsedInTheFollowingStudyHighestVersion" xml:space="preserve">
+    <value>Die Testgruppe wird in den folgenden Studien verwendet (verwendete höchste Version):</value>
+  </data>
+  <data name="TimeOffset" xml:space="preserve">
+    <value>Zeitlicher Versatz</value>
+  </data>
+  <data name="Timepoint" xml:space="preserve">
+    <value>Zeitpunkt</value>
+  </data>
+  <data name="TotalCountToBeTakenExceedsLotAmount" xml:space="preserve">
+    <value>Die Gesamtanzahl {0} [{1}] überschreitet die verfügbare Menge in Charge {2} [{3}].</value>
+  </data>
+  <data name="TotalInventoryFor" xml:space="preserve">
+    <value>Gesamtbestand für</value>
+  </data>
+  <data name="TraceCalculateDueDatesNode" xml:space="preserve">
+    <value>Knoten Berechnen der Stabilität Fälligkeitstermine abgeschlossen {0}</value>
+  </data>
+  <data name="UnitscNotCompatible" xml:space="preserve">
+    <value>Die in dieser Studie verwendete Einheit (&apos;{0}&apos;) ist nicht mit der in der ausgewählten Charge verwendeten Einheit (&apos;{1}&apos;) kompatibel</value>
+  </data>
+  <data name="UnknownArticle" xml:space="preserve">
+    <value>unbekannter Artikel</value>
+  </data>
+  <data name="UnknownTypeXAxisSetting" xml:space="preserve">
+    <value>Unbekannter Typ für die Einstellung der Matrix-X-Achse:</value>
+  </data>
+  <data name="UsageButton" xml:space="preserve">
+    <value>Verbrauch</value>
+  </data>
+  <data name="UserDefinedCalcImpossible" xml:space="preserve">
+    <value>Die benutzerdefinierte Berechnung von Containern kann nicht durchgeführt werden, wenn das Inventar auf Containern basiert</value>
+  </data>
+  <data name="Validation" xml:space="preserve">
+    <value>Validierung</value>
+  </data>
+  <data name="ValueMustBeBetweenZeroAndFifty" xml:space="preserve">
+    <value>Der Wert muss zwischen 0 und 50 liegen</value>
+  </data>
+  <data name="ValueMustBeGreaterThenZero" xml:space="preserve">
+    <value>Der Wert muss größer als 0 sein</value>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>{0}(v{1})</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warnung</value>
+  </data>
+  <data name="WarningIfChangeInitialType" xml:space="preserve">
+    <value>Durch Ändern der Einstellung des Typs der initialen Proben werden alle abhängigen Daten gelöscht. Ändern?</value>
+  </data>
+  <data name="WillBeGenerated" xml:space="preserve">
+    <value>&lt;Wird generiert&gt;</value>
+  </data>
+  <data name="Workflow" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="WorkflowEvent" xml:space="preserve">
+    <value>Workflow Ereignis</value>
+  </data>
+  <data name="WouldYouLikeToAddComponentList" xml:space="preserve">
+    <value>Möchten Sie Komponentenlisten hinzufügen?</value>
+  </data>
+  <data name="WouldYouLikeToCancelTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie abbrechen?</value>
+  </data>
+  <data name="WouldYouLikeToCompleteTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie abschließen?</value>
+  </data>
+  <data name="WouldYouLikeToFinalizeTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie abschließen?</value>
+  </data>
+  <data name="WouldYouLikeToStartTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie starten?</value>
+  </data>
+  <data name="CellErrorEventWorkflowNull" xml:space="preserve">
+    <value>Ereignis nicht ausgeführt, Workflow nicht gefunden.</value>
+  </data>
+  <data name="NodeCreateMissingStorageName" xml:space="preserve">
+    <value>Ergänzen Sie fehlende Inventardaten</value>
+  </data>
+  <data name="NodeCreateMissingStorageCategory" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="NodeCreateMissingStorageDescription" xml:space="preserve">
+    <value>Ergänzen Sie fehlende Inventardaten, um die Stabilität zu gewährleisten, wenn Sie eine Studie starten.</value>
+  </data>
+  <data name="NodeCreateMissingStorageFormatName" xml:space="preserve">
+    <value>Ergänzen Sie fehlende Inventardaten</value>
+  </data>
+  <data name="TraceCreateMissingStorageNode" xml:space="preserve">
+    <value>Knoten Ergänzen fehlender Inventardaten abgeschlossen {0}</value>
+  </data>
+  <data name="InitialCellName" xml:space="preserve">
+    <value>Anfangszelle {0}</value>
+  </data>
+  <data name="DashboardNodeErrorAll" xml:space="preserve">
+    <value>Störfälle, nicht spezifikationsgerechte Ergebnisse und ungültige Reservemenge in Studie &apos;{0}&apos;</value>
+  </data>
+  <data name="DashboardNodeErrorIncident" xml:space="preserve">
+    <value>Störfälle an Proben in Studie &apos;{0}&apos;</value>
+  </data>
+  <data name="DashboardNodeErrorResult" xml:space="preserve">
+    <value>Out-of-Spec-Ergebnisse in Proben der Studie &apos;{0}&apos; gefunden</value>
+  </data>
+  <data name="DashboardNodeErrorOverage" xml:space="preserve">
+    <value>Negative Reservemenge in Studie &apos;{0}&apos; gefunden</value>
+  </data>
+  <data name="DashboardNodeErrorMissed" xml:space="preserve">
+    <value>Fehlende Zellen in Studie &apos;{0}&apos; gefunden</value>
+  </data>
+  <data name="DashboardNodeErrorIncidentLocation" xml:space="preserve">
+    <value>Störfälle an Standort für Bedingung &apos;{0}&apos; in Studie &apos;{1}&apos; gefunden</value>
+  </data>
+  <data name="DashboardSummaryNA" xml:space="preserve">
+    <value>Nicht anwendbar</value>
+  </data>
+  <data name="PicklistNoEntries" xml:space="preserve">
+    <value>Keine Einträge zum Speichern.</value>
+  </data>
+  <data name="PicklistMissingData" xml:space="preserve">
+    <value>Bitte geben Sie fehlende Daten ein.</value>
+  </data>
+  <data name="PicklistWarnings" xml:space="preserve">
+    <value>Bestimmte genommene Mengen übersteigen die geplanten Mengen. Warnung ignorieren?</value>
+  </data>
+  <data name="PicklistMissingPullValues" xml:space="preserve">
+    <value>Wert muss eingegeben werden.</value>
+  </data>
+  <data name="PicklistPullsRecordCount" xml:space="preserve">
+    <value>Pulls - Datensatzanzahl: {0}</value>
+  </data>
+  <data name="PicklistLinkedStudiesRecordCount" xml:space="preserve">
+    <value>Verknüpfte Studien - Anzahl der Datensätze: {0}</value>
+  </data>
+  <data name="PicklistDateStartBeforeEndDate" xml:space="preserve">
+    <value>Das Startdatum muss vor dem Enddatum liegen.</value>
+  </data>
+  <data name="PicklistDateEndBeforeStartDate" xml:space="preserve">
+    <value>Das Enddatum muss nach dem Startdatum liegen.</value>
+  </data>
+  <data name="TestGroupNotFoundError" xml:space="preserve">
+    <value>Fehlende aktive Testgruppe.</value>
+  </data>
+  <data name="Minor" xml:space="preserve">
+    <value>Gering</value>
+  </data>
+  <data name="Major" xml:space="preserve">
+    <value>Schwer</value>
+  </data>
+  <data name="Critical" xml:space="preserve">
+    <value>Kritisch</value>
+  </data>
+  <data name="MissingData" xml:space="preserve">
+    <value>Es fehlen Daten, die vervollständigt werden müssen, um das Diagramm zeichnen zu können.</value>
+  </data>
+  <data name="MissingAxisData" xml:space="preserve">
+    <value>Es fehlen &apos;Pack-, Orientierungs- oder Speicherdaten&apos;, die vervollständigt werden müssen, um das Diagramm zeichnen zu können.</value>
+  </data>
+  <data name="MissingSpecData" xml:space="preserve">
+    <value>Es fehlen &apos;Spezifikations- oder MLP&apos;-Daten, die ausgefüllt werden müssen, um das Diagramm zeichnen zu können.</value>
+  </data>
+  <data name="MissingResultDataAnal" xml:space="preserve">
+    <value>Es fehlen &apos;Analysedaten&apos;, die vervollständigt werden müssen, um das Diagramm zeichnen zu können.</value>
+  </data>
+  <data name="MissingResultDataComp" xml:space="preserve">
+    <value>Es fehlen &apos;Komponentendaten&apos;, die vervollständigt werden müssen, um das Diagramm zeichnen zu können.</value>
+  </data>
+  <data name="StudyNotStarted" xml:space="preserve">
+    <value>Die Studie muss gestartet werden, bevor diese Aktion ausgeführt werden kann.</value>
+  </data>
+  <data name="NoMLPComponentsAssigned" xml:space="preserve">
+    <value>Keine MLP-Komponenten zugewiesen.</value>
+  </data>
+  <data name="MultipleMLPComponents" xml:space="preserve">
+    <value>Mehrere MLP-Komponenten.</value>
+  </data>
+  <data name="ResultsReportStudyPromptText" xml:space="preserve">
+    <value>Wählen Sie eine Studie für diesen Bericht aus.</value>
+  </data>
+  <data name="ResultsReportPackagingPromptText" xml:space="preserve">
+    <value>Wählen Sie ein Packmittel für diesen Bericht aus.</value>
+  </data>
+  <data name="ResultsReportStudyPromptHead" xml:space="preserve">
+    <value>Wählen Sie eine Studie für diesen Bericht aus.</value>
+  </data>
+  <data name="ResultsReportPackagingPromptHead" xml:space="preserve">
+    <value>Wählen Sie ein Packmittel für diesen Bericht aus.</value>
+  </data>
+  <data name="ManualCellLogin" xml:space="preserve">
+    <value>Manuelle Anmeldung</value>
+  </data>
+  <data name="ManualCellSuccess" xml:space="preserve">
+    <value>Zellen wurden fehlerfrei verarbeitet.</value>
+  </data>
+  <data name="NoAmountRemaining" xml:space="preserve">
+    <value>Kein verbleibender Betrag, Bestandsverlagerung ist nicht möglich.</value>
+  </data>
+  <data name="GraphReportNotSelected" xml:space="preserve">
+    <value>Bitte wählen Sie einen Bericht aus.</value>
+  </data>  
+  <data name="GraphSeriesUpperConfidence" xml:space="preserve">
+    <value>Obere Vertrauensgrenze</value>
+  </data>
+  <data name="GraphSeriesLowerConfidence" xml:space="preserve">
+    <value>Untere Vertrauensgrenze</value>
+  </data>
+  <data name="GraphSeriesIntersections" xml:space="preserve">
+    <value>Schnittpunkte</value>
+  </data>
+  <data name="GraphSeriesRegression" xml:space="preserve">
+    <value>Regressionsgerade</value>
+  </data>
+  <data name="GraphSeriesLowerMLP" xml:space="preserve">
+    <value>MLP-Untergrenze</value>
+  </data>
+  <data name="GraphSeriesUpperMLP" xml:space="preserve">
+    <value>MLP-Obergrenze</value>
+  </data>
+  <data name="GraphSeriesResults" xml:space="preserve">
+    <value>Ergebnisse</value>
+  </data>
+  <data name="GraphLimitExceeded" xml:space="preserve">
+    <value>{0} Limit bei {1: F3} überschritten</value>
+  </data>
+  <data name="GraphValueFormat" xml:space="preserve">
+    <value>Wert: {0} \ n {1}</value>
+  </data>
+  <data name="PicklistInvalidName" xml:space="preserve">
+    <value>Ungültiger Name der Entnahmeliste</value>
+  </data>
+  <data name="PicklistInvalidStartDate" xml:space="preserve">
+    <value>Das Startdatum muss eingegeben werden</value>
+  </data>
+  <data name="PicklistInvalidEndDate" xml:space="preserve">
+    <value>Das Enddatum muss eingegeben werden</value>
+  </data> 
+  <data name="PicklistAllocation" xml:space="preserve">
+    <value>Zuordnung für Zeitpunkt {0}</value>
+  </data> 
+  <data name="WouldYouLikeToSuspendTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie unterbrechen?</value>
+  </data>
+  <data name="WouldYouLikeToResumeTheStudy" xml:space="preserve">
+    <value>Möchten Sie die Studie fortsetzen?</value>
+  </data>
+  <data name="WouldYouLikeToSuspendTheStudyCondition" xml:space="preserve">
+    <value>Möchten Sie die Lagerbedingung aussetzen?</value>
+  </data>
+  <data name="WouldYouLikeToResumeTheStudyCondition" xml:space="preserve">
+    <value>Möchten Sie den Studienzustand wieder aufnehmen?</value>
+  </data>
+  <data name="ResumeStudyConditionTitle" xml:space="preserve">
+    <value>Lagerbedingung weiterführen</value>
+  </data>
+  <data name="SuspendStudyConditionTitle" xml:space="preserve">
+    <value>Lagerbedingung aussetzen</value>
+  </data>
+  <data name="ResumeStudyConditionConfirm" xml:space="preserve">
+    <value>Lagerbedingung fortsetzen {0}?</value>
+  </data>
+  <data name="SuspendStudyConditionConfirm" xml:space="preserve">
+    <value>Lagerbedingung aussetzen {0}?</value>
+  </data>
+  <data name="ResumeStudyConditionDone" xml:space="preserve">
+    <value>Lagerbedingung {0} Wieder aufgenommen</value>
+  </data>
+  <data name="SuspendStudyConditionDone" xml:space="preserve">
+    <value>Lagerbedingung {0} ausgesetzt</value>
+  </data>
+  <data name="StorageNotCompleteError" xml:space="preserve">
+    <value>Die ursprüngliche Zelle ist für die Entnahmeliste nicht gültig. Die Speicherbedingung für Zelle {0} ist leer.</value>
+  </data>
+  <data name="CalendarName" xml:space="preserve">
+    <value>Name: {0}</value>
+  </data>
+  <data name="CalendarPullStatus" xml:space="preserve">
+    <value>Pull Status: {0}</value>
+  </data>
+  <data name="CalendarSampleLoginType" xml:space="preserve">
+    <value>Probenanmeldetyp: {0}</value>
+  </data>
+  <data name="CalendarDescription" xml:space="preserve">
+    <value>Beschreibung: {0}</value>
+  </data>
+  <data name="CalendarSample" xml:space="preserve">
+    <value>Probe: {0}</value>
+  </data>
+  <data name="CalendarTestGroup" xml:space="preserve">
+    <value>Testgruppe: {0}</value>
+  </data>
+  <data name="CalendarConditionActive" xml:space="preserve">
+    <value>Bedingung aktiv: {0}</value>
+  </data>
+  <data name="CalendarEventStatus" xml:space="preserve">
+    <value>Ereignisstatus: {0}</value>
+  </data>
+  <data name="CalendarEvent" xml:space="preserve">
+    <value>Ereignis: {0}</value>
+  </data>
+  <data name="CalendarLinkStatus" xml:space="preserve">
+    <value>Verbindungsstatus: {0}</value>
+  </data>
+  <data name="CalendarLinkedStudy" xml:space="preserve">
+    <value>Verknüpfte Studie: {0}</value>
+  </data>
+  <data name="ManualCellLoginSuspendedTitle" xml:space="preserve">
+    <value>Verarbeitung bestätigen (angehaltene)</value>
+  </data>
+  <data name="ManualCellLoginSuspendedMessage" xml:space="preserve">
+    <value>Möchten Sie die angehaltene Zelle &apos;{0}&apos; wirklich manuell verarbeiten?</value>
+  </data>
+  <data name="ManualCellLoginMissedTitle" xml:space="preserve">
+    <value>Verarbeitung bestätigen (verpasster Zeitpunkt)</value>
+  </data>
+  <data name="ManualCellLoginMissedMessage" xml:space="preserve">
+    <value>Möchten Sie die Zelle &apos;{0}&apos; wirklich manuell verarbeiten?</value>
+  </data>
+  <data name="AssignSampleWarning" xml:space="preserve">
+    <value>Pull &apos;{0}&apos; hat bereits ein Probe &apos;{1}&apos; zugewiesen. Möchten Sie die zugewiesene Probe in &apos;{2}&apos; ändern?</value>
+  </data>
+  <data name="AssignSampleTitle" xml:space="preserve">
+    <value>Probe zugewiesen</value>
+  </data>
+  <data name="AllocationTimePoint" xml:space="preserve">
+    <value>Zuordnung für Zeitpunkt {0}</value>
+  </data>
+  <data name="InactiveAnalysisError" xml:space="preserve">
+      <value>Die Analyse &apos;{0}&apos; ist nicht aktiv.</value>
+  </data>
+  <data name="InactiveTestGroupError" xml:space="preserve">
+        <value>Testgruppe &apos;{0}&apos; ist nicht aktiv.</value>
+  </data>
+  <data name="NoComponentListError" xml:space="preserve">
+      <value>Die Analyse &apos;{0}&apos; enthält keine Komponentenliste &apos;{1}&apos;.</value>
+  </data>
+  <data name="ManualCellNoProcessed" xml:space="preserve">
+    <value>Zellen wurden nicht verarbeitet Überprüfen Sie den Ordner &quot;Study Cell Processing&quot; auf mögliche Fehler.</value>
+  </data> 
+  <data name="DisplayStudyGroupError" xml:space="preserve">
+    <value>Studie, ungültige untergeordnete Daten &apos;{0}&apos; können nicht angezeigt werden.</value>
+  </data>
+  <data name="DisplayStudyTemplateGroupError" xml:space="preserve">
+    <value>Studienvorlage, ungültige untergeordnete Daten &apos;{0}&apos; können nicht angezeigt werden.</value>
+  </data>
+  <data name="PullSampleInvalid" xml:space="preserve">
+    <value>Pull hat keine Probe.</value>
+  </data>   
+  <data name="InvalidStudyStatus" xml:space="preserve">
+    <value>Die Studie &apos;{0}&apos; hat den ungültigen Status &apos;{1}&apos;.</value>
+  </data>
+</root>

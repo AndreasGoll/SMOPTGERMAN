@@ -1,0 +1,6 @@
+﻿EXPLORER_CABINET              
+IDENTITY,NAME,DESCRIPTION,GROUP_ID,MODIFIABLE,REMOVEFLAG,ICON_1,ICON_2,USER_LIBRARY,CREATION_ROUTINE,PUBLIC_FOLDER,EXPAND,SORT_BY_NAME,EXPLORER_FORM,EXPLORER_FORM_TASK,ORDER_NUMBER,NAME_DE,DESCRIPTION_DE
+30,100,234,10,1,1,30,30,20,30,1,1,1,30,100,10,100,234
+                       2
+"STABILITY","Stability Setup","Folders associated with Stability Setup operations",,"FALSE","FALSE","INT_CABINET_CLOSED","INT_CABINET_OPEN",,,"TRUE","TRUE","FALSE",,,"0","Stabilitäts Stammdaten","Folders associated with Stability Setup operations"
+"STB_STUDIES","Stability Studies","Folders associated with Stability Study execution",,"FALSE","FALSE","INT_CABINET_CLOSED","INT_CABINET_OPEN",,,"TRUE","TRUE","FALSE",,,"0","Stabilitätsstudien","Folders associated with Stability Study execution"

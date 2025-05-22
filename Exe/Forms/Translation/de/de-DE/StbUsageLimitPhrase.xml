@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <controls>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="SpecsPage">
+      <caption>Packmittel Spezifikationen</caption>
+      <components>
+        <stringtable name="MlpParams">
+          <stringentries>
+            <stringentry name="MlpProperties">
+              <value>MlpHeaderName,Identity,ProductVersion,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="MlpNames">
+              <value>Name,Identität,Version,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="ArticleProperties">
+              <value>StbArticleName,Identity,ArticleVersion,Description,GroupId,ApprovalStatus</value>
+            </stringentry>
+            <stringentry name="ArticleNames">
+              <value>Name,Identität,Version,Beschreibung,Gruppe,Freigabe Status</value>
+            </stringentry>
+            <stringentry name="StudyProperties">
+              <value>StbStudyName,Identity,StudyVersion,ReportingName,GroupId,Description,LabManager,StudyDirector,ProjectId,Article,UseHighestApprVersion,ApprovalStatus,StudyStatus</value>
+            </stringentry>
+            <stringentry name="StudyNames">
+              <value>Name,Identität,Version,Reporting Name,Gruppe,Beschreibung,Laborleiter,Studiendirektor,Projekt,Artikel,Verwende Höchste Version,Freigabe Status,Studien Status</value>
+            </stringentry>
+            <stringentry name="StudyPackagingProperties">
+              <value>Packaging,ReleaseSpecId,ReleaseSpecVersion,ShelfLifeSpecId,ShelfLifeSpecVersion,LotId,JobId,OrigPackagingType</value>
+            </stringentry>
+            <stringentry name="StudyPackagingNames">
+              <value>Packmittel,Release Spezifikation,Release Spez. Version,Shelf Life Spezifikation,Shelf Life Spez. Version,Los,Auftrag,Quelltyp</value>
+            </stringentry>
+            <stringentry name="ArticlePackagingProperties">
+              <value>PackagingSystem,ReleaseSpecId,ReleaseSpecVersion,ShelfLifeSpecId,ShelfLifeSpecVersion</value>
+            </stringentry>
+            <stringentry name="ArticlePackagingNames">
+              <value>Packmittel,Release Spezifikation,Release Spez. Version,Shelf Life Spezifikation,Shelf Life Spez. Version</value>
+            </stringentry>
+            <stringentry name="GroupStudiesName">
+              <value>Studien</value>
+            </stringentry>
+            <stringentry name="GroupStudiesIcon">
+              <value>STB_STUDY_GREEN</value>
+            </stringentry>
+            <stringentry name="GroupArticlesName">
+              <value>Artikel</value>
+            </stringentry>
+            <stringentry name="GroupArticlesIcon">
+              <value>STB_ARTICLE</value>
+            </stringentry>
+            <stringentry name="DisplayStudyOption">
+              <value>28788</value>
+            </stringentry>
+            <stringentry name="DisplayStudyText">
+              <value>Studie Anzeigen</value>
+            </stringentry>
+            <stringentry name="DisplayArticleOption">
+              <value>28717</value>
+            </stringentry>
+            <stringentry name="DisplayArticleText">
+              <value>Artikel Anzeigen</value>
+            </stringentry>
+            <stringentry name="DisplayMlpOption">
+              <value>557</value>
+            </stringentry>
+            <stringentry name="DisplayMlpText">
+              <value>MLP Anzeigen</value>
+            </stringentry>
+            <stringentry name="EntityNameArticle">
+              <value>Artikel</value>
+            </stringentry>
+            <stringentry name="EntityNameStudy">
+              <value>Studie</value>
+            </stringentry>
+            <stringentry name="EntityNameProduct">
+              <value>Produkt</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <controls>
+        <splitter name="SpecSplitter">
+          <position>0</position>
+        </splitter>
+        <panel name="SpecRightPanel">
+          <controls>
+            <datagridcontrol name="SpecProperties">
+              <caption>Eigenschaften</caption>
+              <showbuttons>false</showbuttons>
+              <autosizecolumns>false</autosizecolumns>
+              <MultiSelect>false</MultiSelect>
+              <showiconcolumn>false</showiconcolumn>
+              <showindicator>false</showindicator>
+              <showhorzlines>false</showhorzlines>
+              <showvertlines>false</showvertlines>
+              <allowsort>false</allowsort>
+              <fixedcolumns>0</fixedcolumns>
+              <gridcolumns />
+              <readonly>false</readonly>
+              <supportedoperations>None</supportedoperations>
+              <defaultview>Horizontal</defaultview>
+            </datagridcontrol>
+          </controls>
+        </panel>
+        <panel name="SpecLeftPanel">
+          <controls>
+            <simpletreelist name="SpecTree">
+              <caption>Spezifikationen</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

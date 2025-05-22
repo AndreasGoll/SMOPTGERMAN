@@ -1,0 +1,12 @@
+﻿EXPLORER_RMB                  
+CABINET,FOLDER_NUMBER,RMB_NUMBER,TYPE,NAME,DESCRIPTION,GROUP_ID,ORDER_NUMBER,PARENT_NUMBER,CONTEXT_ROUTINE,CONTEXT_LIBRARY,CONTEXT_FIELD,CONTEXT_OPERATOR,CONTEXT_VALUE,ALLOW_MULTIPLE,ON_TREE,REFRESH,MENUPROC,USING,LOCK_REQUIRED,ON_NAVBAR,ON_GRID,BEGIN_GROUP,ONLY_COMMITTED,NAME_DE,DESCRIPTION_DE
+30,10,10,10,100,234,10,10,10,30,20,30,10,234,1,1,1,10,234,1,1,1,1,1,100,234
+                      8
+"STB_STUDIES","13","3962","GROUP","Pick List",,,"1","0",,,,,,"FALSE","FALSE","FALSE","0",,"FALSE","TRUE","TRUE","FALSE","FALSE","Entnahmeliste",
+"STB_STUDIES","13","3963","ITEM","Create New","Create New Pick List",,"2","1",,,,,,"TRUE","FALSE","TRUE","28845",,"FALSE","TRUE","TRUE","FALSE","FALSE","Neue erstellen","Neue Entnahmeliste erstellen"
+"STB_STUDIES","13","3964","ITEM","Add to Existing","Add to existing pick list",,"3","1",,,,,,"TRUE","FALSE","TRUE","28880",,"FALSE","TRUE","TRUE","FALSE","FALSE","Hinzufügen zu bestehender Liste","Hinzufügen zu bestehender Liste"
+"STB_STUDIES","13","3965","ITEM","Confirm Pull","Confirm Pull, allows the user to select cells and pull samples.",,"4","1",,,,,,"TRUE","FALSE","FALSE","28881",,"FALSE","TRUE","TRUE","FALSE","FALSE","Pull bestätigen","Pull bestätigen"
+"STB_STUDIES","14","3966","GROUP","Pick List",,,"1","0",,,,,,"FALSE","FALSE","FALSE","0",,"FALSE","TRUE","TRUE","FALSE","FALSE","Entnahmeliste",
+"STB_STUDIES","14","3967","ITEM","Create New","Create New Pick List",,"2","1",,,,,,"TRUE","FALSE","FALSE","28845",,"FALSE","TRUE","TRUE","FALSE","FALSE","Neue erstellen","Neue Entnahmeliste erstellen"
+"STB_STUDIES","14","3968","ITEM","Add to Existing","Add to existing pick list",,"3","1",,,,,,"TRUE","FALSE","FALSE","28880",,"FALSE","TRUE","TRUE","FALSE","FALSE","Hinzufügen zu bestehender Liste","Hinzufügen zu bestehender Liste"
+"STB_STUDIES","4","3961","ITEM","Dispose Inventory","Dispose Inventory",,"1","0",,,,,,"FALSE","FALSE","TRUE","28807","PARENT_STORAGE","FALSE","FALSE","TRUE","FALSE","FALSE","Inventar entsorgen","Inventar entsorgen"

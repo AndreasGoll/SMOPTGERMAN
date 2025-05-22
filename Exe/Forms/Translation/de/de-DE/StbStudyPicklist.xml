@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="StudyPicklistForm">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="BrowsePulledBy">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="BrowseLocations">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="BrowseLocationLink">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseCell">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <panel name="PanelGrids">
+          <caption>Panel1</caption>
+          <controls>
+            <splitter name="Splitter">
+              <height>5</height>
+              <position>0</position>
+            </splitter>
+            <panel name="PanelLinks">
+              <caption>Panel2</caption>
+              <controls>
+                <PictureButton name="LinkedStudiesMoveDown">
+                  <tooltip>Move Down</tooltip>
+                  <caption>PictureButton1</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="LinkedStudiesMoveUp">
+                  <tooltip>Move Up</tooltip>
+                  <caption>PictureButton2</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <prompt name="SMPrompt1">
+                  <width>391</width>
+                  <caption>Kriterien Unterstudien</caption>
+                </prompt>
+                <PictureButton name="LinkedStudiesDelete">
+                  <tooltip>Delete</tooltip>
+                  <caption>PictureButton1</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="LinkedStudiesFillUp">
+                  <tooltip>Fill Up</tooltip>
+                  <caption>PictureButton1</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="LinkedStudiesAdd">
+                  <tooltip>Add</tooltip>
+                  <caption>PictureButton3</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="LinkedStudiesFillDown">
+                  <tooltip>Fill Down</tooltip>
+                  <caption>PictureButton3</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <datagridcontrol name="DataGridLinkedStudies">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns>
+                    <GridColumnDefinition name="CellLinkId">
+                      <caption>Verweis-ID</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellLinkId.StudyId">
+                      <caption>Studie</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellLinkId.ItemNumber">
+                      <caption>Nr.</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellLinkId.DueDateUsed">
+                      <caption>Fällig</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellLinkId.DisplayedTotalContainer">
+                      <caption>Geplante Container </caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellLinkId.DisplayedTotalCount">
+                      <caption>Geplante Anzahl</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledContainers">
+                      <caption>Entnommene Container</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledCounts">
+                      <caption>Entnommene Anzahl</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledBy">
+                      <caption>Entnommen von</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledOn">
+                      <caption>Entnommen am</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledLocation">
+                      <caption>von Standort</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="Confirmed">
+                      <caption>Bestätigt</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                  </gridcolumns>
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </datagridcontrol>
+              </controls>
+            </panel>
+            <panel name="PanelPulls">
+              <caption>Panel1</caption>
+              <controls>
+                <PictureButton name="PullsMoveDown">
+                  <tooltip>Move Down</tooltip>
+                  <caption>PictureButton1</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <prompt name="SMPrompt2">
+                  <caption>Pull Kriterien</caption>
+                </prompt>
+                <datagridcontrol name="DataGridPulls">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns>
+                    <GridColumnDefinition name="CellPullId">
+                      <caption>Pull Id</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellPullId.ParentStudy">
+                      <caption>Studie</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellPullId.ItemNumber">
+                      <caption>Nr.</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellPullId.DueDateUsed">
+                      <caption>Fällig</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellPullId.DisplayedTotalContainer">
+                      <caption>Geplante Container</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="CellPullId.DisplayedTotalCount">
+                      <caption>Geplante Anzahl</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledContainers">
+                      <caption>Entnommene Container</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledCounts">
+                      <caption>Entnommene Anzahl</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledBy">
+                      <caption>Entnommen von</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledOn">
+                      <caption>Entnommen am</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="PulledLocation">
+                      <caption>von Standort</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="Confirmed">
+                      <caption>Bestätigt</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                  </gridcolumns>
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </datagridcontrol>
+                <PictureButton name="PullsDelete">
+                  <tooltip>Delete</tooltip>
+                  <caption>PictureButton3</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="PullsFillUp">
+                  <tooltip>Fill Up</tooltip>
+                  <caption>ButtonFillDown</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="PullsAdd">
+                  <tooltip>Add</tooltip>
+                  <caption>PictureButton1</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="PullsFillDown">
+                  <tooltip>Fill Down</tooltip>
+                  <caption>PictureButton2</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+                <PictureButton name="PullsMoveUp">
+                  <tooltip>Move Up</tooltip>
+                  <caption>PictureButton2</caption>
+                  <backcolorARGB>0</backcolorARGB>
+                </PictureButton>
+              </controls>
+            </panel>
+          </controls>
+        </panel>
+        <panel name="PanelButton">
+          <caption>Panel1</caption>
+          <controls>
+            <ButtonEditDefinition name="ButtonEditReport">
+              <caption>Bericht</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ActionButtonDefinition name="ActionButtonApply">
+              <caption>&amp;Anwenden</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <ActionButtonDefinition name="ActionButtonOK">
+              <caption>&amp;OK</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <ActionButtonDefinition name="ActionButtonCancel">
+              <caption>&amp;Abbrechen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+          </controls>
+        </panel>
+        <groupbox name="GroupBox1">
+          <caption>Entnahmelisten Eigenschaften</caption>
+          <controls>
+            <prompt name="PromptDescription">
+              <caption>Beschreibung</caption>
+            </prompt>
+            <prompt name="PromptPicklist">
+              <caption>Name</caption>
+            </prompt>
+            <prompt name="PromptAssignedTo">
+              <caption>Zugewiesen an</caption>
+            </prompt>
+            <prompt name="PromptStatus">
+              <caption>Status</caption>
+            </prompt>
+            <prompt name="PromptGroupId">
+              <caption>Gruppe</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,6 @@
+MESSAGE GROUP "STB_STUDY_APPROVE_"
+
+MESSAGE  = "ERROR"
+TEXT     = "Fehler bei der Studienfreigabe : "
+
+

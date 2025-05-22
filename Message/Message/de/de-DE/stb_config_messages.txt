@@ -1,0 +1,7 @@
+MESSAGE GROUP "STB_CONFIG_LOGIN_"
+
+MESSAGE  = "DUE"
+TEXT     = "Pull Datum"
+
+MESSAGE  = "EARLIEST"
+TEXT     = "Frühestes Pull Datum"

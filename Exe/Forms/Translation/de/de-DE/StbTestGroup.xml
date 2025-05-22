@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <controls>
+        <line name="Line1" />
+        <line name="Line2" />
+        <prompt name="SMPrompt5">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="SMPrompt4">
+          <caption>Geändert von</caption>
+        </prompt>
+        <prompt name="SMPrompt2">
+          <caption>Änderbar</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="TestGroupId" />
+        <line name="Line" />
+        <prompt name="TestGroupVersion">
+          <caption>Version</caption>
+        </prompt>
+        <prompt name="StbTestGroupName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page_StbTestGroupEntries">
+      <caption>Testgruppeneinträge</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseComponentList">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseAnalysisLink">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <stringtable name="Strings">
+          <stringentries>
+            <stringentry name="ContainerAnalysisWarningText">
+              <value>Container Analysis '{0}' excluded from Import</value>
+            </stringentry>
+            <stringentry name="ContainerAnalysisWarningCaption">
+              <value>Container Analysis</value>
+            </stringentry>
+            <stringentry name="WarningIcon">
+              <value>INT_WARNING</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <controls>
+        <groupbox name="InventoryGroup">
+          <caption>Inventur</caption>
+          <controls>
+            <prompt name="RequAmountForTestgroup">
+              <tooltip>Amount required to execute this test group</tooltip>
+              <caption>Benötigte Menge für Testgruppe</caption>
+            </prompt>
+            <prompt name="BaseUnit">
+              <tooltip>Base unit for inventory</tooltip>
+              <caption>Basis Einheit</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <ButtonEditDefinition name="ButtonTestGroupEntitiesFromTS">
+          <tooltip>Import Testgruppe von Testplan</tooltip>
+          <caption>TP Import</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+        </ButtonEditDefinition>
+        <ButtonEditDefinition name="ButtonTestGroupEntitiesFromMLP">
+          <tooltip>Import Testgruppe von MLP Spez.</tooltip>
+          <caption>MLP Import</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+        </ButtonEditDefinition>
+        <datagridcontrol name="GridStbTestGroupEntries">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnAnalysislink">
+              <caption>Analyse</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnAnalysisVersion">
+              <caption>Version</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnComponentList">
+              <caption>Komponentenliste</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnInstrumentType">
+              <caption>Instrumenten-Typ</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnOptionalTest">
+              <caption>Optional</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnReplicateCount">
+              <caption>Wdh</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnRequiredAmount">
+              <caption>Menge</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnDestructiveAnalysis">
+              <caption>Destruktiv</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

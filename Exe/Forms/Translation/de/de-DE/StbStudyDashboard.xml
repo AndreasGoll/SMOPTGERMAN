@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseSamples">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="IdText">
+              <Title>Text ID</Title>
+              <Width>75</Width>
+              <Column>IdText</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="IdNumeric">
+              <Title>Numerische ID</Title>
+              <Width>50</Width>
+              <Column>IdNumeric</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Status">
+              <Title>Status</Title>
+              <Width>50</Width>
+              <Column>Status</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Description">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>Description</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="JobName">
+              <Title>Auftrag</Title>
+              <Width>75</Width>
+              <Column>JobName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ProductLink">
+              <Title>Spezifikation</Title>
+              <Width>75</Width>
+              <Column>ProductLink</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="IsInitial">
+              <Title>Ist Initial</Title>
+              <Width>50</Width>
+              <Column>IsInitial</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LinkedTestGroup">
+              <Title>Testgruppe</Title>
+              <Width>75</Width>
+              <Column>LinkedTestGroup</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="CellPullIdName">
+              <Title>Zellenname</Title>
+              <Width>75</Width>
+              <Column>CellPullId.Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PackagingSystem">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>PackagingSystem</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Orientation">
+              <Title>Orientierung</Title>
+              <Width>75</Width>
+              <Column>Orientation</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageCondition">
+              <Title>Lagerbedingung</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageTime">
+              <Title>Lagerzeit</Title>
+              <Width>75</Width>
+              <Column>StorageTime</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseStudy">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="StbStudyName">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>StbStudyName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>StudyStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>75</Width>
+              <Column>Identity</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyVersion">
+              <Title>Version</Title>
+              <Width>50</Width>
+              <Column>StudyVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Description">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>Description</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StartedOn">
+              <Title>Gestartet am</Title>
+              <Width>75</Width>
+              <Column>StartedOn</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StartedBy">
+              <Title>Gestartet von</Title>
+              <Width>50</Width>
+              <Column>StartedBy</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyDirector">
+              <Title>Studienleiter</Title>
+              <Width>75</Width>
+              <Column>StudyDirector</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Articlelink">
+              <Title>Artikel</Title>
+              <Width>75</Width>
+              <Column>Articlelink</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StudyType">
+              <Title>Studientyp</Title>
+              <Width>75</Width>
+              <Column>StudyType</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseCellPull">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ItemNumber">
+              <Title>Element Nr.</Title>
+              <Width>50</Width>
+              <Column>ItemNumber</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PullStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>PullStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EarliestPullDate">
+              <Title>Frühestens</Title>
+              <Width>75</Width>
+              <Column>EarliestPullDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PullDueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>PullDueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LatestPullDate">
+              <Title>Spätestens</Title>
+              <Width>75</Width>
+              <Column>LatestPullDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="CreatedSampleId">
+              <Title>Probe</Title>
+              <Width>75</Width>
+              <Column>CreatedSampleId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Testgrouplink">
+              <Title>Testgruppe</Title>
+              <Width>75</Width>
+              <Column>Testgrouplink</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Packaging">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>Packaging</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Orientation">
+              <Title>Orientierung</Title>
+              <Width>75</Width>
+              <Column>Orientation</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageCondition">
+              <Title>Lagerbedingung</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageTime">
+              <Title>Lagerzeit</Title>
+              <Width>75</Width>
+              <Column>StorageTime</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseJobs">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="JobName">
+              <Title>Auftragsname</Title>
+              <Width>75</Width>
+              <Column>JobName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="JobStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>JobStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="BrowseDescription">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>BrowseDescription</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LotId">
+              <Title>Charge</Title>
+              <Width>75</Width>
+              <Column>LotId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DateCreated">
+              <Title>Erstellt am</Title>
+              <Width>75</Width>
+              <Column>DateCreated</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="AxisPointStudyId">
+              <Title>Studie</Title>
+              <Width>75</Width>
+              <Column>AxisPointStudyId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="AxisPointPackaging">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>AxisPointPackaging</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <stringtable name="StringTable">
+          <stringentries>
+            <stringentry name="BusyCaptionCalendar">
+              <value>Erstelle Kalender</value>
+            </stringentry>
+            <stringentry name="BusyMessageCalendar">
+              <value>Rufe Zelldaten ab, um Kalender zu füllen</value>
+            </stringentry>
+            <stringentry name="BusyCaptionDashboard">
+              <value>Erstelle das Dashboard</value>
+            </stringentry>
+            <stringentry name="BusyMessageDashboard">
+              <value>Rufe Daten für das Dashboard ab</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+        <entityBrowseDefinition name="EntityBrowseCellLink">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LinkStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>LinkStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EarliestDueDate">
+              <Title>Frühestens</Title>
+              <Width>75</Width>
+              <Column>EarliestDueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>DueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DueDateUsed">
+              <Title>Verwendete Fälligkeit</Title>
+              <Width>75</Width>
+              <Column>DueDateUsed</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LinkedStudy">
+              <Title>Unterstudie</Title>
+              <Width>75</Width>
+              <Column>LinkedStudy</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PackagingSystem">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>PackagingSystem</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Orientation">
+              <Title>Orientierung</Title>
+              <Width>75</Width>
+              <Column>Orientation</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageCondition">
+              <Title>Lagerbedingung</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageTime">
+              <Title>Lagerzeit</Title>
+              <Width>75</Width>
+              <Column>StorageTime</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseCellEvent">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="ItemNumber">
+              <Title>Element Nr.</Title>
+              <Width>75</Width>
+              <Column>ItemNumber</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EventStatus">
+              <Title>Status</Title>
+              <Width>75</Width>
+              <Column>EventStatus</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="TimeOffset">
+              <Title>Zeitversatz</Title>
+              <Width>75</Width>
+              <Column>TimeOffset</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EventDueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>EventDueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="WorkflowEvent">
+              <Title>Workflow Event</Title>
+              <Width>75</Width>
+              <Column>WorkflowEvent</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="PackagingSystem">
+              <Title>Packmittel</Title>
+              <Width>75</Width>
+              <Column>PackagingSystem</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Orientation">
+              <Title>Orientierung</Title>
+              <Width>75</Width>
+              <Column>Orientation</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageCondition">
+              <Title>Lagerbedingung</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="StorageTime">
+              <Title>Lagerzeit</Title>
+              <Width>75</Width>
+              <Column>StorageTime</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <panel name="PanelStudyDetails">
+          <location>
+            <y>145</y>
+          </location>
+          <height>362</height>
+          <caption>Panel1</caption>
+          <controls>
+            <panel name="PanelStudySummary">
+              <height>362</height>
+              <caption>Panel1</caption>
+              <controls>
+                <tabcontrol name="TabControl">
+                  <height>362</height>
+                  <caption>TabControl1</caption>
+                  <multiline>false</multiline>
+                  <tabpages>
+                    <tabpage name="TabPageJob">
+                      <height>336</height>
+                      <caption>Aufträge</caption>
+                      <controls>
+                        <explorergridcontrol name="ExplorerGridJobs">
+                          <height>336</height>
+                          <caption>Explorer Grid Aufträge</caption>
+                        </explorergridcontrol>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPageSamples">
+                      <height>336</height>
+                      <caption>Proben</caption>
+                      <controls>
+                        <explorergridcontrol name="ExplorerGridSamples">
+                          <height>336</height>
+                          <caption>Proben</caption>
+                        </explorergridcontrol>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPageCellPulls">
+                      <height>336</height>
+                      <caption>Zell Pulls</caption>
+                      <controls>
+                        <explorergridcontrol name="ExplorerGridPulls">
+                          <height>336</height>
+                          <caption>Pulls</caption>
+                        </explorergridcontrol>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPageCellLinks">
+                      <height>336</height>
+                      <caption>Unterstudien</caption>
+                      <controls>
+                        <explorergridcontrol name="ExplorerGridCellLinks">
+                          <height>336</height>
+                        </explorergridcontrol>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPageCellEvents">
+                      <height>336</height>
+                      <caption>Ereignisse</caption>
+                      <controls>
+                        <explorergridcontrol name="ExplorerGridEvents">
+                          <height>336</height>
+                          <caption>ExplorerGridEvents</caption>
+                        </explorergridcontrol>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPagePredictions">
+                      <height>336</height>
+                      <caption>Kalender</caption>
+                      <controls>
+                        <ProgressBarDefinition name="ProgressBar">
+                          <caption>ProgressBar1</caption>
+                          <style>Solid</style>
+                          <minimum>0</minimum>
+                          <maximum>0</maximum>
+                          <step>0</step>
+                          <orientation>Vertical</orientation>
+                          <showpercent>false</showpercent>
+                          <shownumber>false</shownumber>
+                        </ProgressBarDefinition>
+                        <CalendarDefinition name="CalendarPredictions">
+                          <height>336</height>
+                          <caption>Calendar1</caption>
+                          <isdatabound>false</isdatabound>
+                          <viewtype>Day</viewtype>
+                          <readonly>false</readonly>
+                          <customworkingweek>false</customworkingweek>
+                        </CalendarDefinition>
+                      </controls>
+                    </tabpage>
+                    <tabpage name="TabPageQuantity">
+                      <height>336</height>
+                      <caption>Mengen</caption>
+                      <controls>
+                        <groupbox name="GroupBoxIncidents">
+                          <height>79</height>
+                          <caption>Störfälle</caption>
+                          <controls>
+                            <TextEdit name="StudyOOSResults">
+                              <tooltip>Number of Out of Spec Results.</tooltip>
+                              <caption>Anzahl der OOS Ergebnisse</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyNumberIncidents">
+                              <tooltip>Number of Incidents associated with samples.</tooltip>
+                              <caption>Anzahl der Störfälle</caption>
+                            </TextEdit>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupCurrentQuantities">
+                          <caption>Aktuelle Mengen</caption>
+                          <controls>
+                            <TextEdit name="StudyAmountStored">
+                              <tooltip>Total Count Stored or Total Container Stored from Storage Conditions.</tooltip>
+                              <caption>Eingelagerte Menge</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyCurrentAmountReq">
+                              <tooltip>Amount Required for Completion + Current Amount Allocated</tooltip>
+                              <caption>Aktuell benötigte Menge</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyAmountRequiredCompletion">
+                              <tooltip>Total of the Amount Required for all future Pulls and Linked Studies.</tooltip>
+                              <caption>Zum Beenden benötigte Menge</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyCurrentOverage">
+                              <tooltip>Amount Stored - Current Amount ( Required )</tooltip>
+                              <caption>Aktuelle Reserve</caption>
+                            </TextEdit>
+                          </controls>
+                        </groupbox>
+                        <groupbox name="GroupStudyPlanned">
+                          <caption>Geplante Mengen</caption>
+                          <controls>
+                            <TextEdit name="StudyPlannedAmountReq">
+                              <tooltip>Total Count Planned or Total Containers Planned from Study Inventory.</tooltip>
+                              <caption>Geplante Menge (Benötigt)</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyPlannedOverage">
+                              <tooltip>Total Overage for attached inventory entries.</tooltip>
+                              <caption>Geplante Reserve</caption>
+                            </TextEdit>
+                            <TextEdit name="StudyPlannedAmountTotal">
+                              <tooltip>Planned Amount + Planned Overage</tooltip>
+                              <caption>Geplante Menge (Gesamt)</caption>
+                            </TextEdit>
+                          </controls>
+                        </groupbox>
+                      </controls>
+                    </tabpage>
+                  </tabpages>
+                </tabcontrol>
+              </controls>
+            </panel>
+            <splitter name="Splitter2">
+              <height>362</height>
+              <position>0</position>
+            </splitter>
+            <simpletreelist name="StudyBreakdown">
+              <height>362</height>
+              <caption>Studienplan</caption>
+              <readonly>false</readonly>
+              <treeoperations>None</treeoperations>
+              <openexpanded>false</openexpanded>
+              <showroot>false</showroot>
+              <autofocusnewnode>false</autofocusnewnode>
+              <showimages>false</showimages>
+              <nodes />
+              <showheader>false</showheader>
+              <allowdragdrop>false</allowdragdrop>
+            </simpletreelist>
+          </controls>
+        </panel>
+        <splitter name="SplitterTree">
+          <height>5</height>
+          <position>0</position>
+        </splitter>
+        <explorergridcontrol name="ExplorerGridStudies" />
+      </controls>
+    </form>
+  </forms>
+</interface>

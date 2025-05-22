@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="TgeFromMlpForm">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="TgeFromMlpProductIdBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="MlpNameColumn">
+              <Title>MLP</Title>
+              <Width>75</Width>
+              <Column>MlpLatestVersionViewName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DescriptionColumn">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>ProductDescription</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="TgeFromMlpProductVersionBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Produkt Version</Title>
+              <Width>50</Width>
+              <Column>ProductVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn2">
+              <Title>Versionskommentar</Title>
+              <Width>100</Width>
+              <Column>VersionComment</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="TgeFromMlpAnalysisListGrid">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="AnalysisId">
+              <caption>Analyse</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+        <groupbox name="GroupBox1">
+          <caption>Erstellt aus</caption>
+          <controls>
+            <PromptEntityBrowseDefinition name="TgeFromMlpProductVersionPrompt">
+              <caption>Version</caption>
+            </PromptEntityBrowseDefinition>
+            <PromptEntityBrowseDefinition name="TgeFromMlpProductIdPrompt">
+              <caption>Spezifikation</caption>
+            </PromptEntityBrowseDefinition>
+          </controls>
+        </groupbox>
+        <ActionButtonDefinition name="TgeFromTsButtonImport">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="TgeFromMlpButtonCancel">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <groupbox name="TgefromMlpModeDetails">
+          <caption>Modus</caption>
+          <controls>
+            <radiobutton name="TgefromMlpModeDelete">
+              <width>240</width>
+              <caption>Existierende Einträge vor Import Löschen</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+            <radiobutton name="TgefromMlpModeAppend">
+              <caption>An Analysenliste Anhängen</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

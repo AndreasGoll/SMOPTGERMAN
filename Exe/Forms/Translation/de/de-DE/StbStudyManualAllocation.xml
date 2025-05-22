@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="StorageTimeBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Lagerungszeit</Title>
+              <Width>75</Width>
+              <Column>StorageTime</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="AllocatedByBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>100</Width>
+              <Column>PersonnelName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>75</Width>
+              <Column>Identity</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="StudyBox">
+          <caption>Studien Details</caption>
+          <controls>
+            <TextEdit name="Location">
+              <caption>Standort</caption>
+            </TextEdit>
+            <TextEdit name="Condition">
+              <caption>Lagerbedingung</caption>
+            </TextEdit>
+            <TextEdit name="Orientation">
+              <caption>Orientierung</caption>
+            </TextEdit>
+            <TextEdit name="Packaging">
+              <caption>Packmittel</caption>
+            </TextEdit>
+            <TextEdit name="StudyDisplay">
+              <caption>Studie</caption>
+            </TextEdit>
+          </controls>
+        </groupbox>
+        <groupbox name="AllocationBox">
+          <caption>Details zur Entnahme</caption>
+          <controls>
+            <PromptEntityBrowseDefinition name="PulledByPrompt">
+              <tooltip>The Allocation is pulled by</tooltip>
+              <caption>Entnommen von</caption>
+            </PromptEntityBrowseDefinition>
+            <DateEditDefinition name="PullDate">
+              <tooltip>The Allocation is pulled on</tooltip>
+              <caption>Entnommen am</caption>
+            </DateEditDefinition>
+            <TextEdit name="Comment">
+              <caption>Begründung</caption>
+            </TextEdit>
+            <SpinEditDefinition name="ContainersAllocated">
+              <tooltip>Enter allocated containers</tooltip>
+              <caption>Container</caption>
+            </SpinEditDefinition>
+            <RealEdit name="CountAllocated">
+              <tooltip>Enter allocated count</tooltip>
+              <caption>Anzahl</caption>
+            </RealEdit>
+          </controls>
+        </groupbox>
+        <groupbox name="InventoryBox">
+          <caption>Inventory Details</caption>
+          <controls>
+            <PromptStringBrowseDefinition name="CountForStudy">
+              <caption>Zum Beenden Benötigt</caption>
+              <captionwidth>125</captionwidth>
+              <multiselect>false</multiselect>
+              <forcevalid>false</forcevalid>
+            </PromptStringBrowseDefinition>
+            <PromptStringBrowseDefinition name="ContainerForStudy">
+              <caption>Zum Beenden Benötigt</caption>
+              <captionwidth>125</captionwidth>
+              <multiselect>false</multiselect>
+              <forcevalid>false</forcevalid>
+            </PromptStringBrowseDefinition>
+            <TextEdit name="CountRemaining">
+              <caption>Anzahl Verbleibend</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+            <TextEdit name="CountStored">
+              <caption>Anzahl Eingelagert</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+            <TextEdit name="ContainerRemaining">
+              <caption>Container Verbleibend</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+            <TextEdit name="ContainersStored">
+              <caption>Container Eingelagert</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+          </controls>
+        </groupbox>
+        <ActionButtonDefinition name="ButtonCancel">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="ButtonOK">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

@@ -1,0 +1,23 @@
+﻿EXPLORER_GROUP                
+CABINET,FOLDER_NUMBER,GROUP_NUMBER,FIELD_NAME,NAME,DESCRIPTION,ICON_1,ICON_2,PARENT_NUMBER,ORDER_NUMBER,SHOW_PHRASE_DESC,ICON_ROUTINE,GROUP_FORM,GROUP_FORM_TASK,CHILD_FORM,CHILD_FORM_TASK,CHILD_DASHBOARD_DEFINITION,GROUP_DASHBOARD_DEFINITION,NAME_DE,DESCRIPTION_DE
+30,10,10,100,100,234,30,30,10,10,1,30,30,100,30,100,36,36,100,234
+                     19
+"STABILITY","18","11","MASTER_TEMPLATE","Study Template","List of items grouped by Study Template","STB_STUDY_TEMPLATE","STB_STUDY_TEMPLATE","0","1","FALSE",,,,,,,,"Studienvorlagen","List of items grouped by Study Template"
+"STB_STUDIES","1","40","STUDY_STATUS","Status","List of items grouped by Status","INT_HELP","INT_HELP","0","1","TRUE",,,,,,,,"Status","List of items grouped by Status"
+"STB_STUDIES","1","43","ARTICLE","Article","List of items grouped by Article","STB_ARTICLE","STB_ARTICLE","0","2","FALSE",,,,,,,,"Artikel","List of items grouped by Article"
+"STB_STUDIES","11","40","MODIFIED_ON","Date","List of errors grouped by date","STB_TIME","STB_TIME","0","1","FALSE",,,,,,,,"Datum","List of errors grouped by date"
+"STB_STUDIES","12","261","AXIS_POINT_STUDY_ID","Study","List of items grouped by Study","STB_STUDY_BLUE","STB_STUDY_BLUE","0","1","FALSE",,,,,,,,"Studie","List of items grouped by Study"
+"STB_STUDIES","2","201","AXIS_POINT_STUDY_ID","By Study","List of items grouped by Study","STB_STUDY_BLUE","STB_STUDY_BLUE","0","2","FALSE",,,,,,,,"Studie","List of items grouped by Study"
+"STB_STUDIES","2","89","LOCATION","By Location","List of items grouped by Location","STB_STUDY_STORAGE","STB_STUDY_STORAGE","0","1","FALSE",,,,,,,,"Standort","List of items grouped by Location"
+"STB_STUDIES","3","63","AXIS_POINT_STUDY_ID","Study","List of items grouped by Study","STB_STUDY_GREEN","STB_STUDY_GREEN","0","1","FALSE",,,,,,,,"Studie","List of items grouped by Study"
+"STB_STUDIES","4","93","AXIS_POINT_STUDY_ID","Study","List of items grouped by Study","STB_STUDY_BLUE","STB_STUDY_BLUE","0","1","FALSE",,,,,,,,"Studie","List of items grouped by Study"
+"STB_STUDIES","5","96","STATUS","By Status","List of items grouped by Status","INT_HELP","INT_HELP","0","1","TRUE",,,,,,,,"Status","List of items grouped by Status"
+"STB_STUDIES","5","98","MODIFIED_ON","By Date","Date Modified","STB_TIME","STB_TIME","0","2","FALSE",,,,,,,,"Datum","Date Modified"
+"STB_STUDIES","7","110","PULL_STATUS","By Status","List of items grouped by Pull Status","INT_HELP","INT_HELP","0","1","TRUE",,,,,,,,"Status","List of items grouped by Pull Status"
+"STB_STUDIES","7","112","STUDY_ID","By Study","List of items grouped by Study","STB_STUDY_BLUE","STB_STUDY_BLUE","0","2","FALSE",,,,,,,,"Studie","List of items grouped by Study"
+"STB_STUDIES","7","114","PACKAGING_SYSTEM","Packaging","List of items grouped by Packaging System","STB_PACKAGING","STB_PACKAGING","2","3","FALSE",,,,,,,,"Packmittel","List of items grouped by Packaging System"
+"STB_STUDIES","7","116","ORIENTATION","Orientation","List of items grouped by Orientation","STB_ORIENTATION","STB_ORIENTATION","3","4","FALSE",,,,,,,,"Orientierung","List of items grouped by Orientation"
+"STB_STUDIES","7","118","STORAGE_TIME","Storage Time","List of items grouped by Storage Time","STB_TIME","STB_TIME","2","7","FALSE",,,,,,,,"Lagerzeit","List of items grouped by Storage Time"
+"STB_STUDIES","7","120","STORAGE_CONDITION","Storage Condition","List of items grouped by Storage Condition","STB_CONDITION","STB_CONDITION","4","5","FALSE",,,,,,,,"Lagerbedingung","List of items grouped by Storage Condition"
+"STB_STUDIES","7","122","STORAGE_TIME","Storage Time","List of items grouped by Storage Time","STB_TIME","STB_TIME","5","6","FALSE",,,,,,,,"Lagerzeit","List of items grouped by Storage Time"
+"STB_STUDIES","8","169","ARTICLE","Article","List of items grouped by Article","STB_ARTICLE","STB_ARTICLE","0","1","FALSE",,,,"StbStudyDashboard","StudyDashboardTask",,,"Artikel","List of items grouped by Article"

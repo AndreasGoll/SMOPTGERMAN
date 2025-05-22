@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="UpdateForm">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <stringtable name="StringTable">
+          <stringentries>
+            <stringentry name="ConfirmUpdate">
+              <value>Sind Sie sicher, dass Sie die spezifizierten Daten updaten wollen ?</value>
+            </stringentry>
+            <stringentry name="NoWork">
+              <value>Es wurden keine Analysen geändert, da keine Änderungen gemacht wurden.</value>
+            </stringentry>
+            <stringentry name="NoWork2">
+              <value>Es wurde kein Produkt geändert, da keine Änderungen gemacht wurden.</value>
+            </stringentry>
+          </stringentries>
+        </stringtable>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <tabcontrol name="TabControl">
+          <caption>TabControl1</caption>
+          <multiline>false</multiline>
+          <tabpages>
+            <tabpage name="TabAnalysis">
+              <caption>Analyse</caption>
+              <controls>
+                <unboundgridcontrol name="AnalysisGrid">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns>
+                    <GridColumnDefinition name="VersionedAnalysisName">
+                      <caption>Analyse</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="Identity">
+                      <caption>Identität</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="AnalysisVersion">
+                      <caption>Version</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="GroupId.GroupHeaderName">
+                      <caption>Gruppe</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="ApprovalStatus.PhraseText">
+                      <caption>Status</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="UpdateColumn">
+                      <caption>Ziel Limit-Berechnung</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                  </gridcolumns>
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </unboundgridcontrol>
+              </controls>
+            </tabpage>
+            <tabpage name="TabProduct">
+              <caption>Produkt</caption>
+              <controls>
+                <unboundgridcontrol name="ProductGrid">
+                  <showbuttons>false</showbuttons>
+                  <autosizecolumns>false</autosizecolumns>
+                  <MultiSelect>false</MultiSelect>
+                  <showiconcolumn>false</showiconcolumn>
+                  <showindicator>false</showindicator>
+                  <showhorzlines>false</showhorzlines>
+                  <showvertlines>false</showvertlines>
+                  <allowsort>false</allowsort>
+                  <fixedcolumns>0</fixedcolumns>
+                  <gridcolumns>
+                    <GridColumnDefinition name="MlpHeaderName">
+                      <caption>Produkt</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="Identity">
+                      <caption>Identität</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="ProductVersion">
+                      <caption>Version</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="GroupId.GroupHeaderName">
+                      <caption>Gruppe</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="ApprovalStatus.PhraseText">
+                      <caption>Status</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                    <GridColumnDefinition name="UpdateColumn">
+                      <caption>Ziel Limit Berechnung</caption>
+                      <readonly>false</readonly>
+                      <datatype>Boolean</datatype>
+                      <showbutton>false</showbutton>
+                    </GridColumnDefinition>
+                  </gridcolumns>
+                  <readonly>false</readonly>
+                  <supportedoperations>None</supportedoperations>
+                  <defaultview>Horizontal</defaultview>
+                </unboundgridcontrol>
+              </controls>
+            </tabpage>
+          </tabpages>
+        </tabcontrol>
+        <panel name="BottomPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <ButtonEditDefinition name="UsageButton">
+              <location>
+                <x>116</x>
+                <y>8</y>
+              </location>
+              <tooltip>Run the Usage Tool</tooltip>
+              <caption>Verwendung</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ButtonEditDefinition name="CopyButton">
+              <width>110</width>
+              <tooltip>Create a copy of the existing record</tooltip>
+              <caption>Kopie Erzeugen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+            <ActionButtonDefinition name="ApplyButton">
+              <caption>&amp;Anwenden</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <ActionButtonDefinition name="CancelButton">
+              <caption>&amp;Abbrechen</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+            <ActionButtonDefinition name="OkButton">
+              <caption>&amp;OK</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+              <formresult>Abort</formresult>
+              <accept>false</accept>
+              <cancel>false</cancel>
+              <save>false</save>
+            </ActionButtonDefinition>
+          </controls>
+        </panel>
+        <panel name="TopPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <groupbox name="OptionBox">
+              <caption>Optionen</caption>
+              <controls>
+                <CheckEdit name="NewVersion">
+                  <caption>Immer Neue Version Erzeugen</caption>
+                  <CheckAlign>Left</CheckAlign>
+                </CheckEdit>
+                <CheckEdit name="AutoSubmit">
+                  <caption>Autom. zur Insp. Einreichen</caption>
+                  <CheckAlign>Left</CheckAlign>
+                </CheckEdit>
+              </controls>
+            </groupbox>
+            <picturebox name="Picture">
+              <caption>PictureBox1</caption>
+              <image>iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALDAAACwwBP0AiyAAAAAd0SU1FB9MHHQgzDyLqvmoAAA2FSURBVGhD7VlpdFXluU5Xh+UP21V/3Nt1f7juWl2da2+9trW1lopV0VYGkSxxvIpSK1MpgggYbxUBbRGxgKXIFCaDQQIkJExJyEDm5GQgIQkZOFOGc3LmkzPtc85++rz77J0EbEvS0mq7+q71rp19hu97nud9vvf79knav+NfMTaY8B9rikNLXi2N1P62FvP0lz/eUV6IT77VgrvX1+PgKyWx8E5TNF5nUxJvlEfVzR3YpH/s4xe7OnHjm/XIeLVU6V5/Lpos6lGSYUVNQI/s8wE8XRAt0T/+8YgNPnxmcxNmEHjea6VKLKslpna74irxSsITjmNzlQt3br+E72/twR173Wv1r3608c5FfGVjPV5fVxa3/646plZY4mosngItUWUNYUFuH777Tg9u+0MvfvxuKicfcE3Vh/hoYk83vvl2A4rfOBdPHLkQV62+5IjasYSK/Y0+zNhrxQ+o9o+2jQLXcoc5fsfB8H/qQ300sakRx4930iIjWgMXXTG8XurGvbttmLLLgvsyLbyacdeOS5i8fZTA5D0DnfowfzYyTPjqsrPqvpdr8XX9pWsXO3pw07pyJRFPIinAz3SHsPj4EGYe6Ef6e5J9mLnfjun7bLh/jxX37bbgHhL5CYlMYjUmbTfX3pE99LW0NHxCH3IkVlXiCytLsWVxvj+68LgHi/L9QytqcLv+9rWJtxqRmd+paF2l3BzBY4ecmJPjxJMfOPB49iAeeX8AD2X1Y9aBPjxAItP22vCzTCuJ2bEwz4lHs/tx+/bu5KTM3vOT9zpfm7THccvyc8nP/boCq5aeDHozCgPI6YjgUoAdqy2KeXn+4RerMFOf/m+LTR24cW2ZEglGU21xVaEP83Ld+MVRF+YeGcKcw0783yEHHiOR2QdJhBWZc3gQiwuGsOC4E29UBPB+exw7miJ48YwHs7JseHB/n7rsZDC0pSaEansczgjQF4JGwBwEcrtieC7Xq7xQdQ02wA0NWJ91nn2G0eqIU1EfFud7efVg3jE3niWRp3OGmE4sKnDhpSIPVpxxYQkJzMtz4NUSH3a1RLGtIYyN1SGsK40g54KCi+4EAhx1KJwCbyX4Hj/Qxbzoo03NcQrlUZedUF5Lw4etN67Y2oUb1pQpnoFAQiOwsSqE5ScDWHbST4A+LDruZXpYFS/WlvsJ1ouXCj1YdsrFCjjx3DEH3/NgU20YW2qiKCWoQAwIsZbeaAr8AMHbqLqZBLoJvtMLtHmYvJbYE2zJbnX+UffOpVn4tA5r/LGxAcvfbYgqxK5a/QmsPBNCRuEwVp4OYtWZANaWBajqMH5bEcTqUh9eLvZSfTeeP+nCfNpn7jEnttWH0eZUEWWr5d4GP0fTwNM2gwTfN0z1SUDs00XlO3QCzS6mGzjXr2LJCY/686Ou/IfzI9fr0K4e62qd160ujdu63Qlqxj7fpOC1kgjWlobxFiuxhcA21gSxnh5fW+bHK6I+7fPCaRcW5ruwu3EYFio6TMAC2sdRPATuJnAB76D6/WPUF/uIddpJoJXAm5iNciWZHY0hbX1xvRXr8K4e68piczZVRdk2k6prWMWa8hitEMFWenlLbQhvU/n1lQGso3VS6nu4SN145awbNlZriGCdBCkpVjFS7kV5AW+n+hYS6L1C/VaxEPNYl4IFeW5kcNzs1hCeyHY6dHhXj1eKI/Wmfs36iLP8Ha44jnRE8WYNLVMVxG8I/nUd/P+f9WJloRtLaJ3hmLZVEKyq2UM8Limg5SrA5XVRXsCLdTTv6wQkS21J/PpsABsq/TjvTMBNMeqI5ZGDgxMiYG53JRBk+XVMDBVxniAaB2LYaRpGRrEPq+j7lVyoy2kdaZ1ruDMbnx0IqRpQUdpIuRfPi21EeQGvdR5mnUPFO3UR7G8Owx5IataTivUza0jg4YkQeLkoRSDEIoQ4kCzACJO78UiElCQ7SwS/OefD/Hwn5nPTmsvOs7aU9ddCJWhVAzs2Bbh4vpuqC/Dz5PxBh4LC7hgrqILDIsA5PfpakcoJgdlZjvETyCgKmTtJwAAeZeuLMeUqrwkxWSFGeMMJ5HYMY+kJJ9Kz+rCmhG2EIYcnc0DVAGugmeJ3bcF6VJy1JmHqlz0ydcgS8CKYn4teFryxZsRC6VkDEyBQGG5vo//EPgI6wWuSKRPIvRAIchIf/SltUe6NsLP22+u92FqTqkSCtrvoVbUeLyk+N7G1XnQLvdHToZxvZXxqoe0X0rU0AszafgWz3psAgZVnhttbnUlNdTkFiXVkKiEyQoBKCQFDKWPBSss0YAl4CdkHLlBx6TCyBmScPxWKtRdc/x8iUEcCDx6YwBpYcVoIxBHRAceZMqlcxVKym9LK8HEyNyczSm1sTOJz6TDyeoSflQgp3Mz0vz8Ug1aoz94JNf3r4FdSBGRciiMEakhg5oG+8RN4kQRaePYRsOL5qKQOXkAQJ+Jzbkco+114/BE4eT9AxaTTGDur+L2DXr+g2caoyZ+IV58GnwKAm9KQfOJ7oA7gsoGH8wz5Qhgkido+hSfd/vETWH4q2N5MArKTSsrCEtXlKveiPv6Hk36TycnjD98Mh8UOO9Wy8M1eWbAEL56/QNs0Df0FAgSOW5j/SwJzbtMIhEoKoE76LDx1VZow1RoB+8QINA6mDl/SEeTkGAxFNeDEBuJKTfodPb+ahqGGWlhJQFqldrIkAVmw7SQgPX50ZVwRN+tjcLzk9C8i8eQPgK+lxnQ3NmgEqkhg2r4JWGjpiWBbw0Bi5PBFLFB//FkkHvsOwvs3wyst6HufHCXwjTQ4G+phIQHDPsbZRixUNUDw6lUI6CSkEsaYLhLo4/yVdgVT99rGT2DZiYCp2qZo27iLHpT9NTnlv4Bvc2ApOa2jjq0AJxtsaoKZBAz1Dfu08cvl9uRlLXMkhNRYAkbK2F9OVdXO+StI4P6JEHi+IGAS1gJeOomDc2kExoIem99Kg2/LalzyJtDFtXKRRm4nCeNwVmRJjrTUkdix5nLFjZS1RaGG334JfcEkbGwMFRTzp3smsAaWFPhN5VZFa2HaYYzzJSd/fnTBjZ3QSJKQ90Nz70L/4QOpozHBt7ACpy4ltHOUhNpaB9x2XaoBXDkWgUcznsSQJwjZoK2c20ICZSRwX6Z1/AR+le83lVoUDby0xj6pRHMzgmsXQv3R9Zpl/iwRscQX03Cx/RJaSEIIHO9JIMJzDjEh8cG21Pev/B4rEX/yNq3aA5zPxrmlIciaKqGY92ZOwEKLSaDErGjlk76uJathZTeyUMjB2tpUqa8EYSRba2eHFc2sQCOPRUe74mwG3NkJTvlg+6j6Y8cgAeXxWzHAz4ho2rMC15OsqRKKOWWXZfwEFuX5TEV8hpVfCUSBy5Kv9bA7XTa54WWxmFSAbbCdBBp1AjmdrCb9TFER5eaHL7EJ0Eahgmzgu3o30wnYKNDIswLXkTSEInMM90yEwMI8b83JnpgGVlqicZqUlPtulvgyAlS0t74ZloJ8BJ+dolnoQmsvGmifhiEgu12B2ce2zONIOGcXIm+vgId/863RRcw1pDz0LZjpMw085zEOf4UkcPfOCayB+bmeyvyu2MjR98rsFCnHrgP+3VNjQjNL30SrtVgDfPCJoI4I61iBrPYYOt18uqKH+HCHIYJ0skWL3zUhuGnFnvoh+ts60cuxx4KX+U7TznfvMk+AQJ4QUDQC0g6lo4zNC6zM0PpVSNxxQ4oIe3Z3VR2a+F4jQTcQtICv5SFJcm9rjI+H8ZFDnzQHedKyk0z8/v+Gs/wsLrEivRTA2EM0sViJHaYgHthnU6duM+fo8K4eC3I95esrgmxf7OuiBgeTHVU2JmmNWnvkZM20Uve5avh++SA6qk0w0TL1ojpB11Deaj0zW6Ko64uPPMwbj5YW3ptZCU11gjUqLBbK64rgsex+3L3b2jUj05VOmcb/A9fzxcotiwvju39+1ONfdtKLXY1hnmeSGhH50Ulao/x2o/38wdcaOGEDSdXrigv4KmYFN5BK5vamCMrYCo2fUYz2qB36JDmGKN/L9yu5AfySj6h37bJ6p2W7X7gnV7lOhzXxeLEY1y8uwuPPnYieeSrHHc8o8uFgW1QDf17vMCbmWOCieBVBC/hy9sRzvP+DKYLCS6NNwQBsKC7qt/KBZzWfp6dk2pSp73t/P60A1/Z/CgsqcONzp2Irnsl3tj2V41DXlfmRy3UiVZBOIwSqmaL4OR18aT+v/HtzfRj53dERf2unVPmbKRbdWh/E1H129f6DvhPp+epN+pR/r8An5pUnbp2TH93ySLbD+cwRp/pWVRCnrQnN+5VUXECXEfxZZimJbKoL4UhnRGsAYsELuuqHOsKYfbBP/Wmm7fysvMTP9An+cbHgWOy6pwpiM5/IjRxJz3JEFhx3YWvDMIrtqkaihOCLSWJ91TCtF9ZUl6e0Qov8+uyU/+44HjjkWXDrob/ix9trHc+cxhcezYssmn0kUJeeNZBcesqNnS0RlJLIm9VB7G9lI3Am8VKhmwczW2TaQe+G9FPJG/Svf7zi0cLkTbOPDL8x471B60PvD2DuUQd+lT+E6fv61BmH/IdnneLO8c8Qd66u/NSMvfZ7p++375+2x1Yy/bB/sv7Wv+NfJNLS/gjpWj/KXz43mwAAAABJRU5ErkJggg==</image>
+            </picturebox>
+            <label name="TopLabel">
+              <caption>Willkommen zum Update Tool für Limit-Berechnungen. Dieses erlaubt das Austauschen einer Limit-Berechnung in Analysen oder Produktspezifikationen. Der Austausch in freigegebenen Versionen erzeugt eine neue Version.</caption>
+            </label>
+            <groupbox name="ExistingBox">
+              <caption>Existierende Limit-Berechnung</caption>
+              <controls>
+                <prompt name="Identity">
+                  <caption>Identität</caption>
+                </prompt>
+              </controls>
+            </groupbox>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>

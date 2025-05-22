@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity">
+          <tooltip>Packaging System ID</tooltip>
+        </prompt>
+        <line name="Line" />
+        <prompt name="StPackagingSystemName">
+          <tooltip>Packaging System Name</tooltip>
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <tooltip>Packaging System Description</tooltip>
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page3">
+      <caption>Weitere Informationen</caption>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="GroupBox5">
+          <caption>Kommentare / Instruktionen</caption>
+          <controls>
+            <prompt name="SMPrompt8">
+              <tooltip>Hinweise zur Montage</tooltip>
+              <caption>Montageanweisungen</caption>
+            </prompt>
+            <prompt name="SMPrompt9">
+              <tooltip>Kommentare zum Packmittel</tooltip>
+              <caption>Packungs Kommentare</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox4">
+          <caption>Typ</caption>
+          <controls>
+            <prompt name="SMPrompt7">
+              <tooltip>Packmitteltyp</tooltip>
+              <caption>Typ</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox3">
+          <caption>Etikettentext</caption>
+          <controls>
+            <prompt name="SMPrompt6">
+              <tooltip>Packaging Label Text</tooltip>
+              <caption>Etikettentext Packmittel</caption>
+              <captionwidth>130</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox2">
+          <caption>Code</caption>
+          <controls>
+            <prompt name="SMPrompt4">
+              <tooltip>Verschluss Code</tooltip>
+              <caption>Verschluss Code</caption>
+            </prompt>
+            <prompt name="SMPrompt5">
+              <tooltip>Container Code</tooltip>
+              <caption>Container Code</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox1">
+          <caption>Anzeigeoptionen</caption>
+          <controls>
+            <TextEdit name="TextEdit1">
+              <tooltip>Name, der auf Berichten verwendet werden soll</tooltip>
+              <caption>Berichtsname</caption>
+            </TextEdit>
+            <prompt name="SMPrompt1">
+              <tooltip>Icon, das für die Anzeige des SDatensatzes benutzt wird</tooltip>
+              <caption>Symbol</caption>
+            </prompt>
+            <prompt name="SMPrompt2">
+              <tooltip>Kurzname, kann in der Studienmatrix verwendet werden</tooltip>
+              <caption>Kurzname</caption>
+            </prompt>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+    <form name="Page_StbPackagingSystemComponents">
+      <caption>Komponenten</caption>
+      <components>
+        <entityBrowseDefinition name="StockBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn1">
+              <Title>Identität</Title>
+              <Width>75</Width>
+              <Column>Identity</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn2">
+              <Title>Bestandsname</Title>
+              <Width>75</Width>
+              <Column>StockName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EntityBrowseColumn3">
+              <Title>Bestandsart</Title>
+              <Width>75</Width>
+              <Column>StockType</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="PackCompGrid">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="PackagingComponent">
+              <caption>Komponente</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="PackagingComponent.Identity">
+              <caption>Identität</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="PackagingComponent.StockType">
+              <caption>Typ</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

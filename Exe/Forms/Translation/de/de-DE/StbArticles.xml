@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="Page_General">
+      <caption>Allgemein</caption>
+      <extendedfunctions />
+      <controls>
+        <prompt name="ArticleVersion">
+          <location>
+            <x>393</x>
+            <y>19</y>
+          </location>
+          <width>195</width>
+          <caption>Version</caption>
+        </prompt>
+        <EntityImage name="EntityImage1" />
+        <prompt name="Identity" />
+        <line name="Line" />
+        <prompt name="StbArticleName">
+          <caption>Name</caption>
+        </prompt>
+        <prompt name="Description">
+          <caption>Beschreibung</caption>
+        </prompt>
+        <line name="Line1" />
+        <prompt name="GroupId">
+          <caption>Gruppe</caption>
+        </prompt>
+        <prompt name="ModifiedOn">
+          <caption>Geändert am</caption>
+        </prompt>
+        <prompt name="ModifiedBy">
+          <caption>Geändert von</caption>
+        </prompt>
+        <line name="Line2" />
+        <prompt name="Modifiable">
+          <caption>Änderbar</caption>
+        </prompt>
+      </controls>
+    </form>
+    <form name="Page_Additional">
+      <caption>Weitere Informationen</caption>
+      <extendedfunctions />
+      <controls>
+        <groupbox name="GroupBox4">
+          <caption>Artikel Eigenschaften</caption>
+          <controls>
+            <prompt name="SubstanceId">
+              <caption>Substanz-ID</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="FormulationType">
+              <caption>Formulierungstyp</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="ArticleType">
+              <caption>Artikeltyp</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="GenericName">
+              <caption>Generischer Name</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="MlpFamily">
+              <caption>MLP Familie</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="AmountUnit">
+              <caption>Einheit</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="Monograph">
+              <caption>Monographie</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="RetestPeriod">
+              <caption>Zeitraum Wdh. Prüfung</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="DeliveryDevice">
+              <caption>Verabreichungssystem</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="DosageForm">
+              <caption>Darreichungsform</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="DosageStrength">
+              <caption>Dosierungsstärke</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="AdministrationRoute">
+              <caption>Adminstrations Pfad</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox3">
+          <caption>Kategorien</caption>
+          <controls>
+            <prompt name="ArticleCategories">
+              <caption>Artikel Kategorien</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="TherapeuticCategories">
+              <caption>Therapeut. Kategorien</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+            <prompt name="ReleaseCategory">
+              <caption>Freisetzungskategorie</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox2">
+          <caption>Lagerung und Transport</caption>
+          <controls>
+            <TextEdit name="TextEdit2">
+              <caption>Transportbedingungen</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+            <prompt name="ArticleStorageCondition">
+              <caption>Lagerungsbedingung</caption>
+              <captionwidth>125</captionwidth>
+            </prompt>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBox1">
+          <caption>Anzeigeoptionen</caption>
+          <controls>
+            <TextEdit name="TextEdit1">
+              <caption>Variation Beschreibung</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+            <TextEdit name="ReportingName">
+              <caption>Berichtsname</caption>
+              <captionwidth>125</captionwidth>
+            </TextEdit>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+    <form name="Page_StbArticlePackSys">
+      <caption>Packmittel</caption>
+      <components>
+        <entityBrowseDefinition name="MlpHeaderBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridStbArticlePackSys">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="Packaging System">
+              <caption>Verpackung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Releasespec">
+              <caption>Freigabespezifikation</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ReleaseSpecVersion">
+              <caption>Version</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Shelflifespec">
+              <caption>Laufzeitspezifikation</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Version">
+              <caption>Version</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnAmountPerContainer">
+              <caption>Menge pro Container</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnMaterialId">
+              <caption>Material-ID</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ExpiryPeriod">
+              <caption>Verfallszeitraum</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="TradeName">
+              <caption>Handelsname</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_StbArticleMarkets">
+      <caption>Märkte</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseMLPLevels">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridStbArticleMarkets">
+          <caption>MLP Stufen vom Typ Markt</caption>
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnIdentity">
+              <caption>Markt-ID</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnQValueForDissolution">
+              <caption>Q-Wert für Auflösung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_StbArticleHazards">
+      <caption>Gefahrenhinweise</caption>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridStbArticleHazards">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnHazard">
+              <caption>Gefahr</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_StbArticleIngredients">
+      <caption>Hilfsstoffe</caption>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridStbArticleIngredients">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="IngredientName">
+              <caption>Hilfsstoff-Name</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnIngredientType">
+              <caption>Hilfsstoff-Typ</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Amount">
+              <caption>Menge</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Unit">
+              <caption>Einheit</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_Constituents">
+      <caption>Wirkstoffe</caption>
+      <components>
+        <entityBrowseDefinition name="ArticleBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns />
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="DataGridDesign1">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ChildArticle">
+              <caption>Wirkstoff</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="Amount">
+              <caption>Menge</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="AmountUnit">
+              <caption>Einheit</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+    <form name="Page_RelatedLots">
+      <caption>Chargen des Artikels</caption>
+      <extendedfunctions />
+      <controls>
+        <datagridcontrol name="GridRelatedLots">
+          <showbuttons>false</showbuttons>
+          <autosizecolumns>false</autosizecolumns>
+          <MultiSelect>false</MultiSelect>
+          <showiconcolumn>false</showiconcolumn>
+          <showindicator>false</showindicator>
+          <showhorzlines>false</showhorzlines>
+          <showvertlines>false</showvertlines>
+          <allowsort>false</allowsort>
+          <fixedcolumns>0</fixedcolumns>
+          <gridcolumns>
+            <GridColumnDefinition name="ColumnLotId">
+              <caption>Charge</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnDescription">
+              <caption>Beschreibung</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnStatus">
+              <caption>Status</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnExpiryDate">
+              <caption>Ablaufdatum</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnManufacturer">
+              <caption>Hersteller</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnManufacturingDate">
+              <caption>Herstelldatum</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+            <GridColumnDefinition name="ColumnStorageLocation">
+              <caption>Standort</caption>
+              <readonly>false</readonly>
+              <datatype>Boolean</datatype>
+              <showbutton>false</showbutton>
+            </GridColumnDefinition>
+          </gridcolumns>
+          <readonly>false</readonly>
+          <supportedoperations>None</supportedoperations>
+          <defaultview>Horizontal</defaultview>
+        </datagridcontrol>
+      </controls>
+    </form>
+  </forms>
+</interface>

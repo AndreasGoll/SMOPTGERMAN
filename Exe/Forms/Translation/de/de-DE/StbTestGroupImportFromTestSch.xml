@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="TgeFromTsTestSchedBrowse">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="TestSchedHeaderName">
+              <Title>Testplan Name</Title>
+              <Width>75</Width>
+              <Column>TestSchedHeaderName</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="TestSchedHeaderDescription">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>Description</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="TgeFromTsAnalysisListColl">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Analysis">
+              <Title>Analyse</Title>
+              <Width>70</Width>
+              <Column>Analysis</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Componentlist">
+              <Title>Komponentenliste</Title>
+              <Width>70</Width>
+              <Column>ComponentList</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Instrumenttype">
+              <Title>Instrumenten-Typ</Title>
+              <Width>70</Width>
+              <Column>InstrumentType</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Replicatecount">
+              <Title>Wdh.</Title>
+              <Width>50</Width>
+              <Column>ReplicateCount</Column>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Stdtest">
+              <Title>Standard Test</Title>
+              <Width>50</Width>
+              <Column>StdTest</Column>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <controls>
+        <explorergridcontrol name="TgeFromTsAnalysisListGrid">
+          <caption>Analysenliste</caption>
+        </explorergridcontrol>
+        <ActionButtonDefinition name="TgeFromTsButtonCancel">
+          <caption>&amp;Abbrechen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <ActionButtonDefinition name="TgeFromTsButtonImport">
+          <caption>&amp;OK</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+        <groupbox name="TgefromTsModeDetails">
+          <caption>Modus</caption>
+          <controls>
+            <radiobutton name="TgefromTsModeDeleteBeforeImport">
+              <width>223</width>
+              <caption>Existierende Einträge vor Import Löschen</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+            <radiobutton name="TgefromTsModeAppend">
+              <caption>An Analysenliste Anhängen</caption>
+              <radiogroupindex>0</radiogroupindex>
+              <CheckAlign>Left</CheckAlign>
+            </radiobutton>
+          </controls>
+        </groupbox>
+        <groupbox name="GroupBoxCreateFrom">
+          <caption>Erstellt aus</caption>
+          <controls>
+            <PromptEntityBrowseDefinition name="TgeFromTsTestSchedBrowsePrompt">
+              <caption>Testplan</caption>
+            </PromptEntityBrowseDefinition>
+          </controls>
+        </groupbox>
+      </controls>
+    </form>
+  </forms>
+</interface>

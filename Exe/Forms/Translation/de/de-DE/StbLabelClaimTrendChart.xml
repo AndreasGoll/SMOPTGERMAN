@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowseAnalyses">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Identity">
+              <Title>Identität</Title>
+              <Width>75</Width>
+              <Column>Identity</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Analysisversion">
+              <Title>Analysen-Version</Title>
+              <Width>75</Width>
+              <Column>AnalysisVersion</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Description">
+              <Title>Beschreibung</Title>
+              <Width>75</Width>
+              <Column>Description</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseComponents">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Versionedcomponentname">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>VersionedComponentName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowsePackaging">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Axispointname">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>AxisPointName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseStorage">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="StorageCondition">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>StorageCondition</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseOrientation">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Orientation">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Orientation</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseMLPLevels">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="LevelId">
+              <Title>Level</Title>
+              <Width>75</Width>
+              <Column>LevelId</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseReleaseSpec">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Mlpheadername">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>MlpHeaderName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseShelfLifeSpec">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Mlpheadername">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>MlpHeaderName</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <panel name="GraphPanel">
+          <caption>Panel1</caption>
+          <controls>
+            <XYChart name="StbXYChart">
+              <caption>XYChart1</caption>
+              <titleFont />
+            </XYChart>
+          </controls>
+        </panel>
+        <tabcontrol name="TabControl1">
+          <caption>TabControl1</caption>
+          <multiline>false</multiline>
+          <tabpages>
+            <tabpage name="TabPageStudy">
+              <caption>Studienkriterien</caption>
+              <controls>
+                <groupbox name="GraphDataOptions">
+                  <caption>Studien Achse</caption>
+                  <controls>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowsePackaging">
+                      <caption>Packmittel</caption>
+                    </PromptEntityBrowseDefinition>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseStorage">
+                      <caption>Lagerbedingung</caption>
+                    </PromptEntityBrowseDefinition>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseOrientation">
+                      <caption>Orientierung</caption>
+                    </PromptEntityBrowseDefinition>
+                  </controls>
+                </groupbox>
+                <groupbox name="GroupBox1">
+                  <caption>Spezifikationen</caption>
+                  <controls>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseShelfLifeSpec" />
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseReleaseSpec" />
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseMLPLevels">
+                      <caption>MLP Level</caption>
+                    </PromptEntityBrowseDefinition>
+                    <radiobutton name="ShelfLifeSpec">
+                      <caption>Laufzeitspez.</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="ReleaseSpec">
+                      <caption>Freigabespez.</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                  </controls>
+                </groupbox>
+                <groupbox name="GroupBox2">
+                  <caption>Ergebnisse</caption>
+                  <controls>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseComponents">
+                      <caption>Komponente</caption>
+                    </PromptEntityBrowseDefinition>
+                    <PromptEntityBrowseDefinition name="PromptEntityBrowseAnalyses">
+                      <caption>Analyse</caption>
+                    </PromptEntityBrowseDefinition>
+                  </controls>
+                </groupbox>
+              </controls>
+            </tabpage>
+            <tabpage name="TabPageGraph">
+              <caption>Grafik Konfiguration</caption>
+              <controls>
+                <groupbox name="GroupBox4">
+                  <caption>Ergebnis</caption>
+                  <controls>
+                    <radiobutton name="ResultRaw">
+                      <width>70</width>
+                      <caption>Rohdaten</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="ResultText">
+                      <caption>Text</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <radiobutton name="ResultValue">
+                      <caption>Wert</caption>
+                      <radiogroupindex>0</radiogroupindex>
+                      <CheckAlign>Left</CheckAlign>
+                    </radiobutton>
+                    <label name="Label1">
+                      <location>
+                        <x>82</x>
+                        <y>20</y>
+                      </location>
+                      <caption>*</caption>
+                    </label>
+                  </controls>
+                </groupbox>
+                <groupbox name="GroupBoxGraphData">
+                  <caption>Grafik Datenserien / Berechnungen</caption>
+                  <controls>
+                    <PromptPhraseBrowseDefinition name="PromptPhraseBrowseReports">
+                      <caption>Bericht</caption>
+                      <multiselect>false</multiselect>
+                      <forcevalid>false</forcevalid>
+                      <usedescription>false</usedescription>
+                    </PromptPhraseBrowseDefinition>
+                    <ButtonEditDefinition name="GenerateReport">
+                      <caption>Erstelle</caption>
+                      <size>
+                        <Width>0</Width>
+                        <Height>0</Height>
+                      </size>
+                    </ButtonEditDefinition>
+                    <ButtonEditDefinition name="GraphData">
+                      <caption>Ergebnis/Grafik Daten</caption>
+                      <size>
+                        <Width>0</Width>
+                        <Height>0</Height>
+                      </size>
+                    </ButtonEditDefinition>
+                  </controls>
+                </groupbox>
+                <groupbox name="GroupBoxGraphStyle">
+                  <caption>Grafik Stil</caption>
+                  <controls>
+                    <CheckEdit name="GraphInterBeyondLimts">
+                      <caption>Zeige Überschneidung ü. Grenzen</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphLegend">
+                      <caption>Zeige Legende</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphLabels">
+                      <caption>Zeige Marker</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphAnnotations">
+                      <caption>Zeige Anmerkungen</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                  </controls>
+                </groupbox>
+                <groupbox name="GroupBox3">
+                  <caption>Grafik Optionen</caption>
+                  <controls>
+                    <CheckEdit name="GraphMLPLimits">
+                      <caption>MLP Grenzwerte</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphNonApprRes">
+                      <caption>Zeige Nicht Freigeg. Ergebnisse</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphOoSResults">
+                      <caption>Zeige OoS Ergebnisse</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                    <CheckEdit name="GraphRegressionLine">
+                      <caption>Regression / Konfidenz Linien</caption>
+                      <CheckAlign>Left</CheckAlign>
+                    </CheckEdit>
+                  </controls>
+                </groupbox>
+              </controls>
+            </tabpage>
+          </tabpages>
+        </tabcontrol>
+        <label name="StatusBar" />
+        <ActionButtonDefinition name="ActionButtonClose">
+          <caption>Schli&amp;eßen</caption>
+          <size>
+            <Width>0</Width>
+            <Height>0</Height>
+          </size>
+          <formresult>Abort</formresult>
+          <accept>false</accept>
+          <cancel>false</cancel>
+          <save>false</save>
+        </ActionButtonDefinition>
+      </controls>
+    </form>
+  </forms>
+</interface>

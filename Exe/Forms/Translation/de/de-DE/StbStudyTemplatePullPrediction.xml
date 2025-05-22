@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-16"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.thermo.com/informatics/xmlns/interface/1.0">
+  <forms>
+    <form name="FormDefinition1">
+      <caption>Allgemein</caption>
+      <components>
+        <entityBrowseDefinition name="EntityBrowsePulls">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="EarliestPullDate">
+              <Title>Frühestes Pull Datum</Title>
+              <Width>75</Width>
+              <Column>EarliestPullDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>DueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LatestPullDate">
+              <Title>Spätestes Pull Datum</Title>
+              <Width>75</Width>
+              <Column>LatestPullDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="Workflow">
+              <Title>Workflow</Title>
+              <Width>75</Width>
+              <Column>Workflow</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="TestGroup">
+              <Title>Testgruppe</Title>
+              <Width>75</Width>
+              <Column>TestGroup</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseEvents">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>DueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="TimeOffset">
+              <Title>Zeitversatz</Title>
+              <Width>75</Width>
+              <Column>TimeOffset</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="WorkflowAction">
+              <Title>Workflow Event</Title>
+              <Width>75</Width>
+              <Column>WorkflowEvent</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+        <entityBrowseDefinition name="EntityBrowseLinks">
+          <ShowColumnHeaders>false</ShowColumnHeaders>
+          <ExplorerColumns>
+            <EntityBrowseColumnDefinition name="Name">
+              <Title>Name</Title>
+              <Width>75</Width>
+              <Column>Name</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="DueDate">
+              <Title>Fällig</Title>
+              <Width>75</Width>
+              <Column>DueDate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+            <EntityBrowseColumnDefinition name="LinkedStudyTemplate">
+              <Title>Template Unterstudie</Title>
+              <Width>75</Width>
+              <Column>LinkedStudyTemplate</Column>
+              <HorizontalAlignment>0</HorizontalAlignment>
+            </EntityBrowseColumnDefinition>
+          </ExplorerColumns>
+          <ShowAllVersions>Default</ShowAllVersions>
+          <ShowRemoved>Default</ShowRemoved>
+        </entityBrowseDefinition>
+      </components>
+      <extendedfunctions />
+      <controls>
+        <panel name="PanelMain">
+          <caption>Panel1</caption>
+          <controls>
+            <CalendarDefinition name="PredictionCalendar">
+              <location>
+                <y>143</y>
+              </location>
+              <height>346</height>
+              <caption>VorhersageKalender</caption>
+              <isdatabound>false</isdatabound>
+              <viewtype>Day</viewtype>
+              <readonly>false</readonly>
+              <customworkingweek>false</customworkingweek>
+            </CalendarDefinition>
+            <splitter name="SplitterCalendar">
+              <height>5</height>
+              <position>0</position>
+            </splitter>
+            <tabcontrol name="TabControlCells">
+              <caption>TabControl1</caption>
+              <multiline>false</multiline>
+              <tabpages>
+                <tabpage name="Page1">
+                  <caption>Pulls</caption>
+                  <controls>
+                    <explorergridcontrol name="ExplorerGridPulls" />
+                  </controls>
+                </tabpage>
+                <tabpage name="Page2">
+                  <caption>Ereignisse</caption>
+                  <controls>
+                    <explorergridcontrol name="ExplorerGridEvents" />
+                  </controls>
+                </tabpage>
+                <tabpage name="PageLinks">
+                  <caption>Unterstudien</caption>
+                  <controls>
+                    <explorergridcontrol name="ExplorerGridLinks" />
+                  </controls>
+                </tabpage>
+              </tabpages>
+            </tabcontrol>
+          </controls>
+        </panel>
+        <panel name="PanelButton">
+          <caption>Panel1</caption>
+          <controls>
+            <DateEditDefinition name="PredictStorage">
+              <tooltip>Start des Vorhersagezeitraumes</tooltip>
+              <caption>Lagerung</caption>
+            </DateEditDefinition>
+            <CheckEdit name="ShowWindow">
+              <caption>Zeitfenster anzeigen</caption>
+              <CheckAlign>Left</CheckAlign>
+            </CheckEdit>
+            <CheckEdit name="ShowEvents">
+              <caption>Ereignisse</caption>
+              <CheckAlign>Left</CheckAlign>
+            </CheckEdit>
+            <CheckEdit name="ShowLinkedStudy">
+              <caption>Unterstudie</caption>
+              <CheckAlign>Left</CheckAlign>
+            </CheckEdit>
+            <CheckEdit name="ShowPull">
+              <caption>Pulls</caption>
+              <CheckAlign>Left</CheckAlign>
+            </CheckEdit>
+            <DateEditDefinition name="PredictEnd">
+              <tooltip>End des Vorhersagezeitraumes</tooltip>
+              <caption>Ende</caption>
+            </DateEditDefinition>
+            <DateEditDefinition name="PredictStart">
+              <tooltip>Start des Vorhersagezeitraumes</tooltip>
+              <caption>Start</caption>
+            </DateEditDefinition>
+            <ButtonEditDefinition name="PredictButton">
+              <tooltip>Process the schedule and generate events, display those events on the Calendar below</tooltip>
+              <caption>Vorhersage</caption>
+              <size>
+                <Width>0</Width>
+                <Height>0</Height>
+              </size>
+            </ButtonEditDefinition>
+          </controls>
+        </panel>
+      </controls>
+    </form>
+  </forms>
+</interface>
